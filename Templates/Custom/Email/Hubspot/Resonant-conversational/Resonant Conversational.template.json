@@ -1,0 +1,238 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 2,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "email_view_as_web_page",
+        "label" : "View As Web Page",
+        "type" : "email_view_as_web_page",
+        "params" : {
+          "html" : "<div style=\"padding-top: 15px; font-family: Geneva, Verdana, Arial, Helvetica, sans-serif; text-align: right; font-size: 9px; line-height: 1.34em; color: {{ secondary_font_color }}\">\n    Not rendering correctly? View this email as a web page <a class=\"hubspot-mergetag\" style=\"color: {{ secondary_font_color }}; text-decoration: underline; white-space: nowrap\" data-viewaswebpage=\"true\" href=\"{{ view_as_page_url }}\">here</a>.\n</div>\n"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_14921805498611306",
+        "label" : "Resonant CSS Include",
+        "type" : "raw_jinja",
+        "params" : {
+          "overrideable" : false,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "value" : "{% set primary_accent_color = \"#ee4a30\" %}\n\n<style>\n{% include 'Coded files/Custom/page/css/resonant-1500567230812.css' %}\n</style>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1490814631149459",
+        "label" : "Branding",
+        "type" : "raw_jinja",
+        "params" : {
+          "overrideable" : false,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "value" : "<table style=\"width: 700px;{# set this to 700 to force email width on outlook #}\" class=\"setFullWidth\"><tr>\n<td style=\" padding-bottom: 50px; padding-top: 50px; padding-left: 50px; margin-bottom: 30px; background-color: {{ primary_accent_color }}\">\n    {% logo \"logo_image\" overrideable=true, suppress_company_name=true, src=\"https://cdn2.hubspot.net/hubfs/2574624/Resonant/resonant-logo.png\", original_width=163, original_height=21, img_alt=\"resonant logo\", width=163, height=21, label=\"Logo\" %}\n</td></tr></table>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1496933440829703",
+        "label" : "Main Email Body",
+        "type" : "email_body",
+        "params" : {
+          "overrideable" : false,
+          "css_class" : "mobile-box-margin",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "margin: 50px 150px 0px 50px;",
+          "ending_html" : "",
+          "starting_html" : "",
+          "default_html" : "<p>Hi Timmy,</p>\n<p>I came across this cool thing that I think might be useful for your widget marketing campaigns. I know you were having a little trouble getting good sample content, so that might be just the trick.</p>\n<p>On a related note, we’ve been working on this new class that helps folks get consistency in their asset management. It’s a topic that a lot of people don’t think about until it starts to get really unweildy. We’re tracking our efforts on our blog if you’re interested in getting a peek.</p>\n<p>As always, feel free to reach out with any questions or comments.</p>\n<p>Sincerly,</p>\n<p>Mortimer Sinclair Rappleton III</p>",
+          "css_color" : "",
+          "css_background_color" : "",
+          "css_border_color" : "",
+          "css_border_width" : "",
+          "css_margin_bottom" : "",
+          "css_margin_left" : "",
+          "css_margin_right" : "",
+          "css_margin_top" : "",
+          "css_padding_bottom" : "",
+          "css_padding_left" : "",
+          "css_padding_right" : "",
+          "css_padding_top" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1496934284614828",
+        "label" : "Resonant Social Media Left-1500567231147",
+        "type" : "custom_widget",
+        "params" : {
+          "overrideable" : true,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "widget_name" : "Resonant Social Media Left-1500567231147",
+          "css_color" : "",
+          "css_background_color" : "",
+          "css_border_color" : "",
+          "css_border_width" : "",
+          "css_margin_bottom" : "",
+          "css_margin_left" : "",
+          "css_margin_right" : "",
+          "css_margin_top" : "",
+          "css_padding_bottom" : "",
+          "css_padding_left" : "",
+          "css_padding_right" : "",
+          "css_padding_top" : "",
+          "schema_version" : 1,
+          "path" : "/Custom modules/Resonant Social Media Left-1500567231147"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_14969455742341054",
+        "label" : "Resonant Footer White-1500567230985",
+        "type" : "custom_widget",
+        "params" : {
+          "overrideable" : true,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "widget_name" : "Resonant Footer White-1500567230985",
+          "schema_version" : 1,
+          "path" : "/Custom modules/Resonant Footer White-1500567230985"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

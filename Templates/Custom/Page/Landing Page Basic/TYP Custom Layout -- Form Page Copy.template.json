@@ -1,0 +1,369 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "Mykaylighting Theme/Header",
+        "label" : "Mykaylighting Theme/Header",
+        "type" : "global_group",
+        "params" : {
+          "overrideable" : false,
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : "",
+          "path" : "/Global content/Global Groups/Mykaylighting Theme/Mykaylighting Theme/Header.template.json"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "section_header",
+        "label" : "Section Header",
+        "type" : "section_header",
+        "params" : {
+          "overrideable" : true,
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : "",
+          "header" : "Inbound Marketing",
+          "subheader" : "Will take you to new ground"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_14586807194972003",
+        "label" : "Module Group",
+        "type" : "cell",
+        "params" : {
+          "overrideable" : false,
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_14586807141841604",
+            "label" : "Call-to-Action",
+            "type" : "cta",
+            "params" : {
+              "overrideable" : true,
+              "cell" : false,
+              "cells" : [ ],
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "text-align: center",
+              "ending_html" : "",
+              "root" : false,
+              "row" : false,
+              "starting_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "text-align: center",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1458680704104839",
+            "label" : "Social Sharing",
+            "type" : "social_sharing",
+            "params" : {
+              "overrideable" : true,
+              "cell" : false,
+              "cells" : [ ],
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "ending_html" : "",
+              "root" : false,
+              "row" : false,
+              "starting_html" : "",
+              "email" : {
+                "default" : true,
+                "enabled" : false,
+                "img_src" : "https://static.hubspot.com/final/img/common/icons/social/email-24x24.png",
+                "link_format" : "mailto:?subject=Check out {{ social_link_url }} &body=Check out {{ social_link_url }}",
+                "network" : "Email"
+              },
+              "facebook" : {
+                "default" : true,
+                "enabled" : false,
+                "img_src" : "https://static.hubspot.com/final/img/common/icons/social/facebook-24x24.png",
+                "link_format" : "http://www.facebook.com/share.php?u={{ social_link_url }}",
+                "network" : "Facebook"
+              },
+              "google_plus" : {
+                "default" : true,
+                "enabled" : false,
+                "img_src" : "https://static.hubspot.com/final/img/common/icons/social/googleplus-24x24.png",
+                "link_format" : "https://plus.google.com/share?url={{ social_link_url }}",
+                "network" : "Google+"
+              },
+              "linkedin" : {
+                "default" : true,
+                "enabled" : false,
+                "img_src" : "https://static.hubspot.com/final/img/common/icons/social/linkedin-24x24.png",
+                "link_format" : "http://www.linkedin.com/shareArticle?mini=true&url={{ social_link_url }}",
+                "network" : "LinkedIn"
+              },
+              "pinterest" : {
+                "default" : true,
+                "enabled" : false,
+                "img_src" : "https://static.hubspot.com/final/img/common/icons/social/pinterest-24x24.png",
+                "link_format" : "http://pinterest.com/pin/create/button/?url={{ social_link_url }}&media={{ pinterest_media }}",
+                "network" : "Pinterest",
+                "secondary_fields" : [ {
+                  "default" : "",
+                  "name" : "pinterest_media",
+                  "type" : "image"
+                } ]
+              },
+              "twitter" : {
+                "default" : true,
+                "enabled" : false,
+                "img_src" : "https://static.hubspot.com/final/img/common/icons/social/twitter-24x24.png",
+                "link_format" : "https://twitter.com/intent/tweet?original_referer={{ social_link_url }}&url={{ social_link_url }}&source=tweetbutton&text={{ social_page_title }}",
+                "network" : "Twitter"
+              },
+              "use_page_url" : true
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1393976589494259",
+        "label" : "New Module",
+        "type" : "rich_text",
+        "params" : {
+          "overrideable" : true,
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : "",
+          "html" : "<h2>New Module</h2><p>Add content here.</p>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1393970161253642",
+        "label" : "Form",
+        "type" : "form",
+        "params" : {
+          "overrideable" : true,
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "Mykaylighting Theme/Footer",
+        "label" : "Mykaylighting Theme/Footer",
+        "type" : "global_group",
+        "params" : {
+          "overrideable" : false,
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : "",
+          "path" : "/Global content/Global Groups/Mykaylighting Theme/Mykaylighting Theme/Footer.template.json"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

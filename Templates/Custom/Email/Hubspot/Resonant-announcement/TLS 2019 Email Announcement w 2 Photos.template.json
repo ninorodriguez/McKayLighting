@@ -1,0 +1,322 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 2,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "email_view_as_web_page",
+        "label" : "View As Web Page",
+        "type" : "email_view_as_web_page",
+        "params" : {
+          "html" : "<div style=\"padding-top: 15px; font-family: Geneva, Verdana, Arial, Helvetica, sans-serif; text-align: right; font-size: 9px; line-height: 1.34em; color: {{ secondary_font_color }}\">\n    Not rendering correctly? View this email as a web page <a class=\"hubspot-mergetag\" style=\"color: {{ secondary_font_color }}; text-decoration: underline; white-space: nowrap\" data-viewaswebpage=\"true\" href=\"{{ view_as_page_url }}\">here</a>.\n</div>\n"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_14921805498611306",
+        "label" : "Resonant CSS Include",
+        "type" : "raw_jinja",
+        "params" : {
+          "overrideable" : false,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "value" : "{% set primary_accent_color = \"#232324\" %}\n\n<style>\n{% include 'Coded files/Custom/page/css/resonant-1500566879364.css' %}\n</style>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1490814631149459",
+        "label" : "Branding",
+        "type" : "raw_jinja",
+        "params" : {
+          "overrideable" : false,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "value" : "<table style=\"width: 700px;{# set this to 700 to force email width on outlook #}\" class=\"setFullWidth\"><tr>\n<td style=\" padding-bottom: 50px; padding-top: 50px; padding-left: 50px; padding-right: 50px;  margin-bottom: 30px; background-color: {{ primary_accent_color }}\"> \n    {% logo \"logo_image\" overrideable=true, suppress_company_name=true, src=\"https://cdn2.hubspot.net/hubfs/2574624/Resonant/resonant-logo.png\", original_width=163, original_height=21, img_alt=\"resonant logo\", width=163, height=21, label=\"Logo\" %}\n</td></tr></table>",
+          "css_color" : "",
+          "css_background_color" : "",
+          "css_border_color" : "",
+          "css_border_width" : "",
+          "css_margin_bottom" : "",
+          "css_margin_left" : "",
+          "css_margin_right" : "",
+          "css_margin_top" : "",
+          "css_padding_bottom" : "",
+          "css_padding_left" : "",
+          "css_padding_right" : "",
+          "css_padding_top" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1533230968239105",
+        "label" : "Image (tall hustle full width)-1500566879687",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "per_widget_wrapper_html" : "",
+          "overrideable" : true,
+          "widget_name" : "Image (tall hustle full width)-1500566879687",
+          "schema_version" : 1,
+          "path" : "/Custom modules/Image (tall hustle full width)-1500566879687"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1496929135753260",
+        "label" : "Resonant One Col Center Align Text CTA (announcement copy)",
+        "type" : "custom_widget",
+        "params" : {
+          "overrideable" : true,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "widget_name" : "Resonant One Col Center Align Text CTA (announcement copy)",
+          "schema_version" : 1,
+          "path" : "/Custom modules/Resonant One Col Center Align Text CTA (announcement copy)"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1496929725864308",
+        "label" : "Resonant Image (tall hustle full width)-1500566879687",
+        "type" : "custom_widget",
+        "params" : {
+          "overrideable" : true,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "widget_name" : "Resonant Image (tall hustle full width)-1500566879687",
+          "schema_version" : 1,
+          "path" : "/Custom modules/Image (tall hustle full width)-1500566879687"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1496929930692330",
+        "label" : "Resonant One Col Left Aligned Text CTA (announcement copy)",
+        "type" : "custom_widget",
+        "params" : {
+          "overrideable" : true,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "widget_name" : "Resonant One Col Left Aligned Text CTA (announcement copy)",
+          "schema_version" : 1,
+          "path" : "/Custom modules/Content"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1529954284831220",
+        "label" : "LM Logo",
+        "type" : "rich_text",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "padding: 80px; align: center",
+          "wrapping_html" : "",
+          "per_widget_wrapper_html" : "",
+          "overrideable" : true,
+          "html" : "<hr>\n<h2 style=\"text-align: center;\">&nbsp;</h2>\n<h2 style=\"text-align: center;\"><span style=\"font-size: 18px;\">Exclusive Media Sponsor:&nbsp;&nbsp;</span><a href=\"http://landscapemanagement.net/\"><img src=\"https://cdn2.hubspot.net/hub/319325/file-2038145981.png\" width=\"200\" style=\"width: 200px; margin: 0px 0px -15px;\" caption=\"false\" data-constrained=\"true\" hspace=\"0\" align=\"center\" alt=\"Landscape Management \" title=\"Landscape Management \"></a></h2>",
+          "css_color" : "#fafafa",
+          "css_background_color" : "#232324",
+          "css_border_color" : "",
+          "css_border_width" : "",
+          "css_margin_bottom" : "",
+          "css_margin_left" : "",
+          "css_margin_right" : "",
+          "css_margin_top" : "",
+          "css_padding_bottom" : "",
+          "css_padding_left" : "",
+          "css_padding_right" : "",
+          "css_padding_top" : "3"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1496930807321428",
+        "label" : "Resonant Footer White-1500566879520",
+        "type" : "custom_widget",
+        "params" : {
+          "overrideable" : true,
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "starting_html" : "",
+          "widget_name" : "Resonant Footer White-1500566879520",
+          "schema_version" : 1,
+          "path" : "/Custom modules/Resonant Footer White-1500566879520"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

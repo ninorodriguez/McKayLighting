@@ -1,0 +1,1309 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Coded files/Custom/page/McKay_Landscape_Lighting_Sept2016-theme/McKay_Landscape_Lighting_Sept2016-style.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "site-page one-column one-column-form",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "McKay_Landscape_Lighting_Sept2016 Theme/Header - No Navigation",
+        "label" : "McKay_Landscape_Lighting_Sept2016 Theme/Header - No Navigation",
+        "type" : "global_group",
+        "params" : {
+          "css_class" : "",
+          "css_style" : "display: none",
+          "overrideable" : false,
+          "path" : "/Global content/Global Groups/McKay_Landscape_Lighting_Sept2016 Theme/Header - No Navigation.template.json"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "display: none",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1553108929710242",
+        "label" : "HubBlox - Hero Banner SaaS with Image",
+        "type" : "custom_widget",
+        "params" : {
+          "call_to_action" : {
+            "items" : [ {
+              "background_color" : {
+                "color" : "#FFF",
+                "opacity" : 100
+              },
+              "color" : {
+                "color" : "#FFF",
+                "opacity" : 100
+              },
+              "cta" : "f636d3ce-4bfb-422b-8dbc-ad17eb7e453e",
+              "full_width" : false,
+              "icon" : { },
+              "size" : "medium",
+              "style" : "outline"
+            } ]
+          },
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "features" : {
+            "items" : [ ]
+          },
+          "image" : { },
+          "overrideable" : true,
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "styling" : {
+            "background_color_alt" : {
+              "color" : "#0F0F0F",
+              "opacity" : 50
+            },
+            "background_image" : {
+              "alt" : "Residential Outdoor Security Lighting Omaha Nebraska McKay Landscape Lighting V 03",
+              "height" : 1200,
+              "src" : "https://cdn2.hubspot.net/hubfs/319325/Project%20Photos%20/Vollertsen/Residential%20Outdoor%20Security%20Lighting%20Omaha%20Nebraska%20McKay%20Landscape%20Lighting%20V%2003.jpg",
+              "width" : 1722
+            },
+            "background_position" : "center center"
+          },
+          "text" : {
+            "text" : "<h1>&nbsp;</h1>\n<h1><strong>PROTECT THE BEAUTY AND FUNCTIONALITY OF YOUR SYSTEM</strong></h1>\n<h2><em>by enrolling into a McKay Landscape Lighting maintenance&nbsp;program</em></h2>\n<p>Regular maintenance will help keep your landscape lighting system performing and looking its best year after year. When you enroll in one of our maintenance programs, you'll enjoy the peace of mind knowing your outdoor lighting system is working as it was first intended.</p>"
+          },
+          "widget_name" : "HubBlox - Hero Banner SaaS with Image",
+          "wrapping_html" : "",
+          "path" : "/Marketplace/Hubmate/HubBlox_-_Hero_Banner_SaaS_with_Image/HubBlox - Hero Banner SaaS with Image"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1553108843225125",
+        "label" : "Flexible column",
+        "type" : "widget_container",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_13966221470251891",
+        "label" : "Page Center, Content Wrapper",
+        "type" : "cell",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "page-center content-wrapper",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "overrideable" : false,
+          "root" : false,
+          "row" : false,
+          "starting_html" : "",
+          "value" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_13885006758448185",
+            "label" : "Main Content",
+            "type" : "cell",
+            "params" : {
+              "cell" : false,
+              "cells" : [ ],
+              "css_class" : "main-content",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "ending_html" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "root" : false,
+              "row" : false,
+              "starting_html" : "",
+              "value" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1521666303569133",
+                "label" : "Module",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "overrideable" : false,
+                  "per_widget_wrapper_html" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_15531102250244054",
+                    "label" : "Packages",
+                    "type" : "cell",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "overrideable" : false,
+                      "per_widget_wrapper_html" : "",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_1521667106327140",
+                        "label" : "Programs Intro",
+                        "type" : "rich_text",
+                        "params" : {
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "html" : "<h1 style=\"text-align: center;\">&nbsp;</h1>\n<h1 style=\"text-align: center;\">LANDSCAPE LIGHTING MAINTENANCE PROGRAMS</h1>\n<h3 style=\"text-align: center;\">FIND THE BEST PROGRAM FOR&nbsp;YOUR LIGHTING NEEDS</h3>\n<p style=\"text-align: center;\">To protect your investment, we offer annual, bi-annual, and quarterly maintenance programs&nbsp;including a&nbsp;hassle-free automatic renewal option, so you won’t have to worry about requesting service with us each year.&nbsp;The following is a guide to help you determine the best program for your property and needs. Please feel free to <a href=\"https://www.mckaylighting.com/contact/\" rel=\" noopener\" target=\"_blank\">contact us</a> to learn more or if you need help selecting a program.&nbsp;</p>\n<p>&nbsp;</p>",
+                          "overrideable" : true,
+                          "per_widget_wrapper_html" : "",
+                          "wrapping_html" : ""
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 4,
+                        "name" : "module_1521667091446137",
+                        "label" : "Annual Service",
+                        "type" : "rich_text",
+                        "params" : {
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "padding: 15px;",
+                          "html" : "<h3 style=\"text-align: center;\"><span style=\"text-decoration: underline; color: #ffc036;\"><strong>ESSENTIAL PACKAGE</strong>:<br>Annual Service</span></h3>\n<p style=\"text-align: center;\"><em>Recommended for properties with <strong>less than 50 fixtures</strong>. Once a year we'll visit your property to perform service.&nbsp;</em></p>\n<hr width=\"100\">\n<p style=\"text-align: center;\">You pay an hourly service fee, the cost of all bulbs, and any repairs.</p>\n<p style=\"text-align: center; font-size: 12px;\">{{cta('5b4831b2-aa1a-497f-b511-b3dedc5453ff')}}</p>",
+                          "overrideable" : true,
+                          "per_widget_wrapper_html" : "",
+                          "wrapping_html" : ""
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "padding: 15px;",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      },
+                      "4" : {
+                        "x" : 4,
+                        "w" : 4,
+                        "name" : "module_1521667109531141",
+                        "label" : "BiAnnual Service",
+                        "type" : "rich_text",
+                        "params" : {
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "padding: 15px;",
+                          "html" : "<h3 style=\"text-align: center;\"><span style=\"text-decoration: underline; color: #ffc036;\"><strong>GOLD PACKAGE</strong>:<br>Bi-Annual Service</span></h3>\n<p style=\"text-align: center;\"><em>Recommended for properties with approximately&nbsp;<strong>50-100 fixtures</strong>. Twice a year we'll visit your property to perform service.&nbsp;</em></p>\n<hr width=\"100\">\n<p style=\"text-align: center;\">You pay a <span style=\"text-decoration: underline;\">flat rate service fee</span> per visit and <span style=\"text-decoration: underline;\">FREE</span> bulb replacement during the second visit.</p>\n<p style=\"text-align: center;\">{{cta('d6a29609-527d-41fd-abd3-dcc5b5151667')}}</p>",
+                          "overrideable" : true,
+                          "per_widget_wrapper_html" : "",
+                          "wrapping_html" : ""
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "padding: 15px;",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      },
+                      "8" : {
+                        "x" : 8,
+                        "w" : 4,
+                        "name" : "module_1521667994563144",
+                        "label" : "Quarterly",
+                        "type" : "rich_text",
+                        "params" : {
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "padding: 15px;",
+                          "html" : "<h3 style=\"text-align: center;\"><span style=\"text-decoration: underline; color: #ffc036;\"><strong>PLATINUM PACKAGE</strong>:<br>Quarterly Service</span></h3>\n<p style=\"text-align: center;\"><span style=\"color: #ffffff;\"></span><em>Recommended for properties with <strong>more than 100 fixtures</strong>. Once a quarter we'll visit your property to perform service.&nbsp;</em></p>\n<hr width=\"100\">\n<p style=\"text-align: center;\">You pay a<span>&nbsp;</span><span style=\"text-decoration: underline;\">flat rate service fee</span><span>&nbsp;</span>per visit and<span>&nbsp;</span><span style=\"text-decoration: underline;\">FREE</span>&nbsp;bulb replacement during the second, third, and fourth visit</p>\n<p style=\"text-align: center;\">{{cta('f4e32ae9-5737-4260-8de2-c38aad0e3cc8')}}</p>",
+                          "overrideable" : true,
+                          "per_widget_wrapper_html" : "",
+                          "wrapping_html" : ""
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "padding: 15px;",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_1521668002710146",
+                        "label" : "Programs footer",
+                        "type" : "rich_text",
+                        "params" : {
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "html" : "<h2 style=\"text-align: center;\">&nbsp;</h2>",
+                          "overrideable" : true,
+                          "per_widget_wrapper_html" : "",
+                          "wrapping_html" : ""
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    } ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_15531131420985173",
+                    "label" : "Features",
+                    "type" : "cell",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "height: 100%; background-image: url(\"https://cdn2.hubspot.net/hubfs/319325/McKay-Landscape-Lighting-Quarterly-Maintenance-Program-Omaha-Nebraska-v2.jpg\");     background-position: center;   background-repeat: no-repeat;   background-size: cover;",
+                      "overrideable" : false,
+                      "per_widget_wrapper_html" : "",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_13885011246079525",
+                        "label" : "Features Intro",
+                        "type" : "rich_text",
+                        "params" : {
+                          "cell" : false,
+                          "cells" : [ ],
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "ending_html" : "",
+                          "html" : "<hr width=\"80%\">\n<h1 style=\"text-align: center;\">&nbsp;</h1>\n<h1 style=\"text-align: center;\">WHAT'S INCLUDED</h1>\n<h2 style=\"text-align: center;\"><em>Save time, money, and more importantly, peace of mind</em></h2>\n<p style=\"text-align: center;\">Enrolling in one of our maintenance service programs will not only save you time but also money.&nbsp;Otherwise, you'll incur a service call fee, plus of the cost of bulbs for each visit and we can not guarantee the bulbs.&nbsp;<span>When you join one of our maintenance&nbsp;programs, an experienced&nbsp;service technician&nbsp;performs the following:&nbsp;</span></p>",
+                          "overrideable" : true,
+                          "root" : false,
+                          "row" : false,
+                          "starting_html" : ""
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_15531105246284236",
+                        "label" : "Features - Row 1",
+                        "type" : "cell",
+                        "params" : {
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "overrideable" : false,
+                          "per_widget_wrapper_html" : "",
+                          "wrapping_html" : ""
+                        },
+                        "rows" : [ {
+                          "0" : {
+                            "x" : 0,
+                            "w" : 4,
+                            "name" : "module_15531098168043580",
+                            "label" : "Rich Text",
+                            "type" : "rich_text",
+                            "params" : {
+                              "css_class" : "",
+                              "css_id" : "",
+                              "css_id_str" : "",
+                              "css_style" : "",
+                              "html" : "<h2 style=\"text-align: center;\">Bulb Replacement</h2>\n<p style=\"text-align: center;\"><span>Over the life of a bulb, its brightness tends to diminish. Burned out bulbs or using the wrong bulb can negatively impact your system.&nbsp;We replace ALL of halogen bulbs OR inspect and only replace faulty LED bulbs.&nbsp;<strong>&nbsp;</strong><span>&nbsp;</span></span></p>",
+                              "overrideable" : true,
+                              "per_widget_wrapper_html" : "",
+                              "wrapping_html" : ""
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          },
+                          "4" : {
+                            "x" : 4,
+                            "w" : 4,
+                            "name" : "module_152166610394879",
+                            "label" : "Rich Text",
+                            "type" : "rich_text",
+                            "params" : {
+                              "css_class" : "",
+                              "css_id" : "",
+                              "css_id_str" : "",
+                              "css_style" : "",
+                              "html" : "<h2 style=\"text-align: center;\">Realign Fixtures</h2>\n<p style=\"text-align: center;\">Ever-growing tree and plant roots underneath the surface can push fixtures upwards. We make sure your fixtures are properly aligned and situated into the ground, lighting what's important.</p>\n<p style=\"text-align: center;\">&nbsp;</p>",
+                              "overrideable" : true,
+                              "per_widget_wrapper_html" : "",
+                              "wrapping_html" : ""
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          },
+                          "8" : {
+                            "x" : 8,
+                            "w" : 4,
+                            "name" : "module_15531098154573577",
+                            "label" : "Rich Text",
+                            "type" : "rich_text",
+                            "params" : {
+                              "css_class" : "",
+                              "css_id" : "",
+                              "css_id_str" : "",
+                              "css_style" : "",
+                              "html" : "<h2 style=\"text-align: center;\">Clean Fixtures &amp; Lenses</h2>\n<p style=\"text-align: center;\">Dirt, debris, and mineral deposits can build up and make your lights appear dimmer than normal. We thoroughly clean your fixtures and lenses.&nbsp;</p>",
+                              "overrideable" : true,
+                              "per_widget_wrapper_html" : "",
+                              "wrapping_html" : ""
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          }
+                        } ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_15531105619204239",
+                        "label" : "Features - Row 2",
+                        "type" : "cell",
+                        "params" : {
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "overrideable" : false,
+                          "per_widget_wrapper_html" : "",
+                          "wrapping_html" : ""
+                        },
+                        "rows" : [ {
+                          "0" : {
+                            "x" : 0,
+                            "w" : 4,
+                            "name" : "module_15531105619204240",
+                            "label" : "Rich Text",
+                            "type" : "rich_text",
+                            "params" : {
+                              "css_class" : "",
+                              "css_id" : "",
+                              "css_id_str" : "",
+                              "css_style" : "",
+                              "html" : "<h2 style=\"text-align: center;\">Inspect Photocells &amp; Transformers</h2>\n<p style=\"text-align: center;\">We'll inspect and make certain no little critters are preventing your photocells or transformers from properly working.</p>",
+                              "overrideable" : true,
+                              "per_widget_wrapper_html" : "",
+                              "wrapping_html" : ""
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          },
+                          "4" : {
+                            "x" : 4,
+                            "w" : 4,
+                            "name" : "module_15531105619204241",
+                            "label" : "Rich Text",
+                            "type" : "rich_text",
+                            "params" : {
+                              "css_class" : "",
+                              "css_id" : "",
+                              "css_id_str" : "",
+                              "css_style" : "",
+                              "html" : "<h2 style=\"text-align: center;\">Check &amp; Reset Timers</h2>\n<p style=\"text-align: center;\">Some timers can lose time, need adjusting as the season's change, or battery replacement. We'll assure your timer is properly functioning and turning on and off at the correct times.</p>\n<h2 style=\"text-align: center;\">&nbsp;</h2>",
+                              "overrideable" : true,
+                              "per_widget_wrapper_html" : "",
+                              "wrapping_html" : ""
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          },
+                          "8" : {
+                            "x" : 8,
+                            "w" : 4,
+                            "name" : "module_15531105619204242",
+                            "label" : "Rich Text",
+                            "type" : "rich_text",
+                            "params" : {
+                              "css_class" : "",
+                              "css_id" : "",
+                              "css_id_str" : "",
+                              "css_style" : "",
+                              "html" : "<h2 style=\"text-align: center;\">System Performance Checks</h2>\n<p style=\"text-align: center;\">We also run through performance checks to affirm&nbsp;your system is performing and working its best.</p>",
+                              "overrideable" : true,
+                              "per_widget_wrapper_html" : "",
+                              "wrapping_html" : ""
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          }
+                        } ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_15531105922014257",
+                        "label" : "Features - Row 3",
+                        "type" : "cell",
+                        "params" : {
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "overrideable" : false,
+                          "per_widget_wrapper_html" : "",
+                          "wrapping_html" : ""
+                        },
+                        "rows" : [ {
+                          "0" : {
+                            "x" : 0,
+                            "w" : 4,
+                            "name" : "module_15531105922014258",
+                            "label" : "Rich Text",
+                            "type" : "rich_text",
+                            "params" : {
+                              "css_class" : "",
+                              "css_id" : "",
+                              "css_id_str" : "",
+                              "css_style" : "",
+                              "html" : "",
+                              "overrideable" : true,
+                              "per_widget_wrapper_html" : "",
+                              "wrapping_html" : ""
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          },
+                          "4" : {
+                            "x" : 4,
+                            "w" : 4,
+                            "name" : "module_15531105922014259",
+                            "label" : "Rich Text",
+                            "type" : "rich_text",
+                            "params" : {
+                              "css_class" : "",
+                              "css_id" : "",
+                              "css_id_str" : "",
+                              "css_style" : "",
+                              "html" : "<h2 style=\"text-align: center;\"><span color=\"#ffc036\">Complete Any Necessary Repairs</span></h2>\n<p style=\"text-align: center;\"><span>If any preventative repairs are needed, we'll complete them to help prevent any major problems&nbsp;from&nbsp;occurring in the future.</span></p>",
+                              "overrideable" : true,
+                              "per_widget_wrapper_html" : "",
+                              "wrapping_html" : ""
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          },
+                          "8" : {
+                            "x" : 8,
+                            "w" : 4,
+                            "name" : "module_15531105922014260",
+                            "label" : "Rich Text",
+                            "type" : "rich_text",
+                            "params" : {
+                              "css_class" : "",
+                              "css_id" : "",
+                              "css_id_str" : "",
+                              "css_style" : "",
+                              "html" : "",
+                              "overrideable" : true,
+                              "per_widget_wrapper_html" : "",
+                              "wrapping_html" : ""
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          }
+                        } ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_1521668008060148",
+                        "label" : "Rich Text",
+                        "type" : "rich_text",
+                        "params" : {
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "html" : "<p class=\"text-align-center\" style=\"text-align: center;\">Our maintenance programs are designed to help ensure the longevity, functionality, and reliability of your lighting system. And if we installed your system, all of your information is stored in our database. Our team will be aware of any past repairs that have been performed or any pending service that’s needed.&nbsp;</p>\n<p class=\"text-align-center\" style=\"text-align: center;\">&nbsp;</p>\n<hr width=\"80%\">\n<h2 style=\"text-align: center;\">&nbsp;</h2>\n<h2 style=\"text-align: center;\"><em>You always have the McKay 100% Satisfaction Guarantee.&nbsp;</em></h2>\n<p style=\"text-align: center;\"><em>When you enroll in one of our service programs,&nbsp;each bulb is then guaranteed for the one-year contract period. If they fail, you can give us a call and we'll promptly take care of it.&nbsp;</em></p>\n<p style=\"text-align: center;\"><em>Any additional service request visits for timer resets, electrical issues, and system repairs or modifications&nbsp;are not covered under the Maintenance Service Programs.</em></p>",
+                          "overrideable" : true,
+                          "per_widget_wrapper_html" : "",
+                          "wrapping_html" : ""
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    } ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "height: 100%; background-image: url(&quot;https://cdn2.hubspot.net/hubfs/319325/McKay-Landscape-Lighting-Quarterly-Maintenance-Program-Omaha-Nebraska-v2.jpg&quot;);     background-position: center;   background-repeat: no-repeat;   background-size: cover;",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "main-content",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ {
+              "x" : 0,
+              "w" : 12,
+              "name" : "module_13885011246079525",
+              "label" : "Rich Text",
+              "type" : "rich_text",
+              "params" : {
+                "html" : "<h2>Something Powerful</h2>\n<h3>Tell The Reader More</h3>\n<p>The headline and subheader tells us what you're&nbsp;<a href=\"#\">offering</a>, and the form header closes the deal. Over here you can explain why your offer is so great it's worth filling out a form for.</p>\n<p>Remember:</p>\n<ul>\n<li>Bullets are great</li>\n<li>For spelling out&nbsp;<a href=\"#\">benefits</a>&nbsp;and</li>\n<li>Turning visitors into leads.</li>\n</ul>",
+                "overrideable" : true
+              },
+              "rows" : [ ],
+              "rowMetaData" : [ ],
+              "cells" : [ ],
+              "cssId" : "",
+              "cssClass" : "",
+              "cssStyle" : "",
+              "styles" : null,
+              "widgets" : [ ]
+            } ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "page-center content-wrapper",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1553199558663170",
+        "label" : "Features",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "background-color: #1f1f1f; background-image: url(\"https://cdn2.hubspot.net/hubfs/319325/McKay-Landscape-Lighting-Quarterly-Maintenance-Program-Omaha-Nebraska-v2.jpg\");     background-position: center;   background-repeat: no-repeat;   background-size: cover;  background-image opacity: 1",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1553199558663171",
+            "label" : "Features Intro",
+            "type" : "rich_text",
+            "params" : {
+              "cell" : false,
+              "cells" : [ ],
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "ending_html" : "",
+              "html" : "<hr width=\"80%\">\n<h1 style=\"text-align: center;\">&nbsp;</h1>\n<h1 style=\"text-align: center;\">WHAT'S INCLUDED</h1>\n<h2 style=\"text-align: center;\"><em>Save time, money, and more importantly, peace of mind</em></h2>\n<p style=\"text-align: center;\">Enrolling in one of our maintenance service programs will not only save you time but also money.&nbsp;Otherwise, you'll incur a service call fee, plus of the cost of bulbs for each visit and we can not guarantee the bulbs.&nbsp;<span>When you join one of our maintenance&nbsp;programs, an experienced&nbsp;service technician&nbsp;performs the following:&nbsp;</span></p>",
+              "overrideable" : true,
+              "root" : false,
+              "row" : false,
+              "starting_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 1,
+            "name" : "module_1553199659797245",
+            "label" : "Horizontal Spacer",
+            "type" : "custom_widget",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false,
+              "widget_name" : "Horizontal Spacer",
+              "schema_version" : 2,
+              "path" : "@hubspot/horizontal_spacer"
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          },
+          "11" : {
+            "x" : 11,
+            "w" : 1,
+            "name" : "module_1553199640991244",
+            "label" : "Horizontal Spacer",
+            "type" : "custom_widget",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false,
+              "widget_name" : "Horizontal Spacer",
+              "schema_version" : 2,
+              "path" : "@hubspot/horizontal_spacer"
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          },
+          "1" : {
+            "x" : 1,
+            "w" : 10,
+            "name" : "module_1553199558663172",
+            "label" : "Features - Row 1",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 4,
+                "name" : "module_1553199558663173",
+                "label" : "Rich Text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "html" : "<h2 style=\"text-align: center;\">Bulb Replacement</h2>\n<p style=\"text-align: center;\"><span>Over the life of a bulb, its brightness tends to diminish. Burned out bulbs or using the wrong bulb can negatively impact your system.&nbsp;We replace ALL of halogen bulbs OR inspect and only replace faulty LED bulbs.&nbsp;<strong>&nbsp;</strong><span>&nbsp;</span></span></p>",
+                  "overrideable" : true,
+                  "per_widget_wrapper_html" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "4" : {
+                "x" : 4,
+                "w" : 4,
+                "name" : "module_1553199558663174",
+                "label" : "Rich Text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "html" : "<h2 style=\"text-align: center;\">Realign Fixtures</h2>\n<p style=\"text-align: center;\">Ever-growing tree and plant roots underneath the surface can push fixtures upwards. We make sure your fixtures are properly aligned and situated into the ground, lighting what's important.</p>\n<p style=\"text-align: center;\">&nbsp;</p>",
+                  "overrideable" : true,
+                  "per_widget_wrapper_html" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "8" : {
+                "x" : 8,
+                "w" : 4,
+                "name" : "module_1553199558663175",
+                "label" : "Rich Text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "html" : "<h2 style=\"text-align: center;\">Clean Fixtures &amp; Lenses</h2>\n<p style=\"text-align: center;\">Dirt, debris, and mineral deposits can build up and make your lights appear dimmer than normal. We thoroughly clean your fixtures and lenses.&nbsp;</p>",
+                  "overrideable" : true,
+                  "per_widget_wrapper_html" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1553199558663176",
+            "label" : "Features - Row 2",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 4,
+                "name" : "module_1553199558663177",
+                "label" : "Rich Text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "html" : "<h2 style=\"text-align: center;\">Inspect Photocells &amp; Transformers</h2>\n<p style=\"text-align: center;\">We'll inspect and make certain no little critters are preventing your photocells or transformers from properly working.</p>",
+                  "overrideable" : true,
+                  "per_widget_wrapper_html" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "4" : {
+                "x" : 4,
+                "w" : 4,
+                "name" : "module_1553199558663178",
+                "label" : "Rich Text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "html" : "<h2 style=\"text-align: center;\">Check &amp; Reset Timers</h2>\n<p style=\"text-align: center;\">Some timers can lose time, need adjusting as the season's change, or battery replacement. We'll assure your timer is properly functioning and turning on and off at the correct times.</p>\n<h2 style=\"text-align: center;\">&nbsp;</h2>",
+                  "overrideable" : true,
+                  "per_widget_wrapper_html" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "8" : {
+                "x" : 8,
+                "w" : 4,
+                "name" : "module_1553199558663179",
+                "label" : "Rich Text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "html" : "<h2 style=\"text-align: center;\">System Performance Checks</h2>\n<p style=\"text-align: center;\">We also run through performance checks to affirm&nbsp;your system is performing and working its best.</p>",
+                  "overrideable" : true,
+                  "per_widget_wrapper_html" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1553199558663180",
+            "label" : "Features - Row 3",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 4,
+                "name" : "module_1553199558663181",
+                "label" : "Rich Text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "html" : "",
+                  "overrideable" : true,
+                  "per_widget_wrapper_html" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "4" : {
+                "x" : 4,
+                "w" : 4,
+                "name" : "module_1553199558663182",
+                "label" : "Rich Text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "html" : "<h2 style=\"text-align: center;\"><span color=\"#ffc036\">Complete Any Necessary Repairs</span></h2>\n<p style=\"text-align: center;\"><span>If any preventative repairs are needed, we'll complete them to help prevent any major problems&nbsp;from&nbsp;occurring in the future.</span></p>",
+                  "overrideable" : true,
+                  "per_widget_wrapper_html" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "8" : {
+                "x" : 8,
+                "w" : 4,
+                "name" : "module_1553199558663183",
+                "label" : "Rich Text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "html" : "",
+                  "overrideable" : true,
+                  "per_widget_wrapper_html" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1553199558663184",
+            "label" : "Rich Text",
+            "type" : "rich_text",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "html" : "<p class=\"text-align-center\" style=\"text-align: center;\">Our maintenance programs are designed to help ensure the longevity, functionality, and reliability of your lighting system. And if we installed your system, all of your information is stored in our database. Our team will be aware of any past repairs that have been performed or any pending service that’s needed.&nbsp;</p>\n<p class=\"text-align-center\" style=\"text-align: center;\">&nbsp;</p>\n<hr width=\"80%\">\n<h2 style=\"text-align: center;\">&nbsp;</h2>\n<h2 style=\"text-align: center;\"><em>You always have the McKay 100% Satisfaction Guarantee.&nbsp;</em></h2>\n<p style=\"text-align: center;\"><em>When you enroll in one of our service programs,&nbsp;each bulb is then guaranteed for the one-year contract period. If they fail, you can give us a call and we'll promptly take care of it.&nbsp;</em></p>\n<p style=\"text-align: center;\"><em>Any additional service request visits for timer resets, electrical issues, and system repairs or modifications&nbsp;are not covered under the Maintenance Service Programs.</em></p>",
+              "overrideable" : true,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "background-color: #1f1f1f; background-image: url(&quot;https://cdn2.hubspot.net/hubfs/319325/McKay-Landscape-Lighting-Quarterly-Maintenance-Program-Omaha-Nebraska-v2.jpg&quot;);     background-position: center;   background-repeat: no-repeat;   background-size: cover;  background-image opacity: 1",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "McKay_Landscape_Lighting_Sept2016 Theme/Footer",
+        "label" : "McKay_Landscape_Lighting_Sept2016 Theme/Footer",
+        "type" : "global_group",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "overrideable" : false,
+          "path" : "/Global content/Global Groups/McKay_Landscape_Lighting_Sept2016 Theme/Footer.template.json",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

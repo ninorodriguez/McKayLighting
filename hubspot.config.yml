@@ -1,0 +1,12 @@
+defaultPortal: McKey
+portals:
+  - name: McKey
+    portalId: 319325
+    authType: personalaccesskey
+    auth:
+      tokenInfo:
+        accessToken: >-
+          COK74eWOLxIEAA0ABBjdvhMgxamaBiju6QwyGQBbiyPMt9olfn8MQZxOuNXlaeKgItCGtDA6KAAABEEAAAB4AAAAAAAAAACAAAAAAAAABAAAwAdgAAAAAAAAAAAAAGBCGQBbiyPMFI3FBrn7VI1aVsmB6KcXQSnsOyhKA25hMQ
+        expiresAt: '2021-04-20T00:40:08.934Z'
+    personalAccessKey: >-
+      CiRiOWQxNTczOC01OWQwLTQ4MTgtOTQzNS0xNTZjNjQ5ZjdmNWQQ3b4TGMWpmgYqGQAF5pGCsBatFFochQQ0kPJ3xJ4r4tVm3hc
