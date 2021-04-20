@@ -1,0 +1,29 @@
+
+/******************************************************/
+/* This style was originally created in Style Manager */
+/******************************************************/
+
+/****************************************/
+/* HubSpot Style Boilerplate            */
+/****************************************/
+
+/* This framework is required for Style Manager-created styles. */
+{% include "hubspot/styles/base/style_manager_bootstrap_structure.css" %}
+
+/*****************************************/
+/* Put your style declarations here      */
+/*****************************************/
+
+
+/*--added by support 3/4/14 to fix form label --*/
+
+.hs-form label {
+color: #FFC036;
+}
+
+
+/*****************************************/
+/* Included CSS files are below          */
+/*****************************************/
+
+{% include 'Coded files/Custom/page/mckaylighting_Theme/Style.css' %}

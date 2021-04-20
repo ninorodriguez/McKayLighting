@@ -1,0 +1,789 @@
+/* @import url('http://example.com/example_style.css'); */
+
+ /***********************************************/
+ /* CSS @imports must be at the top of the file */
+ /* Add them above this section                 */
+ /***********************************************/
+
+ /****************************************/
+ /* HubSpot Style Boilerplate            */
+ /****************************************/
+
+ /* This responsive framework is required for all styles. */
+ {% include "hubspot/styles/responsive/required_base.css" %}
+
+ /* These includes are optional, but helpful. */
+ {% include "hubspot/styles/responsive/modules.css" %}
+ {% include "hubspot/styles/patches/recommended.css" %}
+
+/* Migration Tech Name - dinesh kumar */
+/* Date: 03-oct-2013 */
+
+ /*****************************************/
+ /* Start your style declarations here    */
+ /*****************************************/
+/* 
+ You can use this CSS file as a guide in building out
+ your HubSpot website. It contains the major elements needed
+ to create your own custom style. 
+*/
+
+/* Your website background color (background:#fff;) */
+html, body {} 
+
+body {
+    background: url("http://cdn2.hubspot.net/hub/319325/file-333274636-jpg/images/background.jpg") no-repeat fixed center top #0F0F0F;
+    color: #FFFFFF;
+    font: 16px/22px Arial;
+    margin: 0;
+}
+
+a {
+    color: #FFC036;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #FF9600;
+    text-decoration: underline;
+}
+
+img {}
+
+
+/* ------ Typography ------ */
+/* Basic text */
+p {}
+small {}
+strong {}
+em {}
+cite {}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {}
+
+h1,
+.container-fluid h3.form-title{
+    color: #FFC036;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0 0 15px;
+}
+h2 {
+    color: #ffffff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+h3{
+    color: #ffffff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+}
+h4 {}
+h5 {}
+h6 {}
+
+/* Lists */
+ul, ol {}
+ul ul, ul ol, ol ol, ol ul {}
+
+li {}
+
+ul.unstyled, ol.unstyled {}
+
+ul.inline, ol.inline {}
+ul.inline > li, ol.inline > li {}
+
+dl {}
+dt, dd {}
+dt {}
+dd {}
+
+/* Quotes */
+blockquote {}
+blockquote p {}
+blockquote small {}
+blockquote small:before {}
+
+q:before, q:after, blockquote:before, blockquote:after {}
+
+/* Address */
+address {}
+
+
+/* ------ Structure ------ */
+/* 
+ The outer wrappers of your website, if you wanted to set your website width
+ to a fixed size you could set a width or max-width of 960px for example. 
+*/
+.header-container-wrapper, .body-container-wrapper, .footer-container-wrapper {}
+
+.header-container-wrapper {}
+.body-container-wrapper {}
+.footer-container-wrapper {}
+
+/* The inner wrappers of your website */
+.header-container, .body-container, .footer-container {}
+
+.container-fluid {
+    max-width: 914px;
+    margin: 0 auto;
+}
+
+.header-container {}
+.body-container {}
+.footer-container {}
+
+
+/* ------ Grid ------ */
+/* 
+ By default HubSpot's grid system utilizes 12 columns, making for a 940px wide container 
+ without responsive features enabled. With the responsive CSS file added, the grid adapts 
+ to be 724px and 1170px wide depending on your viewport. Below 767px viewports, the columns 
+ become fluid and stack vertically. 
+ 
+ You can also use spans to setup your different colored sidebar or container columns like 
+ this: span8 {background:#fff;} span4 {background:#eee;}. The column spans will always add 
+ up to 12 and will be setup for you automatically when you use Template Builder to adjust 
+ the visual layout.
+*/
+.span12 {}
+.span11 {}
+.span10 {}
+.span9 {}
+.span8 {}
+.span7 {}
+.span6 {}
+.span5 {}
+.span4 {}
+.span3 {}
+.span2 {}
+.span1 {}
+
+
+/* ------ Header ------ */
+.header-container-wrapper {}
+.header-container {}
+
+/* Logo styling */
+.header-container .hs_cos_wrapper_type_logo {
+    display: block;
+    margin: 0 0 0 12px;
+}
+.header-container .hs_cos_wrapper_type_logo a {}
+.header-container .hs_cos_wrapper_type_logo a img {}
+
+
+/* ------ Menu ------ */
+/* 
+ Change the alignment of your menu easily by using the text-align or float CSS properties. 
+ For a full width centered menu, you could simply add text-align:center; below.
+ */
+.header-container .hs-menu-wrapper.hs-menu-flow-horizontal {}
+ 
+.hs-menu-wrapper {}
+
+/* Primary menu link text color */
+.hs-menu-wrapper a {}
+.hs-menu-wrapper a:hover {}
+
+/* Drop down background color */
+.hs-menu-wrapper.hs-menu-flow-horizontal ul {}
+
+/* Menu link font family and basic padding including drop down links */
+.hs-menu-wrapper.hs-menu-flow-horizontal > ul li a {}
+
+
+/*---------------------Common Menu Style-------------*/
+.hs-menu-wrapper {}
+
+.hs-menu-wrapper > ul {
+    display: block !important;
+    background: url("http://cdn2.hubspot.net/hub/319325/file-335122015-png/images/nav_bg.png") no-repeat center top;
+}
+
+.hs-menu-wrapper > ul > li {}
+
+.hs-menu-wrapper > ul > li > a{
+    background: url("http://cdn2.hubspot.net/hub/319325/file-330827549-jpg/images/nav_sep.jpg") no-repeat right center;
+    color: #FFFFFF;
+    font: 12px Helvetica;
+    padding: 10px 18px !important;
+    display: block !important;
+}
+
+.hs-menu-wrapper  ul  li  a {}
+
+.hs-menu-wrapper  ul  li  a:hover {}
+
+.hs-menu-wrapper > ul > li > a:hover {}
+
+.hs-menu-wrapper  ul li.hs-item-has-children {}
+
+.hs-menu-wrapper ul ul {}
+
+.hs-menu-wrapper ul ul li{}
+
+.hs-menu-wrapper ul ul li a{
+    background: none repeat scroll 0 0 #000000;
+    color: #FFFFFF;
+    font: 12px Helvetica;
+    margin-bottom: 1px;
+    padding: 8px !important;
+    white-space: normal !important;
+}
+
+.hs-menu-wrapper ul ul li a:hover{
+    background: none repeat scroll 0 0 #3A372A;
+    color: #FFC036;
+}
+
+/*---------------------header top menu-------------------*/
+
+.header-container .hs-menu-flow-horizontal {}
+
+.header-container .hs-menu-flow-horizontal > ul {}
+
+.header-container .hs-menu-flow-horizontal > ul > li {}
+
+.header-container .hs-menu-flow-horizontal > ul > li:first-child {
+    margin: 0 0 0 10px;
+    background: url("http://cdn2.hubspot.net/hub/319325/file-330827549-jpg/images/nav_sep.jpg") no-repeat left center;
+}
+
+.header-container .hs-menu-flow-horizontal > ul > li > a {}
+
+.header-container .hs-menu-flow-horizontal > ul >li a:hover {}
+
+.header-container ul li.hs-item-has-children {}
+
+/*---------------------header child menu-------------------*/
+
+.header-container .hs-menu-flow-horizontal ul ul {}
+
+.header-container .hs-menu-flow-horizontal ul ul li {}
+
+.header-container .hs-menu-flow-horizontal ul ul li a {}
+
+.header-container .hs-menu-flow-horizontal ul ul li a:hover {}
+
+/*---------------------End header top menu-------------------*/
+
+/*---------------------body horizontal menu-------------------*/
+
+.body-container .hs-menu-flow-horizontal {}
+
+.body-container .hs-menu-flow-horizontal > ul {}
+
+.body-container .hs-menu-flow-horizontal > ul > li {}
+
+.body-container .hs-menu-flow-horizontal > ul > li > a {}
+
+.body-container .hs-menu-flow-horizontal > ul >li a:hover {}
+
+.body-container .hs-menu-flow-horizontal ul li.hs-item-has-children {}
+
+/*---------------------body child menu-------------------*/
+
+.body-container .hs-menu-flow-horizontal ul ul {}
+
+.body-container .hs-menu-flow-horizontal ul ul li {}
+
+.body-container .hs-menu-flow-horizontal ul ul li a {}
+
+.body-container .hs-menu-flow-horizontal ul ul li a:hover {}
+
+/*---------------------End Body horizontal menu-------------------*/
+
+/*---------------------footer horizontal menu-------------------*/
+
+.footer-container .hs-menu-flow-horizontal {}
+
+.footer-container .hs-menu-flow-horizontal > ul {
+    background: none;
+}
+
+.footer-container .hs-menu-flow-horizontal > ul > li {
+    background: none;
+}
+
+.footer-container .hs-menu-flow-horizontal > ul > li > a {
+    color: #FFFFFF;
+    font-size: 11px;
+    background: none;
+    line-height: 18px;
+    padding: 0 5px important;
+}
+
+.footer-container .hs-menu-flow-horizontal > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+.footer-container ul li.hs-item-has-children {}
+
+/*---------------------footer child menu-------------------*/
+
+.footer-container .hs-menu-flow-horizontal ul ul {}
+
+.footer-container .hs-menu-flow-horizontal ul ul li {}
+
+.footer-container .hs-menu-flow-horizontal ul ul li a {}
+
+.footer-container .hs-menu-flow-horizontal ul ul li a:hover {}
+
+/*---------------------End footer horizontal menu-------------------*/
+
+/*---------------------side menu-------------------*/
+
+.hs-menu-flow-vertical {}
+
+.hs-menu-flow-vertical > ul {
+    background: none;
+}
+
+.hs-menu-flow-vertical > ul > li {
+    background: none;
+}
+
+.hs-menu-flow-vertical > ul > li > a {
+    background: none;
+}
+
+.hs-menu-flow-vertical ul li a:hover {}
+
+.hs-menu-flow-vertical ul li.hs-item-has-children {}
+
+/*--side nav - child menu ---*/
+
+.hs-menu-flow-vertical {}
+
+.hs-menu-flow-vertical ul ul {
+    left: 100% !important;
+}
+
+.hs-menu-flow-vertical ul ul li {}
+
+.hs-menu-flow-vertical ul ul li a {}
+
+.hs-menu-flow-vertical ul ul li a:hover {}
+
+
+/* ------ Content ------ */
+.body-container-wrapper {
+    margin: 50px 0;
+}
+.body-container {}
+
+
+.body-container-wrapper .body-container > .row-fluid-wrapper {
+    margin: 0px 1% 0 5%;
+    width: 94%;
+}
+
+
+/* ------ Blog ------ */
+/* Your basic blog wrapper */
+.blog-listing-wrapper {}
+
+/* Use this to set up different styling for your blog posts */
+.blog-listing-wrapper .post-listing .post-item {}
+.blog-listing-wrapper .post-listing .post-item .post-body {}
+
+/* Blog comments and blog comment form */
+.comment {}
+.comments-listing {}
+.comment-from {}
+.comment-body {}
+.comment-date {}
+
+#blog-comment-form  div.hs-form-field {}
+
+#blog-comment-form  div.hs-form-field label {}
+
+#blog-comment-form  div.hs-form-field .hs-field-desc {}
+
+#blog-comment-form  div.hs-form-field input[type="text"],
+#blog-comment-form  div.hs-form-field input[type="email"],
+#blog-comment-form  div.hs-form-field textarea { }
+
+#blog-comment-form  div.hs-form-field select {}
+
+#blog-comment-form  .hs-button {}
+
+#blog-comment-form  textarea, 
+#blog-comment-form  input[type="text"], 
+#blog-comment-form  input[type="password"], 
+#blog-comment-form  input[type="datetime"], 
+#blog-comment-form  input[type="datetime-local"], 
+#blog-comment-form  input[type="date"], 
+#blog-comment-form  input[type="month"], 
+#blog-comment-form  input[type="time"], 
+#blog-comment-form  input[type="week"], 
+#blog-comment-form  input[type="number"], 
+#blog-comment-form  input[type="email"], 
+#blog-comment-form  input[type="url"], 
+#blog-comment-form  input[type="search"], 
+#blog-comment-form  input[type="tel"], 
+#blog-comment-form  input[type="color"], 
+#blog-comment-form  .uneditable-input {}
+
+#blog-comment-form form div.hs-form-field ul li {}
+
+.hs_submit {}
+
+
+#comments-listing {
+    border: 1px solid #E2E2E2;
+    display: block;
+    line-height: 165%;
+    padding: 15px;
+    margin:15px 0;
+}
+
+#comments-listing h3 {
+    font-size: 21px;
+    margin: 0;
+    padding: 0;
+}
+
+.comment {
+    border-bottom: 1px solid #000000;
+	display: block;
+    padding: 15px;
+}
+
+.comment-date {
+	font-style: italic;
+	padding: 4px 0;
+	display: block;
+	font-size: 0.9em;
+}
+
+#recaptcha_table td {
+    line-height: 0;
+}
+
+.custom_social_bar {
+	border-top:1px solid #E2E2E2;
+	border-bottom:1px solid #E2E2E2;	
+	padding: 7px 0;
+	margin:7px 0
+}
+
+.custom_listing_comments {
+    border: 1px solid #E2E2E2;
+    display: block;
+    line-height: 165%;
+    padding: 15px;
+    margin:10px 0;
+}
+
+.post-listing img{
+	max-width:30%!important; 
+	float:right; 
+}
+
+.blog-listing-wrapper .post-listing .post-item {
+   border-bottom: 1px solid #333333;
+   padding-bottom: 10px;
+   margin-bottom: 10px;
+}
+.blog-listing-wrapper .post-listing .post-item .post-body {}
+
+.blog-post-wrapper h2 a, 
+.post-header h2 a{
+    color: #FFC036;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0 0 15px;
+}
+
+.custom_module_heading h3.form-title,
+.custom_module_heading h3{
+    border-bottom: 1px solid #FFC036;
+    color: #FFC036;
+    font: bold 12px Arial;
+    margin: 15px 0;
+    padding: 0 0 5px;
+    text-transform: uppercase;
+}
+
+.widget-type-blog_comments {
+}
+
+#comment-form h4{
+    border-bottom: 1px dashed #999999;
+    border-top: 1px solid #666666;
+    font-size: 17px;
+    margin: 10px 5px 5px 0;
+    padding: 10px 0 0;
+    text-transform: uppercase;
+}
+
+.post-header p{
+    font-size: 11px;
+}
+
+#hs_cos_wrapper_blog_subscription_title, .custom_blog h3{}
+
+p.hubspot-editable{}
+p.hubspot-editable a{}
+
+a.more-link {}
+
+/* Pagination */
+.post-header a {}
+.post-header p {}
+
+.blog-pagination {}
+
+/* Subscription frequency form */
+.hs_blog_default_blog_subscription {}
+.hs_blog_default_blog_subscription ul {}
+
+
+/* ------ Forms ------ */
+/* This is the main form wrapper */
+.hs-form {}
+
+.hs-input {}
+.hs-input:hover {}
+.hs-input:focus {}
+
+.field label {}
+
+.hs_cos_wrapper_type_form {}
+
+.hs_cos_wrapper_type_form form {
+    background-color: #EEEEEE;
+    border: 1px solid #D3D3D3;
+    border-radius: 3px 3px 3px 3px;
+    margin: 15px 0;
+    padding: 14px;
+}
+
+.hs_cos_wrapper_type_form form div.hs-form-field {}
+
+.hs_cos_wrapper_type_form form div.hs-form-field label {
+    font-family: monospace;
+    font-size: 12px;
+    color: #000000;
+    font-weight: 700;
+    margin: 10px 0;
+    display: block;
+}
+
+.hs_cos_wrapper_type_form form div.hs-form-field input[type="text"],
+.hs_cos_wrapper_type_form form div.hs-form-field textarea {}
+
+.hs_cos_wrapper_type_form form div.hs-form-field select {}
+
+.hs_cos_wrapper_type_form form .hs-button {
+    color: #666666;
+    margin-top: 10px;
+}
+
+ .input ul {
+    list-style:none;
+    padding-left:0;
+}
+
+.hs_cos_wrapper_type_form form textarea, 
+.hs_cos_wrapper_type_form form input[type="text"], 
+.hs_cos_wrapper_type_form form input[type="password"], 
+.hs_cos_wrapper_type_form form input[type="datetime"], 
+.hs_cos_wrapper_type_form form input[type="datetime-local"], 
+.hs_cos_wrapper_type_form form input[type="date"], 
+.hs_cos_wrapper_type_form form input[type="month"], 
+.hs_cos_wrapper_type_form form input[type="time"], 
+.hs_cos_wrapper_type_form form input[type="week"], 
+.hs_cos_wrapper_type_form form input[type="number"], 
+.hs_cos_wrapper_type_form form input[type="email"], 
+.hs_cos_wrapper_type_form form input[type="url"], 
+.hs_cos_wrapper_type_form form input[type="search"], 
+.hs_cos_wrapper_type_form form input[type="tel"], 
+.hs_cos_wrapper_type_form form input[type="color"], 
+.hs_cos_wrapper_type_form form .uneditable-input {
+    background: none repeat scroll 0 0 #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    padding: 3px 0;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    
+}
+
+.hs_cos_wrapper_type_form form .input ul {
+    list-style:none;
+    padding-left:0;
+}
+
+/* ------ Buttons ------ */
+.hs-button {}
+.hs-button:hover {}
+.hs-button:focus {}
+.hs-button:active {}
+
+.hs-button:hover, .hs-button:focus, .hs-button:active {}
+
+
+/* ------ Footer ------ */
+/* The main footer wrapper will default to fill 100% of the browser viewport */
+.footer-container-wrapper {}
+
+/* Your basic footer container */
+.footer-container {}
+
+.footer-container .hs_cos_wrapper_type_page_footer footer {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.footer-container .hs-footer-company-copyright {
+    color: #FFFFFF;
+    font-size: 11px;
+    line-height: 18px;
+}
+
+/* ------ Misc ------ */
+/* Any overflow styles can go in this space */
+
+.custom_footer_center {
+    font-size: 21px;
+    font: 21px/30px "Times New Roman",Times,serif;
+}
+
+
+.custom_copy {
+    color: #FFFFFF;
+    font-size: 11px;
+    line-height: 18px;
+    margin: 20px 0;
+}
+
+.custom_connect {
+    margin-top: 34px;
+}
+
+.custom_subcription h3{
+    font-size: 12px !important;
+    color: #ffffff !important;
+    font-style: italic !important;
+    line-height: 13px !important;
+    font-family: serif;
+    font-weight: normal !important;
+    text-align: center;
+}
+
+.custom_subcription .hs_cos_wrapper_type_form form{
+    background: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    margin: 15px 0 !important;
+    padding: 0 !important;
+}
+
+.custom_subcription label {
+    display: none !important;
+}
+
+.custom_subcription .hs-button{
+    -webkit-border-radius: 3px;
+    background: #ffb76b;
+    background: -moz-linear-gradient(top,#ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#ffb76b),color-stop(50%,#ffa73d),color-stop(51%,#ff7c00),color-stop(100%,#ff7f04));
+    background: -webkit-linear-gradient(top,#ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%);
+    background: -o-linear-gradient(top,#ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%);
+    background: -ms-linear-gradient(top,#ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%);
+    background: linear-gradient(to bottom,#ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%);
+    border: 1px solid #ffb76b;
+    border-radius: 3px;
+    color: #fff !important;
+    cursor: pointer;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#ff7f04',GradientType=0 );
+    font: bold 12px arial;
+    padding: 5px 5px;
+}
+
+.custom_subcription .hs-button:hover{
+    background: none repeat scroll 0 0 #FFB76B;
+    color: #F7F7F7
+}
+
+
+.custom_subcription .hs-input{
+    padding: 5px 3px !important;
+    border-radius: 0px !important;
+}
+
+
+.hs-form label {
+color: #FFC036;
+}
+
+
+/* ------ Mobile ------ */
+/* Large desktop */
+@media (min-width: 1200px) {}
+     
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    
+    .header-container .hs-menu-flow-horizontal > ul > li > a {
+        padding: 10px 12px !important;
+    }
+
+    }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    .body-container-wrapper .body-container > .row-fluid-wrapper {
+        margin: 10px 2% 0 2%;
+        width: 96%;
+    }
+
+    .header-container .hs-menu-flow-horizontal > ul > li,
+    .body-container .hs-menu-flow-horizontal > ul > li{
+        width:100%;
+        text-align:center;
+    }
+    
+    .header-container .hs-menu-flow-horizontal > ul > li  a,
+    .body-container .hs-menu-flow-horizontal > ul > li a{
+        max-width:none !important;
+    }
+    
+    .header-container .hs-menu-flow-horizontal > ul > li:first-child {
+        margin: 0px;
+    }
+    .hs-menu-wrapper ul ul {
+       margin: 0px;
+       width: auto !important;
+       left: 35% !important;
+    }
+            
+    .hs-menu-wrapper > ul {
+        background: none;
+    }
+                 
+    .hs-menu-wrapper > ul > li > a{
+        background: #3A3629;
+    }
+    
+    .custom_connect {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+}
+     
+/* Landscape phones and down */
+@media (max-width: 480px) {}
