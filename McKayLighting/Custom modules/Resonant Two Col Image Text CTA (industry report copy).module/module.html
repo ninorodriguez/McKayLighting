@@ -1,0 +1,34 @@
+<table class="two-col-centered" style="line-height: 1.5em;">
+    <tr>
+        <td style="width: 50%; text-align: center; font-size: 12px; padding: 0;" valign=top class="k-700-col mk-padding">
+            
+            {% if widget.image_left.src %}
+                <img src="{{ widget.image_left.src }}" style="width: 350px;" width="{{ widget.image_left.width }}" alt="{{ widget.image_left.alt }}">
+            {% endif %}
+            
+            <table style="width: 100%;"><tr>
+                <td style="padding: 25px 50px 50px 50px; text-align: center;">
+                    <h2 style="font-size: 16px; margin: 0; margin-bottom: 10px; text-align: center;">{{ widget.heading_left }}</h2> 
+                    {{ widget.content_left }}
+                    <p style="padding-top: 10px;">{{ widget.cta_left }}</p>
+                </td>
+            </tr></table>
+        </td>
+        
+        <td style="width: 50%; text-align: center; font-size: 12px; padding: 0;" valign=top class="k-700-col mk-padding">
+            
+            {% if widget.image_right.src %}
+                <img src="{{ widget.image_right.src }}" style="width: 350px;" width="{{ widget.image_right.width }}" alt="{{ widget.image_right.alt }}">
+            {% endif %}
+            
+            <table style="width: 100%;"><tr>
+                <td style="padding: 25px 50px; text-align: center;">
+                    <h2 style="font-size: 16px; margin: 0; margin-bottom: 10px; text-align: center;">{{ widget.heading_right }}</h2> 
+                    {{ widget.content_right }}
+                    <p style="padding-top: 10px;">{{ widget.cta_right }}</p>
+                </td>
+            </tr></table>
+        </td>
+        
+    </tr>
+</table>

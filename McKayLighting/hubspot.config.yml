@@ -1,22 +1,12 @@
-defaultPortal: McKey
+defaultPortal: McKay
 portals:
-  - name: McKey
+  - name: McKay
     portalId: 319325
     authType: personalaccesskey
     auth:
       tokenInfo:
         accessToken: >-
-          COK74eWOLxIEAA0ABBjdvhMgxamaBiju6QwyGQBbiyPMt9olfn8MQZxOuNXlaeKgItCGtDA6KAAABEEAAAB4AAAAAAAAAACAAAAAAAAABAAAwAdgAAAAAAAAAAAAAGBCGQBbiyPMFI3FBrn7VI1aVsmB6KcXQSnsOyhKA25hMQ
-        expiresAt: '2021-04-20T00:40:08.934Z'
+          COqa7oaPLxIEAA0ABBjdvhMgxamaBiju6QwyGQCSUocFmJYYFYjolrLbStqGnvTFze1565w6KAAABEEAAAB4AAAAAAAAAACAAAAAAAAABAAAwAdgAAAAAAAAAAAAAGBCGQCSUocFhiqNv8JJUfk_YnFR19Z0Ck5XJQ5KA25hMQ
+        expiresAt: '2021-04-20T19:57:03.729Z'
     personalAccessKey: >-
       CiRiOWQxNTczOC01OWQwLTQ4MTgtOTQzNS0xNTZjNjQ5ZjdmNWQQ3b4TGMWpmgYqGQAF5pGCsBatFFochQQ0kPJ3xJ4r4tVm3hc
-  - name: McKayDev
-    portalId: 19498835
-    authType: personalaccesskey
-    auth:
-      tokenInfo:
-        accessToken: >-
-          CJiv-IOPLxIIAA0ADAAA4AEY046mCSDFqZoGKO7pDDIZAJJShwVfTi0UaYeN6YPU4Bu-rhrPAfiYhDooAAAEQQAAAHgAAAAAAAAAAIABAAAAAAAEwADAB2D-_zEAAAAAAAAAYEIZAJJShwVmOhMkY3W8YWgYxeJzBjIIRNxQlUoDbmEx
-        expiresAt: '2021-04-20T18:14:58.719Z'
-    personalAccessKey: >-
-      CiRkY2MyNTljNy0yY2Y0LTQ2YjItYWU5NC1iYmU3ZTBlYWY2NWUQ046mCRjFqZoGKhkABeaRgk3QLeNv9BQgCk5gBEfXuvzAntTp

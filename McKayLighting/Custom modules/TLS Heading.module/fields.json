@@ -1,0 +1,28 @@
+[ {
+  "id" : "235c9a17-84a0-08fa-0ec9-863eecc0c627",
+  "name" : "heading",
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Tips and tricks for Resonant power users"
+}, {
+  "id" : "df135ebd-fc41-44e9-eff4-b4d5f6403c70",
+  "name" : "content",
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Greetings! We recently put together a little tutorial article on getting the most out of your wilson subscription. The full content is on our <a href=\"https://blog.hubspot.com/blog/tabid/6307/bid/32606/The-9-Must-Have-Components-of-Compelling-Email-Copy.aspx#sm.001tjog50p41eux11ip2dwnbl4mni\">blog</a>, but we’ve included some of the highlights below. If you have any questions, please don’t hesitate to <a href=\"https://www.hubspot.com/\">reach out</a>."
+}, {
+  "id" : "c972e302-1ca0-782a-d60f-c3a5f284de89",
+  "name" : "cta",
+  "label" : "CTA",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "{{cta('159487a3-eda2-474f-bee9-b62413bc2f70')}}"
+} ]

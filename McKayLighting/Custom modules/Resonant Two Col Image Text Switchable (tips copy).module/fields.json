@@ -1,0 +1,47 @@
+[ {
+  "id" : "2b672959-df12-4977-7f27-965b2c82f860",
+  "name" : "text_image_orientation",
+  "label" : "Text Image Orientation",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "placeholder" : "Search",
+  "choices" : [ [ "image_left", "Image Left, Text Right" ], [ "image_right", "Text Left, Image Right" ] ],
+  "type" : "choice",
+  "default" : "image_left"
+}, {
+  "id" : "49cb6e02-0fd9-372c-bf1f-2c89733682f3",
+  "name" : "image",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://cdn2.hubspot.net/hubfs/2574624/Resonant/sabri-tuzcu-197978.jpg",
+    "alt" : "sabri-tuzcu-197978.jpg",
+    "width" : "350",
+    "height" : "233"
+  }
+}, {
+  "id" : "5d1c29dc-b579-a2c8-b1d9-ad6201f918b3",
+  "name" : "heading",
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "A helpful tip"
+}, {
+  "id" : "98522ca6-1b89-dafc-a9b8-0a5ee8d0fd4a",
+  "name" : "content",
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Educating your leads&nbsp;is an awesome way to engage with them. It provides value up front and positions you as a trusted expert. Remember to use click through data to deliver individualized content whenever possible."
+} ]

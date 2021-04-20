@@ -3,7 +3,7 @@
   "templateType" : 6,
   "attachedStylesheets" : [ {
     "type" : "cos_extension_resource",
-    "path" : "/Coded files/Custom/page/McKay_Landscape_Lighting_Sept2016-theme/McKay_Landscape_Lighting_Sept2016-style.css"
+    "path" : "McKayLighting/Coded files/Custom/page/McKay_Landscape_Lighting_Sept2016-theme/McKay_Landscape_Lighting_Sept2016-style.css"
   } ],
   "attachedJs" : [ ],
   "customHead" : "",

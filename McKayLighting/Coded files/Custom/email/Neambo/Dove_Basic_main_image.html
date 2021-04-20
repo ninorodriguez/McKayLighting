@@ -1,0 +1,205 @@
+<!--
+  templateType: "email"
+  isAvailableForNewContent: true
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<title>{% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{ content.body.subject }}{% endif %}</title>
+{% if content.meta_description %}<meta name="description" content="{{ content.meta_description }}" />{% endif %}
+<style type="text/css">
+    body{width:100% !important;}
+    body, #backgroundTable {background-color: #0F0F0F; background: url("http://cdn2.hubspot.net/hub/319325/file-333274636-jpg/images/background.jpg") no-repeat fixed center top #0F0F0F; min-height:1000px; font-family:{{ primary_font }}; font-size:{{ primary_font_size }}; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; margin:0; padding:0;}
+    .ExternalClass {width:100%;}
+    .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass div {line-height:inherit;}
+	.ExternalClass p {margin-bottom:1em;}
+	.ExternalClass .ecxhotmailSpace {padding-top: 1em;}
+	#content p, .content p { margin:1em 0;}
+    table {border-collapse:collapse;}
+	table td {border-collapse:collapse;}
+	#outlook a {padding:0;}
+    .content a , #content a {color:{{ secondary_accent_color }};}
+	#footer_copyright a {color:#FFFFFF;}
+    h1, h2, h3, h4 {color:{{ primary_accent_color }} !important;}
+    #bottom h1, #bottom h2, #bottom h3, #bottom h4 {color:{{ primary_font_color }} !important;}
+	#preview_text {display:none;}
+	@media only screen and (max-device-width: 480px) {
+		body[yahoo] #email_wrapper {width:320px !important;}
+		body[yahoo] td.mobile_padding, body[yahoo] #footer {padding:10px 15px !important;}
+		body[yahoo] td.content {padding:0 15px !important;}
+		body[yahoo] #view-webpage {text-align:center !important;}
+		body[yahoo] #header td {display:block; width: 100%; text-align:center !important;}
+		body[yahoo] #logo img {max-width:280px !important; height:auto !important; margin:0 auto 6px !important;}
+		body[yahoo] #banner img {width:100% !important; height:auto !important;}
+		body[yahoo] #accent img {width:100% !important; height:auto !important;}
+		body[yahoo] #hero td {padding:10px 0 25px !important;}
+		body[yahoo] #main_content img {max-width:280px !important; height:auto !important;}
+		body[yahoo] #secondary_content {font-size:{{ secondary_font_size }};}
+		body[yahoo] #secondary_content > tr > td {width:136px !important; font-size:90% !important; line-height:130% !important;}
+		body[yahoo] #secondary_content td.empty_cell {width:8px !important;}
+		body[yahoo] #secondary_content img {max-width:136px !important; height:auto !important;}
+		body[yahoo] #footer table td {display:block; padding:0 !important; text-align:center !important;}
+		body[yahoo] #footer table td img {max-width:280px !important; height:auto !important; margin:0 auto 4px !important;}
+	}
+</style>
+<!--[if gte mso 9]>
+    <style>
+    #social_sharing_wrapper {margin-top:6px;}
+    div {font-family:{{ primary_font }} !important;}
+    #hero h1 div, td.col_title div {font-family:{{secondary_font}} !important;}
+    #main_content, #main_content .hubspot-editable {line-height: 128% !important;}
+    .mobile_padding, .column-area, .sidebar_box, .rows_content {line-height: 148% !important;}
+    #footer-logo, #footer_copyright {line-height: 108% !important;}
+    </style>
+<![endif]-->
+<!--.........................................................................................|
+|...............................................................NNNN.........................|
+|...............................................................NNNN.........................|
+|...............................................................NNNN.........................|
+|...NNNNNNNNNNN.....NNNNNNN.....NNNNNNNN...NNN NNNNNN..NNNNNN...NNNN.NNNNNN.....NNNNNNN......|
+|...NNNNNNNNNNNN..NNNN...NNNI..NNN...NNNN..NNNNNNNNNNNNNNNNNNN..NNNNNN.NNNNN..NNNNNNNNNNN....|
+|...NNNN....NNNN..NNN.... NNN........NNNN..NNNN....NNNN....NNNN.NNNN.....NNN..NNN.....NNN....|
+|...NNNN....NNNN.NNNNNNNNNNNN...NNNNNNNNN..NNNN....NNNN....NNNN.NNNN.....NNNNNNNN.....NNNN...|
+|...NNNN....NNNN.NNNNNNNNNNNN.NNNNN...NNN..NNNN....NNNN....NNNN.NNNN.....NNNNNNNN.... NNNN...|
+|...NNNN....NNNN..NNN........NNNN....NNNN..NNNN....NNNN....NNNN.NNNN.....NNN..NNN.....NNNN...|
+|...NNNN....NNNN..NNNNN...NNN:NNN...NNNNN..NNNN....NNNN....NNNN.NNNNNN.NNNNN..NNNN...NNNN....|
+|...NNNN....NNNN...NNNNNNNNN..NNNNNNN NNN..NNNN....NNNN....NNNN.NNNNNNNNNNN.....NNNNNNN......|
+|............................................................................................|
+|...................................Extra white space........................................|
+|....................................................................Dove Basic 2 Column v7-->
+</head>
+
+<body bgcolor="#0F0F0F" link="{{ secondary_accent_color }}" alink="{{ secondary_accent_color }}" vlink="{{ secondary_accent_color }}" style="margin:0; padding:0; background-color:#0F0F0F; background:background: url("http://cdn2.hubspot.net/hubfs/319325/Mckay_Landscape_Lighting_Sept2016_Theme/Images/Misc/slate-texture.jpg") no-repeat fixed center top 0F0F0F; font-family:{{ primary_font }}; -webkit-text-size-adjust:none; -ms-text-size-adjust:none;" yahoo="fix">
+<span id="preview_text" style="display:none !important;">{% text "preview_text" label="Preview Text <span class=help-text>This will be used as the preview text that displays in some email clients</span>", value="" %}</span>
+<table id="backgroundTable" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#0F0F0F" style="margin:0; padding:0; width:100% !important; font-family:{{ primary_font }}; -webkit-text-size-adjust:none; -ms-text-size-adjust:none;"><tr><td valign="top">
+
+<table id="email_wrapper" width="650" border="0" cellspacing="0" cellpadding="0" align="center" style="border-collapse:collapse;">
+
+  <tr>
+    <td id="view-webpage" valign="middle" align="right" height="32" style="padding: 5px 5px 0 5px; font-family:{{ primary_font }}; color:{{ secondary_font_color }}; font-size: 11px; line-height:15px;">
+    {% if content.create_page %}{{ view_as_page_section }}{% endif %}</td>
+  </tr>
+  
+  <tr>  
+    <td bgcolor="" style="padding: 4px 4px 4px 4px;"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#333333" style="border: 1px solid #222222;">
+	
+	  <!-- Container -->
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" id="content" style="border-collapse:collapse;">
+	    
+		<!-- logo row -->
+        <tr><td style="padding:20px 30px 20px 30px;" class="mobile_padding">
+          <table id="header" width="100%" border="0" cellspacing="0" cellpadding="0"><tr>
+            <td id="logo" valign="middle" style="font-family:{{ primary_font }}; font-size:{{ primary_font_size }}; color:{{ primary_font_color }};">
+            <img width="200" src="https://www.mckaylighting.com/hs-fs/hubfs/Mckay_Landscape_Lighting_Sept2016_Theme/Images/logo.png?t=1479491136564&width=320&name=logo.png" alt="McKay Landscape Lighting">
+			</td>
+            <td id="right_header" valign="middle" align="right">
+              <span style="font-family:{{ primary_font }}; font-size:12px; line-height:18px; color:{{ primary_font_color }};">
+			  {% text "call_label" label="Header Text", value="Call Us Today: {{ site_settings.company_phone }}" %}
+			  </span>
+              <div class="widget-span widget-type-follow_me " style="" data-widget-type="follow_me">
+<div class="layout-widget-wrapper">         
+<a href="http://www.facebook.com/mckaylighting" target="_blank" style="margin: 0px 3px 0px 0px;"><img src="http://cdn2.hubspot.net/hubfs/319325/Mckay_Landscape_Lighting_Sept2016_Theme/Images/SM%20Icons%20-%20awards/Facebook-e1470064028585.png" alt="Facebook"></a>
+<a href="http://twitter.com/#!/mckaylighting" target="_blank" style="margin: 0px 3px 0px 0px;"><img src="http://cdn2.hubspot.net/hubfs/319325/Mckay_Landscape_Lighting_Sept2016_Theme/Images/SM%20Icons%20-%20awards/ico-twitter.png" alt="Twitter"></a>
+<a href="http://www.linkedin.com/company/mckay-landscape-lighting-inc." target="_blank" style="margin: 0px 3px 0px 0px;"><img src="http://cdn2.hubspot.net/hubfs/319325/Mckay_Landscape_Lighting_Sept2016_Theme/Images/SM%20Icons%20-%20awards/ico-linkedin.png" alt="LinkedIn"></a>
+<a href="http://www.houzz.com/pro/mckaylandscapelighting/mckay-landscape-lighting" target="_blank" style="margin: 0px 3px 0px 0px;"><img src="http://cdn2.hubspot.net/hubfs/319325/Mckay_Landscape_Lighting_Sept2016_Theme/Images/SM%20Icons%20-%20awards/ico-houzz.png" alt=""></a>
+<a href="http://pinterest.com/mckaylighting/" target="_blank" style="margin: 0px 3px 0px 0px;"><img src="http://cdn2.hubspot.net/hubfs/319325/Mckay_Landscape_Lighting_Sept2016_Theme/Images/SM%20Icons%20-%20awards/Pinterest-2-e1470064238200.png" alt=""></a>
+<a href="http://www.youtube.com/McKayLandscapeLight" target="_blank" style="margin: 0px 3px 0px 0px;"><img src="http://cdn2.hubspot.net/hubfs/319325/Mckay_Landscape_Lighting_Sept2016_Theme/Images/SM%20Icons%20-%20awards/ico-youtube.png" alt="YouTube"></a>
+<a href="http://www.mckaylighting.com/blog" style="margin: 0px 3px 0px 0px;"><img src="http://cdn2.hubspot.net/hubfs/319325/Mckay_Landscape_Lighting_Sept2016_Theme/Images/SM%20Icons%20-%20awards/blog-white-bkg-e1470064359408.png" alt="RSS Feed"></a>
+<a href="http://instagram.com/mckaylighting" target="_blank"><img src="http://cdn2.hubspot.net/hubfs/319325/Mckay_Landscape_Lighting_Sept2016_Theme/Images/SM%20Icons%20-%20awards/ico-instagram.png" alt="Instagram"></a>
+
+</div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+            </td>
+          </tr></table>
+        </td></tr>
+		<!-- end logo row -->
+		
+    	<!-- banner row -->
+	    <tr><td>
+			{% widget_wrapper "banner_image_wrapper" %}{{ cta('ccd39b7c-ae18-4c4e-98ee-547069bfbc5b', 'justifycenter') }}
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+			<tr><td id="banner" align="center" valign="middle" style="border-top:1px solid {{ primary_accent_color }}; padding:1px 0 1px 0; font-family:{{ primary_font }}; font-size:{{ primary_font_size }}; color:{{ primary_font_color }};"><span>{{ html }}</span></td></tr>
+			</table>
+			{% end_widget_wrapper %}
+			{% linked_image "Top Banner" label="Top Banner [max width: 640px] (optional)<span class=help-text>When removed or replaced click the Save button to refresh preview.</span>", src="http://cdn1.hubspot.com/hub/70580/dove-top-banner.jpg", width="640", height="150", target="_blank", style="display: block; border: none;", widget_wrapper={type="inline", value="banner_image_wrapper"} %}</td>
+		</tr>
+		<!-- end banner row -->
+
+        
+
+        
+        
+        <!-- bottom row -->
+		<tr><td>
+			{% widget_wrapper "bottom_content_wrapper" %}
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+			<tr><td id="bottom" bgcolor="#222222" style="border-top:6px solid {{ secondary_accent_color }};">
+			  <table width="100%" border="0" cellspacing="0" cellpadding="0"><tr>
+				<td class="mobile_padding" style="padding:25px 30px 25px 30px; border-top:1px solid #000000; font-family:{{ primary_font }}; color:{{ primary_font_color }}; font-size:{{ secondary_font_size }}; line-height:180%;">
+				<span>{{ html }}</span>
+				</td>
+			  </tr></table>
+			</td></tr>
+			</table>
+			{% end_widget_wrapper %}
+			{% widget_block rich_text "Bottom Content" label="Bottom Content (optional)<span class=help-text>Leave this empty if you don't want to use bottom section. Click the Save button to refresh preview.</span>", widget_wrapper={type="inline", value="bottom_content_wrapper"} %}
+			  {% widget_attribute "html" %}
+				<p>This area is optional. Use it to add additional notes regarding your offer, terms, or say something fun and important so you leave them with a strong impression... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis erat eu lacus ullamcorper luctus. Proin ut magna ac sapien sagittis sagittis.</p>
+			  {% end_widget_attribute %}
+			{% end_widget_block %}
+		</td></tr>
+        <!-- end bottom row -->
+        
+        <!-- footer row -->
+        <tr><td id="footer" bgcolor="#111111" style="padding:30px 30px 30px 30px; border-top:1px solid #000000;">
+          <table width="100%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td valign="middle" id="footer-logo" style="padding-right:60px; font-family:{{ primary_font }}; font-size:11px; line-height:140%; color:#FFFFFF;"><span>{% linked_image "Footer Logo" label="Footer Logo (optional)", src="http://cdn1.hubspot.com/hub/70580/neambo-YourLogoHere-white-90x22.png", width="90", height="22", target="_blank", style="display: block; border: none;" %}</span></td>
+              <td valign="middle" align="right" id="footer_copyright" style="font-family:{{ primary_font }}; font-size:11px; line-height:140%; color:#FFFFFF;">
+			  &copy;{{ eastern_dt.year }} <strong>{{ site_settings.company_name }}</strong>. All Rights Reserved.<br />{{ site_settings.company_street_address_1 }}, {{ site_settings.company_city }}, {{ site_settings.company_state }}{% if site_settings.company_zip %} {{ site_settings.company_zip }}{% endif %}{% if site_settings.company_phone %}<br />Phone: <a href="#" style="color:#FFFFFF; text-decoration:none;cursor:text;">{{ site_settings.company_phone }}</a>{% endif %}
+			  </td>
+              </td> {% social_sharing "social_sharing" use_page_url=True %} 
+            </tr>
+          </table>
+        </td></tr>
+        <!-- end footer row-->
+        
+      </table>
+	  <!--end Container -->
+	  
+      </td></tr></table></td>
+  </tr>
+ 
+  <tr>
+    <td valign="top" align="center" style="padding:22px 5px 0 5px; font-family:{{ primary_font }}; font-size:11px; line-height:15px; color:{{ secondary_font_color }};">{{ unsubscribe_section }} </td>
+  </tr>  
+  <tr>
+    {% hubspot_footer %}
+  </tr> 
+  <tr>
+    <td valign="top" align="center" style="padding:10px 5px 0 5px;"></td>
+  </tr>  
+  
+</table>
+
+</td></tr></table>
+
+<style type="text/css">
+    body{width:100% !important;}
+    body, #backgroundTable {background:url("http://cdn2.hubspot.net/hub/319325/file-333274636-jpg/images/background.jpg") no-repeat fixed center top #0f0f0f; min-height:1000px; font-family:{{ primary_font }}; font-size:{{ primary_font_size }}; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; margin:0; padding:0;}
+	#content p, .content p { margin:1em 0;}
+    table {border-collapse:collapse;}
+	table td {border-collapse:collapse;}
+	#outlook a {padding:0;}
+    .content a , #content a {color:{{ secondary_accent_color }};}
+	#footer_copyright a {color:#FFFFFF;}
+    h1, h2, h3, h4 {color:{{ primary_accent_color }} !important;}
+    #bottom h1, #bottom h2, #bottom h3, #bottom h4 {color:{{ primary_font_color }} !important;}
+	#preview_text {display:none;} {{ unsubscribe_link }}
+</style>
+
+</body>
+</html>

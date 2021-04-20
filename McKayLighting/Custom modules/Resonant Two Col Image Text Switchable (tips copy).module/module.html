@@ -1,0 +1,27 @@
+<table class="two-col-centered" style="line-height: 1.5em; color: #fff; background-color: #2c2b2a;">
+    <tr>
+        {% if widget.text_image_orientation == 'image_right' %}
+        <td style="width: 50%; padding-right: 30px; text-align: right; font-size: 12px; padding-left: 50px;" valign=middle class="content img-right k-700-text-align k-700-col k-700-padding">
+            <div class="small-screen-padding">
+            <h2 style="font-size: 16px; color: #fff; text-align: right; margin: 0;">{{ widget.heading }}</h2>  
+            <div><span style="display: inline-block; background-color: #fff; width: 10em; height: 3px; margin: 3px 0; border: none;"></span></div>
+            {{ widget.content }}
+            </div>
+        </td>
+        {% endif %}
+        <td style="width: 50%; text-align: left; font-size: 12px; padding: 0;" valign=top class="k-700-col mk-padding">
+            {% if widget.image.src %}
+                <img src="{{ widget.image.src }}" style="width: 350px;" width="{{ widget.image.width }}" alt="{{ widget.image.alt }}">
+            {% endif %}
+        </td>
+        {% if widget.text_image_orientation == 'image_left' %}
+        <td style="width: 50%; padding-left: 30px; text-align: left; font-size: 12px; padding-right: 50px;" valign=middle class="content k-700-col k-700-padding">
+            <div class="small-screen-padding">
+            <h2 style="font-size: 16px; color: #fff; margin: 0;">{{ widget.heading }}</h2> 
+            <div><span style="display: inline-block; background-color: #fff; width: 10em; height: 3px; margin: 0; border: none;"></span></div>
+            {{ widget.content }}
+            </div>
+        </td>
+        {% endif %}
+    </tr>
+</table>

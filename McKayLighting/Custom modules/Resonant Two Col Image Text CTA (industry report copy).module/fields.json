@@ -1,0 +1,87 @@
+[ {
+  "id" : "49cb6e02-0fd9-372c-bf1f-2c89733682f3",
+  "name" : "image_left",
+  "label" : "Image Left",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://cdn2.hubspot.net/hubfs/2574624/Resonant/sabri-tuzcu-197978.jpg",
+    "alt" : "sabri-tuzcu-197978.jpg",
+    "width" : "350",
+    "height" : "233"
+  }
+}, {
+  "id" : "5d1c29dc-b579-a2c8-b1d9-ad6201f918b3",
+  "name" : "heading_left",
+  "label" : "Heading Left",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Secondary report"
+}, {
+  "id" : "98522ca6-1b89-dafc-a9b8-0a5ee8d0fd4a",
+  "name" : "content_left",
+  "label" : "Content Left",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "If possible, use people’s choices to trigger the next email they recieve. Trigger emails have much higher open and click rates."
+}, {
+  "id" : "d00caa6b-14fe-6940-799f-fc7fdb275b23",
+  "name" : "cta_left",
+  "label" : "CTA Left",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "{{cta('00bc67a2-81d5-4bd7-80d2-55eaf7963b3c')}}"
+}, {
+  "id" : "1d6d5c5d-a1a1-e475-1567-f09b0ab4b624",
+  "name" : "image_right",
+  "label" : "Image Right",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://cdn2.hubspot.net/hubfs/2574624/Resonant/siebe-warmoeskerken-221035-cropped.jpg",
+    "alt" : "siebe-warmoeskerken-221035-cropped.jpg",
+    "width" : "350",
+    "height" : "233"
+  }
+}, {
+  "id" : "b7ac0e44-0f0b-5e08-d1c0-5c0ddcc845ae",
+  "name" : "heading_right",
+  "label" : "Heading Right",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Secondary report"
+}, {
+  "id" : "5b2743d2-f303-00f2-cf3f-88157710a339",
+  "name" : "content_right",
+  "label" : "Content Right",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "If possible, use people’s choices to trigger the next email they recieve. Trigger emails have much higher open and click rates."
+}, {
+  "id" : "448e3564-b73f-43ed-9760-24c590fde337",
+  "name" : "cta_right",
+  "label" : "CTA Right",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "{{cta('00bc67a2-81d5-4bd7-80d2-55eaf7963b3c')}}"
+} ]

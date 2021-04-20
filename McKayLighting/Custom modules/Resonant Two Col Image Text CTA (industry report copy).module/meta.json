@@ -1,0 +1,12 @@
+{
+  "global" : false,
+  "smart_type" : "NOT_SMART",
+  "host_template_types" : [ "EMAIL" ],
+  "module_id" : 1319283,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../Coded files/Custom/page/McKay_Landscape_Lighting_Sept2016-theme/McKay_Landscape_Lighting_Sept2016-style.css",
+    "name" : "McKay_Landscape_Lighting_Sept2016-style.css"
+  } ],
+  "is_available_for_new_content" : true
+}
