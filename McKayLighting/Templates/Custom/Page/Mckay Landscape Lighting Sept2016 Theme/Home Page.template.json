@@ -3,7 +3,7 @@
   "templateType" : 4,
   "attachedStylesheets" : [ {
     "type" : "cos_extension_resource",
-    "path" : "/Coded files/Custom/page/McKay_Landscape_Lighting_Sept2016-theme/McKay_Landscape_Lighting_Sept2016-style.css"
+    "path" : "McKayLighting/Coded files/Custom/page/McKay_Landscape_Lighting_Sept2016-theme/McKay_Landscape_Lighting_Sept2016-style.css"
   } ],
   "attachedJs" : [ ],
   "customHead" : "",
@@ -38,7 +38,7 @@
           "row" : false,
           "starting_html" : "",
           "html" : "",
-          "path" : "/Global content/Global Groups/McKay_Landscape_Lighting_Sept2016 Theme/Header.template.json",
+          "path" : "McKayLighting/Global content/Global Groups/McKay_Landscape_Lighting_Sept2016 Theme/Header.template.json",
           "wrapping_html" : ""
         },
         "rows" : [ ],
