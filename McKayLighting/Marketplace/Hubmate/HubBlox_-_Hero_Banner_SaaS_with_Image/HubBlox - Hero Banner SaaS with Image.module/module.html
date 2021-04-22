@@ -1,0 +1,129 @@
+{% if name == 'module_1' %}
+{% require_css %}
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700');
+</style>
+{% end_require_css %}
+{% endif %}
+
+{# VARIABLES #}
+{% set itemWidth = 100 / module.features.items_per_row %}
+{% set imgWidth = 100 - module.text.width %}
+
+<div class="blox_custom-module blox_hero-phone-tablet {{ name }}" id="{{ name }}" data-observe-resizes style="{% if module.styling.background_image.src && module.styling.background_type == 'image' %}background-image: url({{ module.styling.background_image.src }});{% endif %} {% if module.styling.video_placeholder.src && module.styling.background_type == 'video' %}background-image: url({{ module.styling.video_placeholder.src }});{% endif %} background-repeat: no-repeat; background-position: {{ module.styling.background_position }}; background-size: cover; {% if module.styling.parallax_background %}background-attachment: parallax;{% endif %}">
+  	<div class="blox_overlay">
+        {% if module.styling.background_type == "video" && module.styling.video_url is string_containing "youtu" %}
+        		<div class="yt-bg player" data-property="{videoURL:'{{ module.styling.video_url }}',containment:'#{{ name }}',autoPlay:true,mute:{{ module.styling.mute_video }},loop:{{ module.styling.loop_video }},showControls:true,stopMovieOnBlur:false,mobileFallbackImage:'{{ module.styling.background_image.src }},showYTLogo:false',vol:100,useOnMobile:false}"></div>
+        {% endif %}
+      	{% if module.styling.background_type == "color" %}<span class="blox_overcol" style="background-color: {{ module.styling.background_color.color }}; opacity: {{ module.styling.background_color.opacity / 100 }};"></span>{% endif %}
+      	{% if module.styling.background_type != "color" %}<span class="blox_overcol" style="background-color: {{ module.styling.background_color_alt.color }}; opacity: {{ module.styling.background_color_alt.opacity / 100 }};"></span>{% endif %}
+      	{% if module.styling.background_type == "video" %}
+      			<i class="fas fa-circle-notch fa-spin center"></i>
+      			<span class="blox_video-loading">Video Loading <i class="fas fa-circle-notch fa-spin"></i></span>
+      	{% endif %}
+  	</div>
+  	<div class="blox_cell-wrapper" {% if module.styling.background_type == "color" %}data-bg="{{ module.styling.background_color.color }}"{% endif %} style="padding-top: {{ module.styling.top_padding }}px; padding-bottom: {{ module.styling.bottom_padding }}px; color: {{ module.styling.text_color }};">
+      	<div class="blox_image-text" {% if module.image.inverse_columns %}dir="rtl"{% endif %}>
+            <div class="blox_image {% if module.styling.animate_content %}fw-animated-element{% endif %}" data-animation-type="{% if module.image.inverse_columns %}fadeInRight{% else %}fadeInLeft{% endif %}" dir="ltr" style="width: {{ imgWidth }}%; text-align: {{ module.image.alignment_horizontal }}; vertical-align: {{ module.image.alignment_vertical }};">
+                {% if module.image.image.src %}
+                <img src="{{ module.image.image.src }}" alt="{{ module.image.image.alt }}" width="{{ module.image.image.width }}" height="{{ module.image.image.height }}">
+                {% endif %}
+            </div>
+            <div class="blox_text {% if module.styling.animate_content %}fw-animated-element{% endif %}" data-animation-type="{% if module.image.inverse_columns %}fadeInLeft{% else %}fadeInRight{% endif %}" dir="ltr" data-observe-resizes data-breakpoints='{"blox_800":800,"blox_480":480}' style="width: {{ module.text.width }}%; text-align: {{ module.text.alignment_horizontal }}; vertical-align: {{ module.text.alignment_vertical }};">
+                {% if module.logo.use_default_logo || module.logo.image.src %}
+                <div class="blox_logo">
+                    {% if module.logo.use_default_logo %}
+                    <a {% if module.logo.link %}href="{% if module.logo.link is string_startingwith 'www.' %}http://{{ module.logo.link }}{% else %}{{ module.logo.link }}{% endif %}"{% endif %}><img src="{{ site_settings.logo_src }}" alt="{{ site_settings.logo_alt }}" style="width: {{ module.logo.width }}px"></a>
+                    {% else %}
+                    <a {% if module.logo.link %}href="{% if module.logo.link is string_startingwith 'www.' %}http://{{ module.logo.link }}{% else %}{{ module.logo.link }}{% endif %}"{% endif %}><img src="{{ module.logo.image.src }}" alt="{{ module.logo.image.alt }}" style="width: {{ module.logo.width }}px"></a>
+                    {% endif %}
+                </div>
+                {% endif %}
+                <div class="blox_snippet blox_reduced-margin">
+                    {% inline_rich_text field="text.text" value="{{ module.text.text }}" %}
+                </div>
+                <div class="blox_items">{#
+                  #}{% for item in module.features.items %}{#
+                  #}<div class="blox_item-alt" style="width: {{ itemWidth }}%;">
+                      	<div class="blox_icon">
+                            {% icon name="{{ item.icon.name }}" style="{{ item.icon.type }}" unicode="{{ item.icon.unicode }}", no_wrapper=true %}
+                      	</div>
+                      	<div class="blox_label">{{ item.text }}</div>{#
+                  #}</div>{#
+                  #}{% endfor %}
+                </div>
+                <div class="blox_ctas {% if module.styling.animate_content %}anim{% endif %}" style="">{#
+                  #}{% for item in module.call_to_action.items %}
+                    <span class="cta-container {{ item.size }} {{ item.style }} {% if item.full_width %}block{% endif %} {% if module.styling.animate_content %}fw-animated-element{% endif %}" {% if module.styling.animate_content %}data-animation-type="fadeInUp"{% endif %} style="-webkit-animation-delay: {{ loop.index / 5  }}s; animation-delay: {{ loop.index / 5 }}s;">
+                        {% if item.icon %}{% icon name="{{ item.icon.name }}" style="{{ item.icon.type }}" unicode="{{ item.icon.unicode }}", no_wrapper=true %}{% endif %}
+                        {% cta guid="{{ item.cta }}", extra_classes='full-width panel' %}
+                    </span>
+                    {% endfor %}{#
+              #}</div>
+            </div>
+        </div>
+  	</div>
+</div>
+
+{% require_css position="header" %}
+<style class="{{ name }}-styles">
+.{{ name }} .blox_icon svg {
+		width: {{ module.features.icon_size }}em;
+		height: {{ module.features.icon_size }}em;
+}
+{% for item in module.call_to_action.items %}
+    {% if item.style == 'solid' %}
+    .{{ name }} .cta-container:nth-child({{ loop.index }}) .cta_button[title] {
+      	background: {{ item.background_color.color }};
+      	color: {{ item.color.color }};
+    }
+    .{{ name }} .cta-container:nth-child({{ loop.index }}) .cta_button[title] svg {
+      	fill: {{ item.color.color }};
+    }
+    .{{ name }} .cta-container:nth-child({{ loop.index }}) .cta_button[title]:hover {
+      	{% if item.background_color.color is string_containing '000' %}
+      	background: {{ color_variant(item.background_color.color, 40) }};
+      	{% elif item.background_color.color is string_containing 'FFF' or item.background_color.color is string_containing 'fff' %}
+      	background: {{ color_variant(item.background_color.color, -40) }};
+      	{% else %}
+      	background: {{ color_variant(item.background_color.color, 20) }};
+      	{% endif %}
+    }
+    {% else %}
+    .{{ name }} .cta-container:nth-child({{ loop.index }}) .cta_button[title] {
+      	background: none;
+      	border-color: {{ item.color.color }};
+      	color: {{ item.color.color }};
+    }
+    .{{ name }} .cta-container:nth-child({{ loop.index }}) .cta_button[title] svg {
+      	fill: {{ item.color.color }};
+    }
+    .{{ name }} .cta-container:nth-child({{ loop.index }}) .cta_button[title]:hover {
+      	background: {{ item.color.color }};
+      	{% if item.color.color is string_containing 'fff' %}
+      	color: #222 !important;
+      	{% elif item.color.color is string_containing 'FFF' %}
+      	color: #222 !important;
+      	{% endif %}
+    }
+    .{{ name }} .cta-container:nth-child({{ loop.index }}) .cta_button[title]:hover svg {
+      	{% if item.color.color is string_containing 'fff' %}
+      	fill: #222 !important;
+      	{% elif item.color.color is string_containing 'FFF' %}
+      	fill: #222 !important;
+      	{% else %}
+      	fill: {{ item.color.color }};
+      	{% endif %}
+    }
+    {% endif %}
+{% endfor %}
+  
+/* RESPONSIVE */
+@media screen and (min-width: 1930px) and (max-width: 2560px) {
+  	.{{ name }} .blox_cell-wrapper {
+        padding-top: {{ module.styling.top_padding + 30 }}px !important;
+        padding-bottom: {{ module.styling.bottom_padding + 30 }}px !important;
+    }
+}
+</style>
+{% end_require_css %}

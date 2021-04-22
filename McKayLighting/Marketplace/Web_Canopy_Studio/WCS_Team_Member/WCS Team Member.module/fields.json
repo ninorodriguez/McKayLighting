@@ -1,0 +1,113 @@
+[ {
+  "id" : "4954c6ad-91a8-5b94-b0b4-396717ecadfc",
+  "name" : "background_color",
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "b49525eb-fe10-61fb-797d-d8f31dfb8147",
+  "name" : "team_section_heading",
+  "label" : "Team Section Heading",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2 style=\"text-align: center;\">Our Team</h2>\n<p style=\"text-align: center;\">There comes a point where all of our subordinates start looking the same. Ignore that...</p>"
+}, {
+  "id" : "7b5f5904-3724-bced-3d60-0df112faf58c",
+  "name" : "team_member",
+  "label" : "Team Member",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 24,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "12d0755c-34f6-acc2-4143-be52965e34da",
+    "name" : "member_headshot",
+    "label" : "Team Member Headshot",
+    "required" : true,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/395201/Free%20Module%20Resources/mike-square.jpg",
+      "alt" : "mike-square",
+      "width" : 200,
+      "height" : 200
+    }
+  }, {
+    "id" : "6a47a719-4a21-6862-4a9a-7a7045f05ee7",
+    "name" : "member_name",
+    "label" : "Team Member Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Michael Stewart"
+  }, {
+    "id" : "434a35c5-5fac-334e-2a7e-627ce1a34079",
+    "name" : "member_title",
+    "label" : "Team Member Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Technically A Director"
+  }, {
+    "id" : "b92b6025-320a-d70e-c136-282725f45d2a",
+    "name" : "member_info",
+    "label" : "Team Member Additional Info",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p style=\"text-align: center;\">123-867-5309</p>\n<p style=\"text-align: center;\">makestew47@cbminer.com</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "member_headshot" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/395201/Free%20Module%20Resources/mike-square.jpg",
+      "alt" : "mike-square",
+      "width" : 200,
+      "height" : 200
+    },
+    "member_name" : "Michael Stewart",
+    "member_title" : "Technically A Director",
+    "member_info" : "<p style=\"text-align: center;\">123-867-5309</p>\n<p style=\"text-align: center;\">makestew47@cbminer.com</p>"
+  }, {
+    "member_headshot" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/395201/Free%20Module%20Resources/mike-square.jpg",
+      "alt" : "mike-square",
+      "width" : 200,
+      "height" : 200
+    },
+    "member_name" : "Michael Stewart",
+    "member_title" : "Technically A Director",
+    "member_info" : "<p style=\"text-align: center;\">123-867-5309</p>\n<p style=\"text-align: center;\">makestew47@cbminer.com</p>"
+  }, {
+    "member_headshot" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/395201/Free%20Module%20Resources/mike-square.jpg",
+      "alt" : "mike-square",
+      "width" : 200,
+      "height" : 200
+    },
+    "member_name" : "Michael Stewart",
+    "member_title" : "Technically A Director",
+    "member_info" : "<p style=\"text-align: center;\">123-867-5309</p>\n<p style=\"text-align: center;\">makestew47@cbminer.com</p>"
+  } ]
+} ]

@@ -1,0 +1,144 @@
+{% if name == 'module_1' %}
+{% require_css %}
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700');
+</style>
+{% end_require_css %}
+{% endif %}
+
+{# VARIABLES #}
+{% set itemWidth = 100 / module.team_members.items_per_row %}
+
+<div class="blox_custom-module blox_team-members-av {{ name }}" id="{{ name }}" data-observe-resizes style="{% if module.styling.background_image.src && module.styling.background_type == 'image' %}background-image: url({{ module.styling.background_image.src }});{% endif %} {% if module.styling.video_placeholder.src && module.styling.background_type == 'video' %}background-image: url({{ module.styling.video_placeholder.src }});{% endif %} background-repeat: no-repeat; background-position: {{ module.styling.background_position }}; background-size: cover; {% if module.styling.parallax_background %}background-attachment: parallax;{% endif %}">
+  	<div class="blox_overlay">
+        {% if module.styling.background_type == "video" && module.styling.video_url is string_containing "youtu" %}
+        		<div class="yt-bg player" data-property="{videoURL:'{{ module.styling.video_url }}',containment:'#{{ name }}',autoPlay:true,mute:{{ module.styling.mute_video }},loop:{{ module.styling.loop_video }},showControls:true,stopMovieOnBlur:false,mobileFallbackImage:'{{ module.styling.background_image.src }},showYTLogo:false',vol:100}"></div>
+        {% endif %}
+      	{% if module.styling.background_type == "color" %}<span class="blox_overcol" style="background-color: {{ module.styling.background_color.color }}; opacity: {{ module.styling.background_color.opacity / 100 }};"></span>{% endif %}
+      	{% if module.styling.background_type != "color" %}<span class="blox_overcol" style="background-color: {{ module.styling.background_color_alt.color }}; opacity: {{ module.styling.background_color_alt.opacity / 100 }};"></span>{% endif %}
+      	{% if module.styling.background_type == "video" %}
+      			<i class="fas fa-circle-notch fa-spin center"></i>
+      			<span class="blox_video-loading">Video Loading <i class="fas fa-circle-notch fa-spin"></i></span>
+      	{% endif %}
+  	</div>
+  	<div class="blox_cell-wrapper" {% if module.styling.background_type == "color" %}data-bg="{{ module.styling.background_color.color }}"{% endif %} style="padding-top: {{ module.styling.top_padding }}px; padding-bottom: {{ module.styling.bottom_padding }}px;">
+      	{% if module.intro.intro && module.intro.position == 'above' %}
+      	<div class="blox_intro {% if module.styling.animate_content %}fw-animated-element{% endif %}" {% if module.styling.animate_content %}data-animation-type="fadeInDown"{% endif %} style="text-align: {{ module.intro.text_alignment }}; padding-bottom: {{ module.intro.padding }}px;">
+          	<div class="blox_text" style="max-width: {{ module.intro.text_width }}%;">
+          	{% inline_rich_text field="intro.intro" value="{{ module.intro.intro }}" %}
+            </div>
+      	</div>
+      	{% endif %}
+      	<div class="blox_items" style="text-align: {{ module.team_members.item_alignment }};">{#
+          #}{% for item in module.team_members.items %}{#
+          #}<div class="blox_item-alt {% if module.styling.animate_content %}fw-animated-element{% endif %}" style="width: {{ itemWidth }}%;" {% if module.styling.animate_content %}data-animation-type="fadeInUp"{% endif %}>
+								{% if module.team_members.link_type == 'link' %}
+                    {% set memberLink = page_by_id(item.page_link) %}
+                    <a {% if item.page_link %}href="{{ memberLink.absolute_url }}"{% endif %}>
+                        <img class="{% if module.team_members.apply_rounded_corners_to_avatars %}blox_circle{% endif %}" src="{{ item.avatar.src }}" alt="{{ item.avatar.alt }}" width="{{ item.avatar.width }}" height="{{ item.avatar.height }}">
+                    </a>
+          			{% else %}
+                    <a class="popup-with-zoom-anim" href="#team-member{{ loop.index }}">
+                        <img class="blox_avatar {% if module.team_members.apply_rounded_corners_to_avatars %}blox_circle{% endif %}" src="{{ item.avatar.src }}" alt="{{ item.avatar.alt }}" width="{{ item.avatar.width }}">
+                    </a>
+                    <div id="team-member{{ loop.index }}" class="zoom-anim-dialog mfp-hide">
+                      	<div class="row-fluid">
+                          	<div class="span3 blox_avatar-pop">
+																<img src="{{ item.avatar.src }}" alt="{{ item.avatar.alt }}" width="{{ item.avatar.width }}" height="{{ item.avatar.height }}">
+                          	</div>
+                          	<div class="span9 blox_bio">
+                              	<h3>{{ item.popup_name }}</h3>
+                              	<p>{{ item.position }}</p>
+                              	<div class="blox_snippet">{{ item.popup_text }}</div>
+                          	</div>
+                        </div>
+          					</div>
+          			{% endif %}
+          	</div>{#
+          #}{% endfor %}{#
+      #}</div>
+      	{% if module.intro.intro && module.intro.position == 'below' %}
+      	<div class="blox_intro {% if module.styling.animate_content %}fw-animated-element{% endif %}" {% if module.styling.animate_content %}data-animation-type="fadeInLeft"{% endif %} style="text-align: {{ module.intro.text_alignment }}; padding-top: {{ module.intro.padding }}px;">
+          	<div class="blox_text" style="max-width: {{ module.intro.text_width }}%;">
+          	{% inline_rich_text field="intro.intro" value="{{ module.intro.intro }}" %}
+            </div>
+      	</div>
+      	{% endif %}
+        <div class="blox_ctas {% if module.styling.animate_content %}anim{% endif %}" style="text-align: {{ module.call_to_action.cta_alignment }}; padding-top: {{ module.call_to_action.top_padding }}px;">{#
+          #}{% for item in module.call_to_action.items %}
+            <span class="cta-container {{ item.size }} {{ item.style }} {% if item.full_width %}block{% endif %} {% if module.styling.animate_content %}fw-animated-element{% endif %}" {% if module.styling.animate_content %}data-animation-type="fadeInUp"{% endif %} style="-webkit-animation-delay: {{ loop.index / 5  }}s; animation-delay: {{ loop.index / 5 }}s;">
+								{% if item.icon %}{% icon name="{{ item.icon.name }}" style="{{ item.icon.type }}" unicode="{{ item.icon.unicode }}", no_wrapper=true %}{% endif %}
+                {% cta guid="{{ item.cta }}" %}
+            </span>
+            {% endfor %}{#
+      #}</div>
+  	</div>
+</div>
+
+{% require_css position="header" %}
+<style class="{{ name }}-styles">  
+{% for item in module.call_to_action.items %}
+    {% if item.style == 'solid' %}
+    .{{ name }} .cta-container:nth-child({{ loop.index }}) .cta_button[title] {
+      	background: {{ item.background_color.color }};
+      	color: {{ item.color.color }};
+    }
+    .{{ name }} .cta-container:nth-child({{ loop.index }}) .cta_button[title] svg {
+      	fill: {{ item.color.color }};
+    }
+    .{{ name }} .cta-container:nth-child({{ loop.index }}) .cta_button[title]:hover {
+      	{% if item.background_color.color is string_containing '000' %}
+      	background: {{ color_variant(item.background_color.color, 40) }};
+      	{% elif item.background_color.color is string_containing 'FFF' or item.background_color.color is string_containing 'fff' %}
+      	background: {{ color_variant(item.background_color.color, -40) }};
+      	{% else %}
+      	background: {{ color_variant(item.background_color.color, 20) }};
+      	{% endif %}
+    }
+    {% else %}
+    .{{ name }} .cta-container:nth-child({{ loop.index }}) .cta_button[title] {
+      	background: none;
+      	border-color: {{ item.color.color }};
+      	color: {{ item.color.color }};
+    }
+    .{{ name }} .cta-container:nth-child({{ loop.index }}) .cta_button[title] svg {
+      	fill: {{ item.color.color }};
+    }
+    .{{ name }} .cta-container:nth-child({{ loop.index }}) .cta_button[title]:hover {
+      	background: {{ item.color.color }};
+      	{% if item.color.color is string_containing 'fff' %}
+      	color: #222 !important;
+      	{% elif item.color.color is string_containing 'FFF' %}
+      	color: #222 !important;
+      	{% endif %}
+    }
+    .{{ name }} .cta-container:nth-child({{ loop.index }}) .cta_button[title]:hover svg {
+      	{% if item.color.color is string_containing 'fff' %}
+      	fill: #222 !important;
+      	{% elif item.color.color is string_containing 'FFF' %}
+      	fill: #222 !important;
+      	{% else %}
+      	fill: {{ item.color.color }};
+      	{% endif %}
+    }
+    {% endif %}
+{% endfor %}
+  
+/* RESPONSIVE */
+@media screen and (min-width: 1930px) and (max-width: 2560px) {
+  	.{{ name }} .blox_cell-wrapper {
+        padding-top: {{ module.styling.top_padding + 30 }}px !important;
+        padding-bottom: {{ module.styling.bottom_padding + 30 }}px !important;
+    }
+    .{{ name }} .blox_intro:first-child {
+        padding-bottom: {{ module.intro.padding + 30 }}px !important;
+    }
+    .{{ name }} .blox_items:first-child + .blox_intro {
+        padding-top: {{ module.intro.padding + 30 }}px !important;
+    }
+    .{{ name }} .blox_ctas {
+        padding-top: {{ module.call_to_action.top_padding + 30 }}px !important;
+    }
+}
+</style>
+{% end_require_css %}

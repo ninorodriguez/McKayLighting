@@ -1,0 +1,58 @@
+{
+  "content_tags" : [ {
+    "name" : "HEADERS",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "NAVIGATION",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "BANNER",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "COMPATIBLE_PAGE",
+    "source" : "MARKETPLACE"
+  } ],
+  "global" : false,
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 4227920,
+  "css_assets" : [ {
+    "url" : "https://cdn2.hubspot.net/hubfs/346178/hs_marketplace_assets/modules/Hero%20Video%20Startup%20Framework/2/jquery.oembed.css",
+    "autoload" : false,
+    "name" : "jquery.oembed.css"
+  }, {
+    "url" : "https://cdn2.hubspot.net/hubfs/346178/hs_marketplace_assets/modules/Hero%20Video%20Startup%20Framework/2/magnific-popup.min.css",
+    "autoload" : false,
+    "name" : "magnific-popup.min.css"
+  } ],
+  "js_assets" : [ {
+    "url" : "https://cdn2.hubspot.net/hubfs/346178/hs_marketplace_assets/modules/Hero%20Video%20Startup%20Framework/2/jquery.magnific-popup.min.js",
+    "autoload" : false,
+    "name" : "jquery.magnific-popup.min.js"
+  }, {
+    "url" : "https://cdn2.hubspot.net/hubfs/346178/hs_marketplace_assets/modules/Hero%20Video%20Startup%20Framework/2/hero-video-startup-kit-v2.js",
+    "autoload" : false,
+    "name" : "hero-video-startup-kit-v2.js"
+  }, {
+    "url" : "https://cdn2.hubspot.net/hubfs/346178/hs_marketplace_assets/modules/Hero%20Video%20Startup%20Framework/2/jquery.oembed.js",
+    "autoload" : false,
+    "name" : "jquery.oembed.js"
+  }, {
+    "url" : "https://cdn2.hubspot.net/hubfs/346178/hs_marketplace_assets/modules/Hero%20Video%20Startup%20Framework/2/video.js",
+    "autoload" : false,
+    "name" : "video.js"
+  }, {
+    "url" : "https://cdn2.hubspot.net/hubfs/346178/hs_marketplace_assets/modules/Hero%20Video%20Startup%20Framework/2/hero-video-deps.min.js",
+    "autoload" : false,
+    "name" : "hero-video-deps.min.js"
+  } ],
+  "other_assets" : [ {
+    "url" : "https://cdn2.hubspot.net/hubfs/346178/hs_marketplace_assets/modules/Hero%20Video%20Startup%20Framework/2/btn-play.png",
+    "autoload" : false,
+    "name" : "btn-play.png"
+  }, {
+    "url" : "https://cdn2.hubspot.net/hubfs/346178/hs_marketplace_assets/modules/Hero%20Video%20Startup%20Framework/2/img-video.jpeg",
+    "autoload" : false,
+    "name" : "img-video.jpeg"
+  } ],
+  "is_available_for_new_content" : true
+}

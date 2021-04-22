@@ -1,0 +1,16 @@
+{
+  "content_tags" : [ {
+    "name" : "GALLERY",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "BANNER",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "COMPATIBLE_PAGE",
+    "source" : "MARKETPLACE"
+  } ],
+  "global" : false,
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 4226840,
+  "is_available_for_new_content" : true
+}

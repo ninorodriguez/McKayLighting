@@ -1,0 +1,184 @@
+{#  -----------------------------------------------------------------------
+    Developed By  : GiantFocal
+    Website       : https://www.giantfocal.com/
+    Support       : admin@giantfocal.com
+------------------------------------------------------------------------- #}
+
+{% if module.enable_section %}
+{# Start #}
+
+<div id="{{ module.settings.layout.custom_id }}" class="ark {{ name }} ark-pricing-01 {% if module.settings.background_setting.background_type == 'image' && module.settings.background_setting.parallax %}ark-parallax{% endif %} {% if module.settings.background_setting.background_type == 'image' and module.settings.background_setting.overlay %}ark-overlay{% endif %} {{ module.settings.layout.custom_css_classes }}" 
+	{% if module.settings.background_setting.background_type == 'solid' %}style="background-color:{{ module.settings.background_setting.solid_color.color }};"
+	{% elif module.settings.background_setting.background_type == 'gradient' %}
+	{% elif module.settings.background_setting.background_type == 'image' %}style="background-image:url('{{ module.settings.background_setting.background_image.src }}');"
+	{% else %}
+	{% endif %}>
+
+  {# ----- Parallax ----- #}
+  {% if module.settings.background_setting.background_type == 'image' and module.settings.background_setting.parallax %}
+  	<img class="ark-parallax-img" src="{{ module.settings.background_setting.background_image.src }}" alt="">
+  {% endif %}
+  {# ----- /Parallax ----- #}
+  
+  {# ----- Section Intro ----- #}
+  {% if module.content.section_intro.enable_intro %}
+    <div class="ark-section-intro ark-element-animation">
+      {# ----- Page Center ----- #}
+      <div class="ark-page-center ark-text-align-center {% if module.settings.typography.font_color == 'white' %}ark-color-white{% endif %}">
+        {% if module.content.section_intro.sub_heading_text %}<p class="ark-section-intro-subheading">{{ module.content.section_intro.sub_heading_text }}</p>{% endif %}
+        {% if module.content.section_intro.heading_text %}
+          {% if module.content.section_intro.heading_size == 'h1' %}
+            <h1 class="ark-section-intro-heading">{{ module.content.section_intro.heading_text }}</h1>
+          {% elif module.content.section_intro.heading_size == 'h2' %}
+            <h2 class="ark-section-intro-heading">{{ module.content.section_intro.heading_text }}</h2>
+          {% elif module.content.section_intro.heading_size == 'h3' %}
+            <h3 class="ark-section-intro-heading">{{ module.content.section_intro.heading_text }}</h3>
+          {% else %}
+            <h4 class="ark-section-intro-heading">{{ module.content.section_intro.heading_text }}</h4>
+          {% endif %}
+        {% endif %}
+        {% if module.content.section_intro.description_text %}
+          <div class="ark-section-intro-description">
+            {{ module.content.section_intro.description_text }}
+          </div>
+        {% endif %}
+      </div>
+      {# ----- /Page Center ----- #}
+    </div>
+  {% endif %}
+  {# ----- /Section Intro ----- #}
+
+	
+
+	<div class="ark-pricing-01-inner ark-vertical-align ark-vertical-align-center {% if module.settings.layout.enable_page_center %}ark-page-center{% endif %} ark-element-animation">
+		<div class="row-fluid-wrapper">
+			
+			{# ----- Pricing Toggle ----- #}
+			{% if module.content.plan_box_settings.enable_monthly_yearly_toggle %}
+				<div class="row-fluid ark-pricing-01-toggle-wrapper {% if module.settings.typography.font_color == 'white' %}ark-color-white{% endif %}">
+					<div class="ark-pricing-01-toggle {% if module.content.plan_box_settings.invert_toogle_color %}ark-pricing-01-toggle-invert{% endif %}">
+						<div class="ark-pricing-01-toggle-active">Monthly</div>
+						<div>Yearly</div>
+					</div>
+				</div>
+			{% endif %}
+			{# ----- /Pricing Toggle ----- #}
+			
+			{# ----- Pricing Repeater ----- #}
+			<div class="row-fluid">
+				<div class="ark-pricing-01-repeater">
+					{% for item in module.content.plan_repeater %}
+					<div class="ark-pricing-01-box {% if loop.length < 4 %} ark-pricing-01-box-3col{% endif %}">
+            <div>
+                <div class="ark-pricing-01-box-header">
+                  <p>{{ item.plan_name }}</p>
+                  <div class="ark-pricing-01-box-price">
+                    <h2><sup>{{ module.content.plan_box_settings.currency }}</sup>{{ item.plan_price_01 }}<sub>{{ item.plan_price_label_01 }}</sub></h2>
+                    <h2 style="display:none;"><sup>{{ module.content.plan_box_settings.currency }}</sup>{{ item.plan_price_02 }}<sub>{{ item.plan_price_label_02 }}</sub></h2>
+                  </div>
+                </div>
+                <div class="ark-pricing-01-box-detail">
+                  {% for item2 in item.plan_detail_repeater %}
+                    <p>{{ item2 }}</p> 
+                  {% endfor %}
+                </div>
+            </div>
+						<a href="{{ item.button_link }}" class="ark-btn ark-btn-primary ark-pricing-01-box-button">{{ item.button_text }}</a>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			{# ----- /Pricing Repeater ----- #}
+				
+		</div>
+	</div>
+    
+
+  {# ----- Section Footer ----- #}
+  {% if module.content.section_footer.enable_section_footer %}
+    <div class="ark-section-footer {% if module.settings.typography.font_color == 'white' %}ark-color-white{% endif %} ark-element-animation">
+      <div class="ark-page-center">
+        {{ module.content.section_footer.section_footer_text }}
+      </div>
+    </div>
+  {% endif %}
+  {# ----- /Section Footer ----- #}  
+
+</div>
+
+
+
+{# =============== CSS Styling =============== #}
+{% require_css %}
+  <style>
+    .{{ name }} {
+      padding: {{ (module.settings.layout.top_padding / 16) }}em 0 {{ (module.settings.layout.bottom_padding / 16) }}em;
+    }
+
+    {# Image overlay #}
+    {% if module.settings.background_setting.overlay and module.settings.background_setting.background_type == 'image' %}
+      .{{ name }}:before {
+        background: {{ module.settings.background_setting.overlay_color.color }};
+        opacity: {{ module.settings.background_setting.overlay_color.opacity/100 }};
+      }
+		{% endif %}
+
+    {# Typography - Font Color #}
+    {% if module.settings.typography.font_color == 'custom' %}
+      .{{ name }} *:not(a) {
+        color: {{ module.settings.typography.custom_font_color.color }};
+      }
+    {% endif %}
+    
+    {# Overwrite page center size #}
+    {% if module.settings.layout.overwrite_page_center %}
+      .{{ name }} .ark-page-center {
+        max-width: {{ module.settings.layout.page_center_size }}px;
+      }
+    {% endif %}
+	
+    {# Gradient BG #}
+    {% if module.settings.background_setting.background_type == 'gradient' %}
+      .{{ name }} {
+        background: {{ module.settings.background_setting.gradient_color_01.color }}; 
+        background: -moz-linear-gradient(-45deg, {{ module.settings.background_setting.gradient_color_01.color }} 0%, {{ module.settings.background_setting.gradient_color_02.color }} 100%); 
+        background: -webkit-linear-gradient(-45deg, {{ module.settings.background_setting.gradient_color_01.color }} 0%,{{ module.settings.background_setting.gradient_color_02.color }} 100%); 
+        background: linear-gradient(135deg, {{ module.settings.background_setting.gradient_color_01.color }} 0%,{{ module.settings.background_setting.gradient_color_02.color }} 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{{ module.settings.background_setting.gradient_color_01.color }}', endColorstr='{{ module.settings.background_setting.gradient_color_02.color }}',GradientType=1 );
+      }
+    {% endif %}
+    
+    {# Box Color #}
+    {% if module.content.plan_box_settings.custom_plan_text_color %}
+      .{{ name }} .ark-pricing-01-box {
+        background-color: {{ module.content.plan_box_settings.box_color.color }};
+      }
+      .{{ name }} .ark-pricing-01-box .ark-pricing-01-box-header p,
+    	.{{ name }} .ark-pricing-01-box .ark-pricing-01-box-price h2,
+      .{{ name }} .ark-pricing-01-box .ark-pricing-01-box-detail p {
+        color:{{ module.content.plan_box_settings.text_color.color }};
+      }
+		{% endif %}
+    
+  </style>
+{% end_require_css %}
+{# =============== /CSS Styling =============== #}
+
+
+{# =============== Script =============== #}
+{% require_js %}
+  <script>
+    $(".{{name }}.ark-pricing-01 .ark-pricing-01-toggle div").on('click', function(){
+      var currentIndex = $(this).index();
+      $(this).addClass("ark-pricing-01-toggle-active").siblings("div").removeClass("ark-pricing-01-toggle-active");
+      $(this).closest(".ark-pricing-01").find(".ark-pricing-01-box-price").each(function(){
+        $(this).find("h2").hide().eq(currentIndex).show();
+      });
+    });
+  </script>
+{% end_require_js %}
+{# =============== /Script =============== #}
+
+
+{# End #}
+{% endif %}

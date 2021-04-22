@@ -1,0 +1,197 @@
+[ {
+  "id" : "9c5b12b6-bdc0-ea9d-5b4c-47dc8cf38d1e",
+  "name" : "background_choice",
+  "label" : "Background Type",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "placeholder" : "Search",
+  "choices" : [ [ "gradient", "Gradient" ], [ "video", "Video" ], [ "image", "Image" ] ],
+  "type" : "choice",
+  "default" : "image"
+}, {
+  "picker" : "file",
+  "id" : "ac8039a0-e907-d673-9ed8-f21ae509e7bf",
+  "name" : "video_file",
+  "label" : "Video File",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "9c5b12b6-bdc0-ea9d-5b4c-47dc8cf38d1e",
+    "controlling_value_regex" : "video",
+    "operator" : null,
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "file",
+  "default" : "https://cdn2.hubspot.net/hubfs/395201/2018_WCS/videos/smallhomepagewcs.mp4"
+}, {
+  "id" : "dc74c948-aa4e-ad8b-1f2b-51eded6faf42",
+  "name" : "video_type",
+  "label" : "Video Type",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "9c5b12b6-bdc0-ea9d-5b4c-47dc8cf38d1e",
+    "controlling_value_regex" : "video",
+    "operator" : null,
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "select",
+  "placeholder" : "Search",
+  "choices" : [ [ "webm", "Webm" ], [ "mp4", "MP4" ], [ "ogg", "OGG" ] ],
+  "type" : "choice",
+  "default" : ""
+}, {
+  "id" : "cd8d1cbf-1069-b79a-4e97-a74788fdc9ee",
+  "name" : "left_rich_text_field",
+  "label" : "Left Rich text field",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h1>A Hero For Any Purpose</h1>\n<h3>From the top of the page with an video, to the bottom of the page with an image, this module can be used to fill any role.</h3>"
+}, {
+  "id" : "e4e577df-320f-dbce-3fbb-c96126172368",
+  "name" : "right_rich_text_field",
+  "label" : "Right Rich text field",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "a5bff30e-53bf-4f98-c6fe-ec3af2836939",
+    "controlling_value_regex" : "2-2",
+    "operator" : null,
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "richtext",
+  "default" : "Lorem ipsum dolor\nConsectetur adipiscing elit. Curabitur quis auctor risus. Cras non metus ante. Proin condimentum lorem et molestie viverra. Duis porttitor feugiat leo in luctus. Cras vel porttitor velit, vel finibus mi. Duis nec lectus lectus. Vestibulum convallis, nisl vel auctor cursus, urna ex fringilla orci, a blandit lacus leo ultricies quam. In felis nibh, vestibulum vitae libero vel, faucibus gravida felis. Pellentesque blandit aliquet tristique."
+}, {
+  "id" : "a5bff30e-53bf-4f98-c6fe-ec3af2836939",
+  "name" : "column_sizes",
+  "label" : "Column Sizes",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "placeholder" : "Search",
+  "choices" : [ [ "1-1", "1/1" ], [ "2-2", "1/2 + 1/2" ] ],
+  "type" : "choice",
+  "default" : "2-2"
+}, {
+  "id" : "4954c6ad-91a8-5b94-b0b4-396717ecadfc",
+  "name" : "background_color",
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 10
+  }
+}, {
+  "id" : "8d55fe60-5801-1f29-d2e1-7a21c06990a4",
+  "name" : "background_color_2",
+  "label" : "Background Color 2",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "9c5b12b6-bdc0-ea9d-5b4c-47dc8cf38d1e",
+    "controlling_value_regex" : "gradient",
+    "operator" : null,
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "d58f412e-4bb4-1929-8554-10fb6ca9daf9",
+  "name" : "vertically_align",
+  "label" : "Vertically Align?",
+  "required" : false,
+  "locked" : false,
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "d49ada27-4b2e-f75a-0a09-1bb9a63b2fcc",
+  "name" : "select_a_hero_image",
+  "label" : "Select a Hero Image",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "9c5b12b6-bdc0-ea9d-5b4c-47dc8cf38d1e",
+    "controlling_value_regex" : "image",
+    "operator" : null,
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "responsive" : false,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://cdn2.hubspot.net/hubfs/2660751/Juiced%20Triggers%20LP%20background%202.png",
+    "alt" : "Juiced Triggers LP background 2",
+    "width" : 2426,
+    "height" : 1728
+  }
+}, {
+  "id" : "d5bb10e4-a03f-a931-a472-e793ef4869a4",
+  "name" : "hero_position",
+  "label" : "Hero Position",
+  "help_text" : "Select a preset position, or if you want a custom position, select 'Custom'",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "9c5b12b6-bdc0-ea9d-5b4c-47dc8cf38d1e",
+    "controlling_value_regex" : "image",
+    "operator" : null,
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "select",
+  "placeholder" : "Search",
+  "choices" : [ [ "center top", "Top Middle" ], [ "center center", "Center" ], [ "center bottom", "Bottom Middle" ], [ "right top", "Top Right" ], [ "right center", "Right Middle" ], [ "right bottom", "Bottom Right" ], [ "left top", "Top Left" ], [ "left center", "Left Middle" ], [ "left bottom", "Bottom Left" ], [ "custom", "Custom" ] ],
+  "type" : "choice",
+  "default" : "center center"
+}, {
+  "id" : "5ae14f3d-ab3b-9c63-43d2-ba2c437fb9f9",
+  "name" : "x_position",
+  "label" : "Custom left/right position",
+  "help_text" : "Please supply a percent in between 0-100 i.e. 50%",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "d5bb10e4-a03f-a931-a472-e793ef4869a4",
+    "controlling_value_regex" : "custom",
+    "operator" : null,
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "50%"
+}, {
+  "id" : "7f026199-78f3-09b0-a08a-56413deb1bda",
+  "name" : "y_position",
+  "label" : "Custom top/bottom position",
+  "help_text" : "Please supply a percent in between 0-100 i.e. 50%",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "d5bb10e4-a03f-a931-a472-e793ef4869a4",
+    "controlling_value_regex" : "custom",
+    "operator" : null,
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "50%"
+} ]

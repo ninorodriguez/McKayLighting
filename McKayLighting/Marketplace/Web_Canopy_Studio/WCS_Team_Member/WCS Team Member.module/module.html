@@ -1,0 +1,21 @@
+<div class="wcs">
+  <div class="wcs-col-12 wcs-team-member-section" style="background-color: {{ module.background_color.color }}">
+    <div class="wcs-col-12 wcs-page-center">
+      <div class="wcs-col-12 wcs-team-heading">
+        {% inline_rich_text field="team_section_heading" value="{{ module.team_section_heading }}" %}
+      </div>
+      <div class="wcs-member-center">
+          {% for item in module.team_member %}
+              <div class="wcs-team-member">
+                 {% if item.member_headshot.src %}
+                   <center><img src="{{ item.member_headshot.src }}" alt="{{ item.member_headshot.alt }}" width="{{ item.member_headshot.width }}" height="{{ item.member_headshot.height }}"></center>
+                 {% endif %}
+                 <h3>{{ item.member_name }}</h3>
+                 <h4>{{ item.member_title }}</h4>
+                 <p>{{ item.member_info }}</p>
+              </div>
+          {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

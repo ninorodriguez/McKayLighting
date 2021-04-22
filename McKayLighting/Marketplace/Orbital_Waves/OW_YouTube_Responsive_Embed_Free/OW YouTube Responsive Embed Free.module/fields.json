@@ -1,0 +1,24 @@
+[ {
+  "id" : "b926f3a8-8f3a-7803-5438-54961d9dd32a",
+  "name" : "ratio",
+  "label" : "Video Ratio",
+  "help_text" : "Select your YouTube video Ratio to fit proportions when resized",
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "embed-responsive-169", "16:9" ], [ "embed-responsive-43", "4:3" ] ],
+  "type" : "choice",
+  "default" : "embed-responsive-169"
+}, {
+  "id" : "78d9a8b4-69f6-c4ff-4175-44d8aa456693",
+  "name" : "video_id",
+  "label" : "Video ID",
+  "help_text" : "Check your video URL: https://www.youtube.com/watch?v=PxsD-XU9cEw -> Your ID is PxsD-XU9cEw",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "^([^\\/\\?]{5,})$",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+} ]

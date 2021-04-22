@@ -1,0 +1,735 @@
+[ {
+  "id" : "2a227626-b5b9-1531-fd9f-b09c40c1e763",
+  "name" : "image",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f9694c7d-006c-2486-aa1e-a55575479c08",
+    "name" : "image",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/281278/HubBlox/Images/Features/feature_app-devices_b.png",
+      "alt" : "feature_app-devices_b",
+      "width" : 544,
+      "height" : 583
+    }
+  }, {
+    "id" : "5cf77026-6dff-fe7c-2c9f-f6f995b86c63",
+    "name" : "alignment_horizontal",
+    "label" : "Alignment (horizontal)",
+    "help_text" : "Sets how the image should be aligned horizontally",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "placeholder" : "Choose the horizontal alignment...",
+    "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+    "type" : "choice",
+    "default" : "center"
+  }, {
+    "id" : "7c82827e-3603-851f-8110-2c1fd0db0212",
+    "name" : "alignment_vertical",
+    "label" : "Alignment (vertical)",
+    "help_text" : "Sets how the image should be aligned vertically",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "placeholder" : "Choose the vertical alignment...",
+    "choices" : [ [ "top", "Top" ], [ "middle", "Middle" ], [ "bottom", "Bottom" ] ],
+    "type" : "choice",
+    "default" : "middle"
+  }, {
+    "id" : "fe7f0041-ee5b-21fd-904f-630cfec3b5f0",
+    "name" : "inverse_columns",
+    "label" : "Inverse Columns",
+    "help_text" : "Switches the image to be on the right side",
+    "required" : false,
+    "locked" : false,
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/281278/HubBlox/Images/Features/feature_app-devices_b.png",
+      "alt" : "feature_app-devices_b",
+      "width" : 544,
+      "height" : 583
+    },
+    "alignment_horizontal" : "center",
+    "alignment_vertical" : "middle",
+    "inverse_columns" : true
+  }
+}, {
+  "id" : "785143b0-07dd-e443-e0bd-d2634dbb1a6a",
+  "name" : "logo",
+  "label" : "Logo",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "8a9147d0-ea2a-ce5b-f750-61e4e5ff9668",
+    "name" : "use_default_logo",
+    "label" : "Use Default Logo",
+    "required" : false,
+    "locked" : false,
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "c19cd675-7989-5c76-b0cf-229460a3562c",
+    "name" : "image",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "8a9147d0-ea2a-ce5b-f750-61e4e5ff9668",
+      "controlling_value_regex" : "false",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/281278/HubBlox/Images/Logos/logo-hubblox_232323.svg",
+      "alt" : "logo-hubblox_232323",
+      "width" : 363,
+      "height" : 77
+    }
+  }, {
+    "id" : "aca0eada-f7e0-fa2f-0849-c6a71a5b6531",
+    "name" : "width",
+    "label" : "Width",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 50,
+    "max" : 150,
+    "step" : 1,
+    "type" : "number",
+    "default" : 150
+  }, {
+    "id" : "cc179fdd-72c1-46e9-939f-32e605a79a77",
+    "name" : "link",
+    "label" : "Link",
+    "help_text" : "Where should the logo link to. Can be left blank if not needed.",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : true,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "use_default_logo" : true,
+    "image" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/281278/HubBlox/Images/Logos/logo-hubblox_232323.svg",
+      "alt" : "logo-hubblox_232323",
+      "width" : 363,
+      "height" : 77
+    },
+    "width" : 150
+  }
+}, {
+  "id" : "ecfaceba-812a-b668-edf7-5d52c04cf040",
+  "name" : "text",
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "8f7f5bce-f6b6-b052-988d-3d6cdc8b7768",
+    "name" : "text",
+    "label" : "Text",
+    "help_text" : "The headline should convey your page's purpose clearly. Sub-headline elaborates and supports the headline. Focus on a common pain-point your product or service addresses.",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h1>Create your business</h1>\n<p>Software as a service is a software licensing and delivery model in which software is licensed on a subscription basis.</p>"
+  }, {
+    "id" : "1405a243-fa47-74e0-4b1c-f629d828676b",
+    "name" : "alignment_horizontal",
+    "label" : "Alignment (horizontal)",
+    "help_text" : "Sets how the image should be aligned horizontally",
+    "required" : false,
+    "locked" : true,
+    "display" : "radio",
+    "placeholder" : "Choose the horizontal alignment...",
+    "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+    "type" : "choice",
+    "default" : "left"
+  }, {
+    "id" : "635a26af-334c-857c-15aa-194ee8436374",
+    "name" : "alignment_vertical",
+    "label" : "Alignment (vertical)",
+    "help_text" : "Sets how the image should be aligned vertically",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "placeholder" : "Choose the vertical alignment...",
+    "choices" : [ [ "top", "Top" ], [ "middle", "Middle" ], [ "bottom", "Bottom" ] ],
+    "type" : "choice",
+    "default" : "middle"
+  }, {
+    "id" : "3f335741-c631-d78b-ad0a-323c1a233592",
+    "name" : "width",
+    "label" : "Width",
+    "help_text" : "Sets the text area's width as a percentage of the module",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 25,
+    "max" : 100,
+    "step" : 2,
+    "type" : "number",
+    "default" : 50
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "text" : "<h1>Create your business</h1>\n<p>Software as a service is a software licensing and delivery model in which software is licensed on a subscription basis.</p>",
+    "alignment_horizontal" : "left",
+    "alignment_vertical" : "middle",
+    "width" : 50
+  }
+}, {
+  "id" : "466250ea-e214-2d62-57b9-bc6c9afdcfe2",
+  "name" : "features",
+  "label" : "Features",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "389b4af5-d2f8-a3d8-10ed-2d36c51c4e53",
+    "name" : "items",
+    "label" : "Items",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : "1db060c1-92ed-9d2f-b57e-188ffb0a2385",
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "44685e31-377b-ce63-7a53-b62b868fdb02",
+      "name" : "icon",
+      "label" : "Icon",
+      "required" : false,
+      "locked" : false,
+      "icon_set" : "fontawesome-5.0.10",
+      "type" : "icon",
+      "default" : {
+        "name" : "shield-alt",
+        "unicode" : "f3ed",
+        "type" : "SOLID"
+      }
+    }, {
+      "id" : "1db060c1-92ed-9d2f-b57e-188ffb0a2385",
+      "name" : "text",
+      "label" : "Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : true,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "PROTECTION"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "icon" : {
+        "name" : "shield-alt",
+        "unicode" : "f3ed",
+        "type" : "SOLID"
+      },
+      "text" : "PROTECTION"
+    } ]
+  }, {
+    "id" : "2396d98e-e3e9-7fa2-eca2-607e1571f64d",
+    "name" : "icon_size",
+    "label" : "Icon Size",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 2,
+    "max" : 3,
+    "step" : 0.1,
+    "type" : "number",
+    "default" : 2
+  }, {
+    "id" : "99908d04-3601-fe60-0d0d-ba6a41c9da40",
+    "name" : "items_per_row",
+    "label" : "Items per row",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 1,
+    "max" : 3,
+    "step" : 1,
+    "type" : "number",
+    "default" : 2
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "items" : [ {
+      "icon" : {
+        "name" : "shield-alt",
+        "unicode" : "f3ed",
+        "type" : "SOLID"
+      },
+      "text" : "PROTECTION"
+    } ],
+    "icon_size" : 2,
+    "items_per_row" : 2
+  }
+}, {
+  "id" : "a4ccfa84-8b56-0d80-7379-abcc753ff593",
+  "name" : "call_to_action",
+  "label" : "Call-to-Action",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "58a6597f-913b-9aa9-03c7-6bb2c5a38c98",
+    "name" : "items",
+    "label" : "Items",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : "dd2f8ec0-a332-2e1e-198d-0c9550294e87",
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "dd2f8ec0-a332-2e1e-198d-0c9550294e87",
+      "name" : "cta",
+      "label" : "CTA",
+      "help_text" : "CTAs can use optional HubBlox button styles. Choose 'Link (No Style)' from the 'Button style' dropdown when creating your CTA. See here: http://g.recordit.co/fhrmStZKcI.gif",
+      "required" : false,
+      "locked" : false,
+      "type" : "cta",
+      "default" : "523f7d2d-991b-4e20-bd3b-33de5aa35bb4"
+    }, {
+      "id" : "9692b36f-55a3-c8af-5faf-57a91d5b9f0b",
+      "name" : "background_color",
+      "label" : "Background Color",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "52315e5f-aaa9-d7f7-f2b0-efa68f1e3b48",
+        "controlling_value_regex" : "solid",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "color",
+      "default" : {
+        "color" : "#FFF",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "3f7db9ba-f5db-b9d3-0291-f422096a3924",
+      "name" : "color",
+      "label" : "Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#FFF",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "ca83960a-c01a-b4fe-9bca-c641a6291c4d",
+      "name" : "icon",
+      "label" : "Icon",
+      "required" : false,
+      "locked" : false,
+      "icon_set" : "fontawesome-5.0.10",
+      "type" : "icon",
+      "default" : { }
+    }, {
+      "id" : "315e905f-1b31-ee90-080b-53836b9a4752",
+      "name" : "size",
+      "label" : "Size",
+      "help_text" : "Sets the size of the  CTA",
+      "required" : false,
+      "locked" : false,
+      "display" : "radio",
+      "placeholder" : "",
+      "choices" : [ [ "small", "Small" ], [ "medium", "Medium" ], [ "large", "Large" ] ],
+      "type" : "choice",
+      "default" : "medium"
+    }, {
+      "id" : "52315e5f-aaa9-d7f7-f2b0-efa68f1e3b48",
+      "name" : "style",
+      "label" : "Style",
+      "help_text" : "Sets the style on the CTA",
+      "required" : false,
+      "locked" : false,
+      "display" : "radio",
+      "placeholder" : "Choose CTA type...",
+      "choices" : [ [ "outline", "Line" ], [ "solid", "Solid" ] ],
+      "type" : "choice",
+      "default" : "outline"
+    }, {
+      "id" : "7ad6f38c-626b-a8a9-64a4-57a9abe19c00",
+      "name" : "full_width",
+      "label" : "Full Width",
+      "required" : false,
+      "locked" : false,
+      "type" : "boolean",
+      "default" : false
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "cta" : "523f7d2d-991b-4e20-bd3b-33de5aa35bb4",
+      "background_color" : {
+        "color" : "#FFF",
+        "opacity" : 100
+      },
+      "color" : {
+        "color" : "#FFF",
+        "opacity" : 100
+      },
+      "icon" : { },
+      "size" : "medium",
+      "style" : "outline",
+      "full_width" : false
+    } ]
+  }, {
+    "id" : "ba10e38b-3b04-0a9a-0ad7-461303124054",
+    "name" : "cta_alignment",
+    "label" : "CTA Alignment",
+    "help_text" : "Sets the alignment of the CTAs",
+    "required" : false,
+    "locked" : true,
+    "display" : "radio",
+    "placeholder" : "",
+    "choices" : [ [ "left", "Left" ], [ "center", "Center" ] ],
+    "type" : "choice",
+    "default" : "left"
+  }, {
+    "id" : "19b131bd-352d-d466-3b5b-1995311988f4",
+    "name" : "top_padding",
+    "label" : "Top Padding",
+    "required" : false,
+    "locked" : true,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 100,
+    "step" : 1,
+    "type" : "number",
+    "default" : 50
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "items" : [ {
+      "cta" : "523f7d2d-991b-4e20-bd3b-33de5aa35bb4",
+      "background_color" : {
+        "color" : "#FFF",
+        "opacity" : 100
+      },
+      "color" : {
+        "color" : "#FFF",
+        "opacity" : 100
+      },
+      "icon" : { },
+      "size" : "medium",
+      "style" : "outline",
+      "full_width" : false
+    } ],
+    "cta_alignment" : "left",
+    "top_padding" : 50
+  }
+}, {
+  "id" : "405bdd87-9eb8-0577-a889-657a50f09f1f",
+  "name" : "styling",
+  "label" : "Styling",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d6fe7e58-8120-943a-a71e-01c7d719d8e8",
+    "name" : "animate_content",
+    "label" : "Animate Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "f2fa4f55-feae-cf85-52bb-a86eab662b88",
+    "name" : "top_padding",
+    "label" : "Top Padding",
+    "help_text" : "Amount of padding (in pixels) at the top of the module",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 200,
+    "step" : 1,
+    "type" : "number",
+    "default" : 120
+  }, {
+    "id" : "e1852ba7-24ca-7265-4d9f-a23886620fea",
+    "name" : "bottom_padding",
+    "label" : "Bottom Padding",
+    "help_text" : "Amount of padding (in pixels) at the bottom of the module",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 200,
+    "step" : 1,
+    "type" : "number",
+    "default" : 120
+  }, {
+    "id" : "15f54733-5e2e-d0c8-4213-021cddf3a01c",
+    "name" : "text_color",
+    "label" : "Text Color",
+    "help_text" : "Sets the module text color. 'Black' will set the module to your usual color for text.",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "placeholder" : "Select module text color...",
+    "choices" : [ [ "inherit", "Black" ], [ "#fff", "White" ] ],
+    "type" : "choice",
+    "default" : "#fff"
+  }, {
+    "id" : "3eb01cef-6af5-0304-4868-e0d2e93347cd",
+    "name" : "background_type",
+    "label" : "Background Type",
+    "help_text" : "Choose the type of module background",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "placeholder" : "",
+    "choices" : [ [ "color", "Color" ], [ "image", "Image" ], [ "video", "Video" ] ],
+    "type" : "choice",
+    "default" : "image"
+  }, {
+    "id" : "2c9c2004-562e-2e2b-0311-2e52e35f4c23",
+    "name" : "background_color",
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "3eb01cef-6af5-0304-4868-e0d2e93347cd",
+      "controlling_value_regex" : "color",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#FFF",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "7cf3b60b-ab2b-67f8-4925-dcf77e0c1316",
+    "name" : "background_color_alt",
+    "label" : "Background Overlay",
+    "help_text" : "This covers the background image and video with a solid color. Adjust the transparency as needed.",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "3eb01cef-6af5-0304-4868-e0d2e93347cd",
+      "controlling_value_regex" : "color",
+      "operator" : "NOT_EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#0F0F0F",
+      "opacity" : 5
+    }
+  }, {
+    "id" : "0650d0e0-5fb5-23d8-4c6e-e3f8c7aa63ce",
+    "name" : "background_image",
+    "label" : "Background Image",
+    "help_text" : "Image should be roughly 1920px wide to ensure it displays nicely on larger screens. The image will fill the available background space regardless.",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "3eb01cef-6af5-0304-4868-e0d2e93347cd",
+      "controlling_value_regex" : "image",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/281278/HubBlox/Images/Hero/bg_blue-waves.jpg",
+      "alt" : "bg_blue-waves",
+      "width" : null,
+      "height" : null
+    }
+  }, {
+    "id" : "808bb61c-fd55-c106-adf6-150dc2fce1e9",
+    "name" : "video_placeholder",
+    "label" : "Video Placeholder",
+    "help_text" : "Image should be roughly 1920px wide to ensure it displays nicely on larger screens. The image will fill the available background space regardless.",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "3eb01cef-6af5-0304-4868-e0d2e93347cd",
+      "controlling_value_regex" : "video",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/281278/HubBlox/Images/Hero/placeholder-bgvid.jpg",
+      "alt" : "placeholder-bgvid",
+      "width" : 1920,
+      "height" : 1080
+    }
+  }, {
+    "id" : "b4f29453-dce8-a64b-f0bf-6fe46522a98b",
+    "name" : "background_position",
+    "label" : "Background Position",
+    "help_text" : "This sets the starting position for the background image. The first value is the horizontal position and the second value is the vertical.",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "3eb01cef-6af5-0304-4868-e0d2e93347cd",
+      "controlling_value_regex" : "image",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "display" : "select",
+    "placeholder" : "Choose background position...",
+    "choices" : [ [ "left top", "Left Top" ], [ "left center", "Left Center" ], [ "left bottom", "Left Bottom" ], [ "right top", "Right Top" ], [ "right center", "Right Center" ], [ "right bottom", "Right Bottom" ], [ "center top", "Center Top" ], [ "center center", "Center Center" ], [ "center bottom", "Center Bottom" ] ],
+    "type" : "choice",
+    "default" : "center center"
+  }, {
+    "id" : "fa43cce4-e394-a67e-07ca-76a338e1ecde",
+    "name" : "parallax_background",
+    "label" : "Parallax background?",
+    "help_text" : "This will apply a parallax effect to the background image",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "3eb01cef-6af5-0304-4868-e0d2e93347cd",
+      "controlling_value_regex" : "image",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "d28316fa-5f85-5a18-ec3d-70f161b9efdd",
+    "name" : "video_url",
+    "label" : "Video URL",
+    "help_text" : "Youtube URL",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "3eb01cef-6af5-0304-4868-e0d2e93347cd",
+      "controlling_value_regex" : "video",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "allow_new_line" : true,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "https://www.youtube.com/watch?v=_bNRCwzUUIE"
+  }, {
+    "id" : "ea9b1456-3e59-226b-323e-567690ffd393",
+    "name" : "mute_video",
+    "label" : "Mute video?",
+    "help_text" : "Check this box to mute the background video",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "3eb01cef-6af5-0304-4868-e0d2e93347cd",
+      "controlling_value_regex" : "video",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "b7490813-a7ae-61a6-32dd-ad186048da4a",
+    "name" : "loop_video",
+    "label" : "Loop video?",
+    "help_text" : "Check to this box to play the background video on a loop",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "3eb01cef-6af5-0304-4868-e0d2e93347cd",
+      "controlling_value_regex" : "video",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "animate_content" : true,
+    "top_padding" : 120,
+    "bottom_padding" : 120,
+    "text_color" : "#fff",
+    "background_type" : "image",
+    "background_color" : {
+      "color" : "#FFF",
+      "opacity" : 100
+    },
+    "background_color_alt" : {
+      "color" : "#0F0F0F",
+      "opacity" : 5
+    },
+    "background_image" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/281278/HubBlox/Images/Hero/bg_blue-waves.jpg",
+      "alt" : "bg_blue-waves",
+      "width" : null,
+      "height" : null
+    },
+    "video_placeholder" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/281278/HubBlox/Images/Hero/placeholder-bgvid.jpg",
+      "alt" : "placeholder-bgvid",
+      "width" : 1920,
+      "height" : 1080
+    },
+    "background_position" : "center center",
+    "parallax_background" : false,
+    "video_url" : "https://www.youtube.com/watch?v=_bNRCwzUUIE",
+    "mute_video" : true,
+    "loop_video" : true
+  }
+} ]

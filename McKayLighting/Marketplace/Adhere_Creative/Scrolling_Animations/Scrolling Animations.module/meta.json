@@ -1,0 +1,29 @@
+{
+  "content_tags" : [ {
+    "name" : "INTERACTION",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "LAYOUT",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "MULTIMEDIA",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "COMPATIBLE_PAGE",
+    "source" : "MARKETPLACE"
+  } ],
+  "global" : false,
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 7007589,
+  "css_assets" : [ {
+    "url" : "https://www.adherecreative.com/hubfs/hs_marketplace_assets/modules/Scrolling%20Animations/2/aos.css",
+    "autoload" : true,
+    "name" : "aos.css"
+  } ],
+  "js_assets" : [ {
+    "url" : "https://www.adherecreative.com/hubfs/hs_marketplace_assets/modules/Scrolling%20Animations/2/aos.js",
+    "autoload" : true,
+    "name" : "aos.js"
+  } ],
+  "is_available_for_new_content" : true
+}

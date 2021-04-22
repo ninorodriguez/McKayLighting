@@ -1,0 +1,1277 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Marketplace/Inbound_Pixels/Landing_Img/Coded_Files/reset.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/Marketplace/Inbound_Pixels/Landing_Img/Coded_Files/Apollo.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/Coded files/Custom/page/McKay_Landscape_Lighting_Sept2016-theme/McKay_Landscape_Lighting_Sept2016-modules.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/Coded files/Custom/page/McKay_Landscape_Lighting_Sept2016-theme/McKay_Landscape_Lighting_Sept2016-style.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/Coded files/Custom/page/custom-stylemanager/Mckaylighting Theme.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1486531594007606",
+        "label" : "Custom HubL",
+        "type" : "raw_jinja",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "overrideable" : false,
+          "starting_html" : "",
+          "value" : "{% color \"color_primary\" label=\"Primary Color. Leave blank for the default value.\",  color=\"\", export_to_template_context=true, no_wrapper=true %}\n<style>\n    {%- if widget_data.color_primary.color|trim != \"\" -%}\n        {% set colorPrimary = widget_data.color_primary.color %}\n        a {\n            color: {{ colorPrimary }};\n        }\n        .hero,.testimonial {\n            background: {{ colorPrimary }}; \n        }\n        .features h4 {\n          color: {{ colorPrimary }};\n        }\n    {%- endif -%}\n</style>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_148000554291224",
+        "label" : "Hero",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "hero",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "overrideable" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1540920341812595",
+            "label" : "Banner test",
+            "type" : "global_group",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false,
+              "path" : "/Marketplace/HubSpot/Stratus_HubTheme/Templates/Banner test.template.json"
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_148000554790326",
+            "label" : "Container",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "container",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "ending_html" : "",
+              "overrideable" : false,
+              "starting_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 3,
+                "name" : "logo",
+                "label" : "Logo",
+                "type" : "logo",
+                "params" : {
+                  "alt" : "ApolloWhite.png",
+                  "height" : 105,
+                  "img" : {
+                    "alt" : "ApolloWhite.png",
+                    "height" : 105,
+                    "override_inherited_src" : true,
+                    "src" : "http://cdn2.hubspot.net/hubfs/2500081/Apollo/ApolloWhite.png",
+                    "suppress_company_name" : false,
+                    "width" : 105
+                  },
+                  "img_alt" : "ApolloWhite.png",
+                  "img_load_error" : false,
+                  "open_in_new_tab" : false,
+                  "original_height" : 105,
+                  "original_width" : 105,
+                  "override_inherited_src" : true,
+                  "overrideable" : true,
+                  "src" : "http://cdn2.hubspot.net/hubfs/2500081/Apollo/ApolloWhite.png",
+                  "suppress_company_name" : false,
+                  "width" : 105
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "3" : {
+                "x" : 3,
+                "w" : 9,
+                "name" : "module_148000553885722",
+                "label" : "Email",
+                "type" : "text",
+                "params" : {
+                  "css_class" : "email",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "overrideable" : true,
+                  "starting_html" : "",
+                  "value" : "inboundpixels@gmail.com"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "email",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1480018962355529",
+                "label" : "Module Group",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "overrideable" : false,
+                  "starting_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_148000558906127",
+                    "label" : "Rich Text",
+                    "type" : "rich_text",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "ending_html" : "",
+                      "html" : "<h1>It’s All About Your Company</h1>\n<p>Every landing page needs a small description after the big bold title, thats why we added this text here. Add here all the information that can make you or your company create the first impression.</p>",
+                      "overrideable" : true,
+                      "starting_html" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1480018962356530",
+                    "label" : "Call-to-Action",
+                    "type" : "cta",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "embed_code" : "<!--HubSpot Call-to-Action Code -->\n<span class=\"hs-cta-wrapper\" id=\"hs-cta-wrapper-3500136c-9d89-45cd-af06-038d41454661\">\n    <span class=\"hs-cta-node hs-cta-3500136c-9d89-45cd-af06-038d41454661\" id=\"hs-cta-3500136c-9d89-45cd-af06-038d41454661\">\n        <!--[if lte IE 8]><div id=\"hs-cta-ie-element\"></div><![endif]-->\n        <a href=\"http://cta-redirect.hubspot.com/cta/redirect/319325/3500136c-9d89-45cd-af06-038d41454661\" ><img class=\"hs-cta-img\" id=\"hs-cta-img-3500136c-9d89-45cd-af06-038d41454661\" style=\"border-width:0px;\" src=\"https://no-cache.hubspot.com/cta/default/319325/3500136c-9d89-45cd-af06-038d41454661.png\"  alt=\"CALL TO ACTION\"/></a>\n    </span>\n    <script charset=\"utf-8\" src=\"https://js.hscta.net/cta/current.js\"></script>\n    <script type=\"text/javascript\">\n        hbspt.cta.load(319325, '3500136c-9d89-45cd-af06-038d41454661', {});\n    </script>\n</span>\n<!-- end HubSpot Call-to-Action Code -->\n",
+                      "ending_html" : "",
+                      "guid" : "3500136c-9d89-45cd-af06-038d41454661",
+                      "image_html" : "<!--HubSpot Call-to-Action Code -->\n<span class=\"hs-cta-wrapper\" data-hs-img-pg=\"3500136c-9d89-45cd-af06-038d41454661\" id=\"hs-cta-wrapper-3500136c-9d89-45cd-af06-038d41454661\">\n    <span class=\"hs-cta-node hs-cta-3500136c-9d89-45cd-af06-038d41454661\" id=\"hs-cta-3500136c-9d89-45cd-af06-038d41454661\">\n        <a href=\"http://cta-image-cms2.hubspot.com/ctas/v2/public/cs/ci/?pg=3500136c-9d89-45cd-af06-038d41454661&pid=319325&ecid={{encrypted_contact_id}}\" > <img class=\"hs-cta-img\" id=\"hs-cta-img-3500136c-9d89-45cd-af06-038d41454661\" style=\"border-width:0px;\" mce_noresize=\"1\" src=\"http://cta-image-cms2.hubspot.com/ctas/v2/public/cs/il/?pg=3500136c-9d89-45cd-af06-038d41454661&pid=319325&ecid={{encrypted_contact_id}}\"  alt=\"CALL TO ACTION\"/></a>\n    </span>\n</span>\n<!-- end HubSpot Call-to-Action Code -->\n",
+                      "image_src" : "https://no-cache.hubspot.com/cta/default/319325/3500136c-9d89-45cd-af06-038d41454661.png",
+                      "overrideable" : true,
+                      "starting_html" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "container",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "hero",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_148000562454035",
+        "label" : "Features",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "features",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "overrideable" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_148000562768137",
+            "label" : "Container",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "container",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "ending_html" : "",
+              "overrideable" : false,
+              "starting_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 4,
+                "name" : "module_1480091711492603",
+                "label" : "Module Group",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "overrideable" : false,
+                  "starting_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_148000561669531",
+                    "label" : "Icon",
+                    "type" : "linked_image",
+                    "params" : {
+                      "alt" : "paper-plane.png",
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "ending_html" : "",
+                      "height" : 512,
+                      "img" : {
+                        "alt" : "paper-plane.png",
+                        "height" : 512,
+                        "src" : "http://cdn2.hubspot.net/hubfs/2500081/Apollo/Icons/paper-plane.png",
+                        "width" : 512
+                      },
+                      "img_alt" : "paper-plane.png",
+                      "img_load_error" : false,
+                      "link" : "",
+                      "open_in_new_tab" : false,
+                      "original_height" : 512,
+                      "original_width" : 512,
+                      "overrideable" : true,
+                      "src" : "http://cdn2.hubspot.net/hubfs/2500081/Apollo/Icons/paper-plane.png",
+                      "starting_html" : "",
+                      "width" : 512
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1480091711493604",
+                    "label" : "Rich Text",
+                    "type" : "rich_text",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "ending_html" : "",
+                      "html" : "<h4>Lightning Fast</h4>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+                      "overrideable" : true,
+                      "starting_html" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "4" : {
+                "x" : 4,
+                "w" : 4,
+                "name" : "module_148009189235337",
+                "label" : "Module Group",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "overrideable" : false,
+                  "starting_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_148000567570939",
+                    "label" : "Icon",
+                    "type" : "linked_image",
+                    "params" : {
+                      "alt" : "search.png",
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "ending_html" : "",
+                      "height" : 512,
+                      "img" : {
+                        "alt" : "search.png",
+                        "height" : 512,
+                        "src" : "http://cdn2.hubspot.net/hubfs/2500081/Apollo/Icons/search.png",
+                        "width" : 512
+                      },
+                      "img_alt" : "search.png",
+                      "img_load_error" : false,
+                      "link" : "",
+                      "open_in_new_tab" : false,
+                      "original_height" : 512,
+                      "original_width" : 512,
+                      "overrideable" : true,
+                      "src" : "http://cdn2.hubspot.net/hubfs/2500081/Apollo/Icons/search.png",
+                      "starting_html" : "",
+                      "width" : 512
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_148009189235338",
+                    "label" : "Rich Text",
+                    "type" : "rich_text",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "ending_html" : "",
+                      "html" : "<h4>SEO Optimized</h4>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+                      "overrideable" : true,
+                      "starting_html" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "8" : {
+                "x" : 8,
+                "w" : 4,
+                "name" : "module_148009190100741",
+                "label" : "Module Group",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "overrideable" : false,
+                  "starting_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_148000567469138",
+                    "label" : "Icon",
+                    "type" : "linked_image",
+                    "params" : {
+                      "alt" : "tools.png",
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "ending_html" : "",
+                      "height" : 512,
+                      "img" : {
+                        "alt" : "tools.png",
+                        "height" : 512,
+                        "src" : "http://cdn2.hubspot.net/hubfs/2500081/Apollo/Icons/tools.png",
+                        "width" : 512
+                      },
+                      "img_alt" : "tools.png",
+                      "img_load_error" : false,
+                      "link" : "",
+                      "open_in_new_tab" : false,
+                      "original_height" : 512,
+                      "original_width" : 512,
+                      "overrideable" : true,
+                      "src" : "http://cdn2.hubspot.net/hubfs/2500081/Apollo/Icons/tools.png",
+                      "starting_html" : "",
+                      "width" : 512
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_148009190100742",
+                    "label" : "Rich Text",
+                    "type" : "rich_text",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "ending_html" : "",
+                      "html" : "<h4>Fully Customizable</h4>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+                      "overrideable" : true,
+                      "starting_html" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 4,
+                "name" : "module_148009190472745",
+                "label" : "Module Group",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "overrideable" : false,
+                  "starting_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_148000568512840",
+                    "label" : "Icon",
+                    "type" : "linked_image",
+                    "params" : {
+                      "alt" : "video-player.png",
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "ending_html" : "",
+                      "height" : 512,
+                      "img" : {
+                        "alt" : "video-player.png",
+                        "height" : 512,
+                        "src" : "http://cdn2.hubspot.net/hubfs/2500081/Apollo/Icons/video-player.png",
+                        "width" : 512
+                      },
+                      "img_alt" : "video-player.png",
+                      "img_load_error" : false,
+                      "link" : "",
+                      "open_in_new_tab" : false,
+                      "original_height" : 512,
+                      "original_width" : 512,
+                      "overrideable" : true,
+                      "src" : "http://cdn2.hubspot.net/hubfs/2500081/Apollo/Icons/video-player.png",
+                      "starting_html" : "",
+                      "width" : 512
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_148009190472746",
+                    "label" : "Rich Text",
+                    "type" : "rich_text",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "ending_html" : "",
+                      "html" : "<h4>Video Ready</h4>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+                      "overrideable" : true,
+                      "starting_html" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "4" : {
+                "x" : 4,
+                "w" : 4,
+                "name" : "module_148009190772849",
+                "label" : "Module Group",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "overrideable" : false,
+                  "starting_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_148000568716643",
+                    "label" : "Icon",
+                    "type" : "linked_image",
+                    "params" : {
+                      "alt" : "testing.png",
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "ending_html" : "",
+                      "height" : 512,
+                      "img" : {
+                        "alt" : "testing.png",
+                        "height" : 512,
+                        "src" : "http://cdn2.hubspot.net/hubfs/2500081/Apollo/Icons/testing.png",
+                        "width" : 512
+                      },
+                      "img_alt" : "testing.png",
+                      "img_load_error" : false,
+                      "link" : "",
+                      "open_in_new_tab" : false,
+                      "original_height" : 512,
+                      "original_width" : 512,
+                      "overrideable" : true,
+                      "src" : "http://cdn2.hubspot.net/hubfs/2500081/Apollo/Icons/testing.png",
+                      "starting_html" : "",
+                      "width" : 512
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_148009190772950",
+                    "label" : "Rich Text",
+                    "type" : "rich_text",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "ending_html" : "",
+                      "html" : "<h4>A / B Tested</h4>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+                      "overrideable" : true,
+                      "starting_html" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "8" : {
+                "x" : 8,
+                "w" : 4,
+                "name" : "module_148009190989153",
+                "label" : "Module Group",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "overrideable" : false,
+                  "starting_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_148000568600142",
+                    "label" : "Icon",
+                    "type" : "linked_image",
+                    "params" : {
+                      "alt" : "competition.png",
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "ending_html" : "",
+                      "height" : 512,
+                      "img" : {
+                        "alt" : "competition.png",
+                        "height" : 512,
+                        "src" : "http://cdn2.hubspot.net/hubfs/2500081/Apollo/Icons/competition.png",
+                        "width" : 512
+                      },
+                      "img_alt" : "competition.png",
+                      "img_load_error" : false,
+                      "link" : "",
+                      "open_in_new_tab" : false,
+                      "original_height" : 512,
+                      "original_width" : 512,
+                      "overrideable" : true,
+                      "src" : "http://cdn2.hubspot.net/hubfs/2500081/Apollo/Icons/competition.png",
+                      "starting_html" : "",
+                      "width" : 512
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_148009190989154",
+                    "label" : "Rich Text",
+                    "type" : "rich_text",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "ending_html" : "",
+                      "html" : "<h4>Award Winning</h4>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+                      "overrideable" : true,
+                      "starting_html" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "container",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "features",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_148000579742748",
+        "label" : "Copy",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "copy",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "overrideable" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_148000580234450",
+            "label" : "Container",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "container",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "ending_html" : "",
+              "overrideable" : false,
+              "starting_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 6,
+                "name" : "module_148000578963444",
+                "label" : "Rich Text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "html" : "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</p>\n<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>",
+                  "overrideable" : true,
+                  "starting_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "6" : {
+                "x" : 6,
+                "w" : 6,
+                "name" : "module_148000587259954",
+                "label" : "Rich Text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "html" : "<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>\n<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>\n<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>",
+                  "overrideable" : true,
+                  "starting_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "container",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "copy",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_148000588046256",
+        "label" : "Testimonial",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "testimonial",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "overrideable" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_148000588326658",
+            "label" : "Container",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "container",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "ending_html" : "",
+              "overrideable" : false,
+              "starting_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 3,
+                "name" : "module_1480097376167709",
+                "label" : "Horizontal Spacer",
+                "type" : "space",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "overrideable" : true,
+                  "starting_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "3" : {
+                "x" : 3,
+                "w" : 6,
+                "name" : "module_148000586242851",
+                "label" : "Testimonial",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "overrideable" : true,
+                  "schema_version" : 1,
+                  "starting_html" : "",
+                  "widget_name" : "Testimonial",
+                  "path" : "/Marketplace/Inbound_Pixels/Landing_Img/Custom_Modules/Testimonial"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "9" : {
+                "x" : 9,
+                "w" : 3,
+                "name" : "module_1480097378904710",
+                "label" : "Horizontal Spacer",
+                "type" : "space",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "overrideable" : true,
+                  "starting_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "container",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "testimonial",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_148000592304263",
+        "label" : "CTA",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "cta",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "overrideable" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_148000592974365",
+            "label" : "Container",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "container",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "ending_html" : "",
+              "overrideable" : false,
+              "starting_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_148000591716159",
+                "label" : "Rich Text",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "html" : "<h2>Final CTA</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+                  "overrideable" : true,
+                  "starting_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_148000600649666",
+                "label" : "Call-to-Action",
+                "type" : "cta",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "embed_code" : "<!--HubSpot Call-to-Action Code -->\n<span class=\"hs-cta-wrapper\" id=\"hs-cta-wrapper-9e2cc3ff-b824-42c6-aa89-012f127122d8\">\n    <span class=\"hs-cta-node hs-cta-9e2cc3ff-b824-42c6-aa89-012f127122d8\" id=\"hs-cta-9e2cc3ff-b824-42c6-aa89-012f127122d8\">\n        <!--[if lte IE 8]><div id=\"hs-cta-ie-element\"></div><![endif]-->\n        <a href=\"http://cta-redirect.hubspot.com/cta/redirect/319325/9e2cc3ff-b824-42c6-aa89-012f127122d8\" ><img class=\"hs-cta-img\" id=\"hs-cta-img-9e2cc3ff-b824-42c6-aa89-012f127122d8\" style=\"border-width:0px;\" src=\"https://no-cache.hubspot.com/cta/default/319325/9e2cc3ff-b824-42c6-aa89-012f127122d8.png\"  alt=\"CALL TO ACTION\"/></a>\n    </span>\n    <script charset=\"utf-8\" src=\"https://js.hscta.net/cta/current.js\"></script>\n    <script type=\"text/javascript\">\n        hbspt.cta.load(319325, '9e2cc3ff-b824-42c6-aa89-012f127122d8', {});\n    </script>\n</span>\n<!-- end HubSpot Call-to-Action Code -->\n",
+                  "ending_html" : "",
+                  "guid" : "9e2cc3ff-b824-42c6-aa89-012f127122d8",
+                  "image_html" : "<!--HubSpot Call-to-Action Code -->\n<span class=\"hs-cta-wrapper\" data-hs-img-pg=\"9e2cc3ff-b824-42c6-aa89-012f127122d8\" id=\"hs-cta-wrapper-9e2cc3ff-b824-42c6-aa89-012f127122d8\">\n    <span class=\"hs-cta-node hs-cta-9e2cc3ff-b824-42c6-aa89-012f127122d8\" id=\"hs-cta-9e2cc3ff-b824-42c6-aa89-012f127122d8\">\n        <a href=\"http://cta-image-cms2.hubspot.com/ctas/v2/public/cs/ci/?pg=9e2cc3ff-b824-42c6-aa89-012f127122d8&pid=319325&ecid={{encrypted_contact_id}}\" > <img class=\"hs-cta-img\" id=\"hs-cta-img-9e2cc3ff-b824-42c6-aa89-012f127122d8\" style=\"border-width:0px;\" mce_noresize=\"1\" src=\"http://cta-image-cms2.hubspot.com/ctas/v2/public/cs/il/?pg=9e2cc3ff-b824-42c6-aa89-012f127122d8&pid=319325&ecid={{encrypted_contact_id}}\"  alt=\"CALL TO ACTION\"/></a>\n    </span>\n</span>\n<!-- end HubSpot Call-to-Action Code -->\n",
+                  "image_src" : "https://no-cache.hubspot.com/cta/default/319325/9e2cc3ff-b824-42c6-aa89-012f127122d8.png",
+                  "overrideable" : true,
+                  "starting_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "container",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "cta",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_148000602643270",
+        "label" : "Landing/Landing Img Footer",
+        "type" : "global_group",
+        "params" : {
+          "css_class" : "footer",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "overrideable" : false,
+          "path" : "/Marketplace/Inbound_Pixels/Landing_Img/Templates/Landing/Landing Img Footer.template.json",
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "footer",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

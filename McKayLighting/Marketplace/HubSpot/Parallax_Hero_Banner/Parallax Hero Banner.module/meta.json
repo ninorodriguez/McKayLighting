@@ -1,0 +1,22 @@
+{
+  "content_tags" : [ {
+    "name" : "HEADERS",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "BANNER",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "COMPATIBLE_PAGE",
+    "source" : "MARKETPLACE"
+  } ],
+  "global" : false,
+  "icon" : "https://cdn2.hubspot.net/hubfs/298884/Module%20Icons/header-01.svg",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 4226032,
+  "js_assets" : [ {
+    "url" : "https://design-assets.hubspot.com/hubfs/Assets/Paraxify/paraxify.min.js",
+    "autoload" : true,
+    "name" : "paraxify.min.js"
+  } ],
+  "is_available_for_new_content" : true
+}

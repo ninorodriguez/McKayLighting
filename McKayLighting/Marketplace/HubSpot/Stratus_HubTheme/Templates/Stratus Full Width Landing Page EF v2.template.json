@@ -1,0 +1,812 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Marketplace/HubSpot/Stratus_HubTheme/Coded_Files/stratus-style_mckay.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "<style>\n body {\n background-color: #1f1f1f;\n }\n </style>",
+  "customFooter" : "",
+  "bodyClass" : "landing-page one-column",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "Stratus Theme/Header - No Navigation",
+        "label" : "Stratus Theme/Header - No Navigation",
+        "type" : "global_group",
+        "params" : {
+          "css_class" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "path" : "/Marketplace/HubSpot/Stratus_HubTheme/Templates/Stratus Theme/Stratus Header - No Navigation.template.json"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_140787426930528178",
+        "label" : "Banner test",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "banner",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1541013764928511",
+            "label" : "Image",
+            "type" : "linked_image",
+            "params" : {
+              "alt" : "Educational Facility Outdoor Lighting Omaha Nebraska McKay Landscape Lighting DA 03-963222-edited",
+              "css_class" : "banner-image",
+              "css_style" : "text-align: center",
+              "height" : 643,
+              "img" : {
+                "alt" : "Educational Facility Outdoor Lighting Omaha Nebraska McKay Landscape Lighting DA 03-963222-edited",
+                "height" : 643,
+                "src" : "https://cdn2.hubspot.net/hubfs/319325/Project%20Photos%20/Duchesne%20Academy/Educational%20Facility%20Outdoor%20Lighting%20Omaha%20Nebraska%20McKay%20Landscape%20Lighting%20DA%2003-963222-edited.jpg",
+                "width" : 2000
+              },
+              "link" : "",
+              "open_in_new_tab" : false,
+              "overrideable" : false,
+              "src" : "https://cdn2.hubspot.net/hubfs/319325/Project%20Photos%20/Duchesne%20Academy/Educational%20Facility%20Outdoor%20Lighting%20Omaha%20Nebraska%20McKay%20Landscape%20Lighting%20DA%2003-963222-edited.jpg",
+              "width" : 2000,
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "banner-image",
+            "cssStyle" : "text-align: center",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1541013764928512",
+            "label" : "Banner Text",
+            "type" : "rich_text",
+            "params" : {
+              "css_class" : "banner-text page-center",
+              "css_style" : "",
+              "html" : "<h4><em>Beautifully Enhance &amp;&nbsp; Increase Security of Your&nbsp;</em></h4>\n<h1>EDUCATIONAL FACILITY</h1>",
+              "overrideable" : false,
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "banner-text page-center",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "banner",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1540921767681670",
+        "label" : "Module group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "background: #1f1f1f; background-image: url(\"https://cdn2.hubspot.net/hubfs/319325/Mckay_Landscape_Lighting_Sept2016_Theme/Images/Misc/slate-texture.jpg\");     background-repeat: repeat; ",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_13885006495507970",
+            "label" : "Page Center, Content Wrapper",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "page-center content-wrapper padding80tb;",
+              "css_id" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "value" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_13885006758448185",
+                "label" : "Main Content",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "main-content",
+                  "css_id" : "",
+                  "css_style" : "",
+                  "overrideable" : false,
+                  "per_widget_wrapper_html" : "",
+                  "value" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1395325010670284",
+                    "label" : "Column",
+                    "type" : "widget_container",
+                    "params" : {
+                      "css_style" : "padding: 25px; text-align: center;",
+                      "overrideable" : false,
+                      "value" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "padding: 25px; text-align: center;",
+                    "styles" : null,
+                    "widgets" : [ {
+                      "x" : 0,
+                      "w" : 12,
+                      "name" : "module_13885011246079525",
+                      "label" : "Rich Text",
+                      "type" : "rich_text",
+                      "params" : {
+                        "html" : "<h1 style=\"text-align: center;\">Landscape Lighting for Educational Facilities&nbsp;</h1>\n<h2 style=\"text-align: center;\"><span style=\"color: #ffc036;\">Illuminate campus grounds, buildings, and unique features</span></h2>\n<p style=\"text-align: center;\">When your educational property needs expertly lit to provide enhance appeal, provide function, while increasing security, leave it to McKay Landscape Lighting. Our team of experts has the years of experience to beautifully enhance the campus grounds, distinctive facades, and colorful landscapes with professionally designed low-voltage lighting. Students, parents, and guests will feel more welcome and secure on a well-illuminated property. &nbsp;</p>",
+                        "overrideable" : true
+                      },
+                      "rows" : [ ],
+                      "rowMetaData" : [ ],
+                      "cells" : [ ],
+                      "cssId" : "",
+                      "cssClass" : "",
+                      "cssStyle" : "",
+                      "styles" : null,
+                      "widgets" : [ ]
+                    } ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1541177135978645",
+                    "label" : "Ark Features 01",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "content" : {
+                        "features_repeater" : [ {
+                          "short_description_text" : "Curabitur et pretium mi. Cras nec urna ut magna vehicula.",
+                          "title" : "Enhance Appeal"
+                        }, {
+                          "short_description_text" : "Curabitur et pretium mi. Cras nec urna ut magna vehicula.",
+                          "title" : "Increase Security & Safety"
+                        }, {
+                          "icon" : {
+                            "name" : "snowflake",
+                            "type" : "REGULAR",
+                            "unicode" : "f2dc"
+                          },
+                          "short_description_text" : "Curabitur et pretium mi. Cras nec urna ut magna vehicula.",
+                          "title" : "Transform Outdoor Areas"
+                        }, {
+                          "icon" : {
+                            "name" : "snowflake",
+                            "type" : "REGULAR",
+                            "unicode" : "f2dc"
+                          },
+                          "short_description_text" : "Curabitur et pretium mi. Cras nec urna ut magna vehicula.",
+                          "title" : "Save Energy"
+                        }, {
+                          "icon" : {
+                            "name" : "snowflake",
+                            "type" : "REGULAR",
+                            "unicode" : "f2dc"
+                          },
+                          "short_description_text" : "Curabitur et pretium mi. Cras nec urna ut magna vehicula.",
+                          "title" : "Features Title"
+                        } ],
+                        "features_repeater_settings" : {
+                          "choose_image_or_icon" : "image",
+                          "features_repeater_grid" : "three-column",
+                          "icon_color_and_opacity" : {
+                            "color" : "#fffff",
+                            "opacity" : 70
+                          }
+                        },
+                        "section_footer" : {
+                          "enable_section_footer" : false,
+                          "section_footer_text" : "<p class=\"ark-text-align-center\">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>\n<p class=\"ark-text-align-center\"><a class=\"ark-btn ark-btn-primary\" href=\"#\">Read More</a></p>"
+                        },
+                        "section_intro" : {
+                          "description_text" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque gravida gravida. Duis ullamcorper justo arcu, id tempor massa molestie vel. Sed in felis ac massa feugiat.</p>",
+                          "enable_intro" : false,
+                          "heading_size" : "h2",
+                          "heading_text" : "Ark Features 01",
+                          "sub_heading_text" : "The Marvelous"
+                        }
+                      },
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "overrideable" : true,
+                      "per_widget_wrapper_html" : "",
+                      "schema_version" : 2,
+                      "settings" : {
+                        "background_setting" : {
+                          "solid_color" : {
+                            "color" : "#0",
+                            "opacity" : 0
+                          }
+                        },
+                        "typography" : {
+                          "font_color" : "white"
+                        }
+                      },
+                      "widget_name" : "Ark Features 01",
+                      "wrapping_html" : "",
+                      "path" : "/Marketplace/GiantFocal/Ark_Features_01/Ark Features 01"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_15411777322611079",
+                    "label" : "Features Module group",
+                    "type" : "cell",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "display: none; text-align: center; padding-bottom: 50px;",
+                      "overrideable" : false,
+                      "per_widget_wrapper_html" : "",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 1,
+                        "name" : "module_15411790391212785",
+                        "label" : "Horizontal Spacer",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "overrideable" : false,
+                          "per_widget_wrapper_html" : "",
+                          "schema_version" : 2,
+                          "widget_name" : "Horizontal Spacer",
+                          "wrapping_html" : "",
+                          "path" : "@hubspot/horizontal_spacer"
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      },
+                      "11" : {
+                        "x" : 11,
+                        "w" : 1,
+                        "name" : "module_15411790364092784",
+                        "label" : "Horizontal Spacer",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "overrideable" : false,
+                          "per_widget_wrapper_html" : "",
+                          "schema_version" : 2,
+                          "widget_name" : "Horizontal Spacer",
+                          "wrapping_html" : "",
+                          "path" : "@hubspot/horizontal_spacer"
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      },
+                      "1" : {
+                        "x" : 1,
+                        "w" : 5,
+                        "name" : "module_1541176428735451",
+                        "label" : "Section Header",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "text-align: center;",
+                          "header" : "<h2>Enhance Appeal<h2>",
+                          "overrideable" : true,
+                          "per_widget_wrapper_html" : "",
+                          "schema_version" : 2,
+                          "widget_name" : "Section Header",
+                          "wrapping_html" : "",
+                          "path" : "@hubspot/section_header"
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "text-align: center;",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      },
+                      "6" : {
+                        "x" : 6,
+                        "w" : 5,
+                        "name" : "module_1541176431857453",
+                        "label" : "Section Header",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "text-align: center;",
+                          "header" : "<h2> Save Energy<h2>",
+                          "overrideable" : true,
+                          "per_widget_wrapper_html" : "",
+                          "schema_version" : 2,
+                          "widget_name" : "Section Header",
+                          "wrapping_html" : "",
+                          "path" : "@hubspot/section_header"
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "text-align: center;",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 1,
+                        "name" : "module_15411790443562787",
+                        "label" : "Horizontal Spacer",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "overrideable" : false,
+                          "per_widget_wrapper_html" : "",
+                          "schema_version" : 2,
+                          "widget_name" : "Horizontal Spacer",
+                          "wrapping_html" : "",
+                          "path" : "@hubspot/horizontal_spacer"
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      },
+                      "11" : {
+                        "x" : 11,
+                        "w" : 1,
+                        "name" : "module_15411790420352786",
+                        "label" : "Horizontal Spacer",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "overrideable" : false,
+                          "per_widget_wrapper_html" : "",
+                          "schema_version" : 2,
+                          "widget_name" : "Horizontal Spacer",
+                          "wrapping_html" : "",
+                          "path" : "@hubspot/horizontal_spacer"
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      },
+                      "1" : {
+                        "x" : 1,
+                        "w" : 5,
+                        "name" : "module_1541176435934454",
+                        "label" : "Section Header",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "text-align: center;",
+                          "header" : "<h2>Transform Outdoor Areas<h2>",
+                          "overrideable" : true,
+                          "per_widget_wrapper_html" : "",
+                          "schema_version" : 2,
+                          "widget_name" : "Section Header",
+                          "wrapping_html" : "",
+                          "path" : "@hubspot/section_header"
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "text-align: center;",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      },
+                      "6" : {
+                        "x" : 6,
+                        "w" : 5,
+                        "name" : "module_1541176438601456",
+                        "label" : "Section Header",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "text-align: center;",
+                          "header" : "<h2>Increase Safety & Securiy<h2>",
+                          "overrideable" : true,
+                          "per_widget_wrapper_html" : "",
+                          "schema_version" : 2,
+                          "widget_name" : "Section Header",
+                          "wrapping_html" : "",
+                          "path" : "@hubspot/section_header"
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "text-align: center;",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    } ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "display: none; text-align: center; padding-bottom: 50px;",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "main-content",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ {
+                  "x" : 0,
+                  "w" : 12,
+                  "name" : "module_13885011246079525",
+                  "label" : "Rich Text",
+                  "type" : "rich_text",
+                  "params" : {
+                    "html" : "<h2>Something Powerful</h2>\n<h3>Tell The Reader More</h3>\n<p>The headline and subheader tells us what you're&nbsp;<a href=\"#\">offering</a>, and the form header closes the deal. Over here you can explain why your offer is so great it's worth filling out a form for.</p>\n<p>Remember:</p>\n<ul>\n<li>Bullets are great</li>\n<li>For spelling out&nbsp;<a href=\"#\">benefits</a>&nbsp;and</li>\n<li>Turning visitors into leads.</li>\n</ul>",
+                    "is_in_container" : false,
+                    "overrideable" : true
+                  },
+                  "rows" : [ ],
+                  "rowMetaData" : [ ],
+                  "cells" : [ ],
+                  "cssId" : "",
+                  "cssClass" : "",
+                  "cssStyle" : "",
+                  "styles" : null,
+                  "widgets" : [ ]
+                }, {
+                  "x" : 0,
+                  "w" : 12,
+                  "name" : "module_13885064832664947",
+                  "label" : "Form",
+                  "type" : "form",
+                  "params" : {
+                    "is_in_container" : false,
+                    "notifications_are_overridden" : false,
+                    "notifications_override_email_addresses" : [ ],
+                    "overrideable" : true
+                  },
+                  "rows" : [ ],
+                  "rowMetaData" : [ ],
+                  "cells" : [ ],
+                  "cssId" : "",
+                  "cssClass" : "",
+                  "cssStyle" : "",
+                  "styles" : null,
+                  "widgets" : [ ]
+                } ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "page-center content-wrapper padding80tb;",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_15411792320622813",
+            "label" : "Case Study",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "background-color: #1f1f1f; padding-top: 25px; ",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_15411803483473703",
+                "label" : "Startup Framework - Header 23",
+                "type" : "custom_widget",
+                "params" : {
+                  "background_color" : "#1f1f1f",
+                  "background_opacity" : "0.3",
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "padding 50px; ",
+                  "left_text" : "Explore Our Work",
+                  "overrideable" : true,
+                  "per_widget_wrapper_html" : "",
+                  "right_text" : "Duchesne Academy",
+                  "schema_version" : 2,
+                  "widget_name" : "Startup Framework - Header 23",
+                  "wistia_background_video_id" : "https://vimeo.com/mckaylighting/duchesne",
+                  "wistia_video_id" : "https://vimeo.com/mckaylighting/duchesne",
+                  "wrapping_html" : "",
+                  "path" : "/Marketplace/InboundLabs/Hero_Video_Startup_Framework/Startup Framework - Header 23"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "padding 50px; ",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_154117561576433",
+                "label" : "Tabber copy",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "text-align: center; padding: 50px; ",
+                  "overrideable" : true,
+                  "per_widget_wrapper_html" : "",
+                  "schema_version" : 2,
+                  "tab" : [ {
+                    "content" : "Add some helpful and informative content here.",
+                    "tab_label" : "WHY LIGHT"
+                  }, {
+                    "content" : "Add some helpful and informative content here.",
+                    "tab_label" : "CHALLENGES"
+                  }, {
+                    "content" : "Add some helpful and informative content here.",
+                    "tab_label" : "DESIGN"
+                  }, {
+                    "content" : "<p>Summary. Put some clear and concise content in here. Keep your reader in mind. What are they trying to do? What are they hoping to learn? Why are they reading this? Help them out and use the tone and voice of your organization.</p>\n<p>Annual Energy Savings&nbsp;</p>\n<p>MEDIA EXPOSURE:&nbsp;</p>\n<p>&nbsp;</p>\n<p><span><a class=\"ark-btn ark-btn-primary\" href=\"https://www.mckaylighting.com/www.mckaylighthing.com/Duchesne#\" rel=\" noopener\">SEE PHOTOS OF DUCHESNE</a></span><span>&nbsp;</span></p>",
+                    "tab_label" : "RESULTS"
+                  } ],
+                  "tab_bg_color" : {
+                    "color" : "#0",
+                    "opacity" : 0
+                  },
+                  "tab_text_color" : {
+                    "color" : "#c0c0c0",
+                    "opacity" : 0
+                  },
+                  "widget_name" : "Tabber copy",
+                  "wrapping_html" : "",
+                  "path" : "/Marketplace/HubSpot/Tabber/Tabber copy"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "text-align: center; padding: 50px; ",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "background-color: #1f1f1f; padding-top: 25px; ",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "background: #1f1f1f; background-image: url(&quot;https://cdn2.hubspot.net/hubfs/319325/Mckay_Landscape_Lighting_Sept2016_Theme/Images/Misc/slate-texture.jpg&quot;);     background-repeat: repeat; ",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1541013806437543",
+        "label" : "Footer EF LP",
+        "type" : "global_group",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "path" : "/Global content/Global Groups/McKay_Landscape_Lighting_Sept2016 Theme/Footer EF LP.template.json",
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "Stratus Theme/Footer",
+        "label" : "Stratus Theme/Footer",
+        "type" : "global_group",
+        "params" : {
+          "css_style" : "display: none;",
+          "overrideable" : false,
+          "path" : "/Marketplace/HubSpot/Stratus_HubTheme/Templates/Stratus Theme/Stratus Footer-1540906896929.template.json"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "display: none;",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

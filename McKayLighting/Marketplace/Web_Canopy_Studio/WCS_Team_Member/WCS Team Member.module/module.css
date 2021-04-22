@@ -1,0 +1,144 @@
+.wcs .wcs-team-member-section {
+  padding: 50px 0;
+}
+.wcs .wcs-team-heading {
+  max-width: 650px;
+  margin: 0 auto 50px !important;
+  float: none !important;
+}
+.wcs .wcs-team-member img {
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto 20px !important;
+  float: none !important;
+  text-align: center;
+  border-radius: 50%;
+}
+.wcs .wcs-team-member h1 {
+  text-align: center;
+}
+.wcs .wcs-team-member h2 {
+  text-align: center;
+}
+.wcs .wcs-team-member h3 {
+  text-align: center;
+}
+.wcs .wcs-team-member h4 {
+  text-align: center;
+}
+.wcs .wcs-team-member h5 {
+  text-align: center;
+}
+.wcs .wcs-team-member h6 {
+  text-align: center;
+}
+
+.wcs .wcs-team-member p + p {
+  margin: 0;
+}
+
+.wcs .wcs-member-center {
+  max-width: 900px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: top;
+  -webkit-align-items: top;
+     -moz-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+.wcs .wcs-team-member {
+  margin-bottom: 40px;
+  width: 300px;
+  float: left;
+}
+.wcs .wcs-page-center {
+    max-width: 1000px;
+    margin: 0 auto !important;
+    float: none !important;
+}
+
+/********************************/
+
+.wcs-container {
+  margin: 0 auto !important;
+  float: none !important;
+  padding: 0 20px;
+}
+.wcs-container-fluid {
+  margin: 0 auto !important;
+  float: none !important;
+  padding: 0 20px;
+}
+.wcs-col-1, .wcs-col-2, .wcs-col-3, .wcs-col-4, .wcs-col-5, .wcs-col-6, .wcs-col-7, .wcs-col-8, .wcs-col-9, .wcs-col-10, .wcs-col-11, .wcs-col-12 {
+  min-height: 1px;
+}
+@media (min-width: 1200px) {
+  .wcs-col-1, .wcs-col-2, .wcs-col-3, .wcs-col-4, .wcs-col-5, .wcs-col-6, .wcs-col-7, .wcs-col-8, .wcs-col-9, .wcs-col-10, .wcs-col-11, .wcs-col-12 {
+    float: left;
+  }
+  .wcs-col-12 {
+    width: 100%;
+  }
+  .wcs-col-11 {
+    width: 91.66666667%;
+  }
+  .wcs-col-10 {
+    width: 83.33333333%;
+  }
+  .wcs-col-9 {
+    width: 75%;
+  }
+  .wcs-col-8 {
+    width: 66.66666667%;
+  }
+  .wcs-col-7 {
+    width: 58.33333333%;
+  }
+  .wcs-col-6 {
+    width: 50%;
+  }
+  .wcs-col-5 {
+    width: 41.66666667%;
+  }
+  .wcs-col-4 {
+    width: 33.33333333%;
+  }
+  .wcs-col-3 {
+    width: 25%;
+  }
+  .wcs-col-2 {
+    width: 16.66666667%;
+  }
+  .wcs-col-1 {
+    width: 8.33333333%;
+  }
+}
+.wcs-clearfix:before,
+.wcs-clearfix:after,
+.wcs-container:before,
+.wcs-container:after,
+.wcs-container-fluid:before,
+.wcs-container-fluid:after {
+  content: " ";
+  display: table;
+}
+.wcs-clearfix:after,
+.wcs-container:after,
+.wcs-container-fluid:after {
+  clear: both;
+}

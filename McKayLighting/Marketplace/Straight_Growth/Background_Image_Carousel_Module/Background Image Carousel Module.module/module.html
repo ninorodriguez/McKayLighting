@@ -1,0 +1,202 @@
+{####################################
+    HubSpot Logo Carousel Module 
+##################################### 
+This module was provided as an easy
+to implement option for users, and 
+also serves as a simple example for 
+developers to learn from & work with.
+#-----------------------------------#}
+
+<div id="Background_image_corousal_{{name}}">
+{% if module.logos|map('background_image')|map('src')|join|length > 0 %}      {# << Only create slider if at least 1 image is added #}
+    <div id="hs-logo-carousel_{{ name }}" class="hs-logo-carousel">
+    {% for slide in module.logos %}
+      <div class="hs-logo-carousel__inner">
+        <div style="background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url({{ slide.background_image.src }}) center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+           <div id="{{name}}_overlayText" style="text-align: center;" class="container">
+                         <div class="content-desktop hero_SG">
+                           <div class="title">
+                              <h2 style="color: {{ slide.title_color.color }}">
+                                {{ slide.desktop_title }}
+                              </h2>
+                           </div>
+                            <div class="lead">
+                               <p style="color: {{ slide.subtitle_color.color }}">
+                                 {{ slide.desktop_subtitle }}
+                              </p>
+                           </div>
+
+                          <div class="cta-sec">
+                              {% cta guid="{{ slide.add_call_to_action }}" %}
+                          </div>   
+                        </div>
+
+                         <div class="content-mobile hero_SG">
+                          <div class="title">
+                              <h2 style="color: {{ slide.title_color.color }}">
+                                {{ slide.mobile_title }}
+                              </h2>
+                           </div>
+                            <div class="lead">
+                               <p style="color: {{ slide.subtitle_color.color }}">
+                                 {{  slide.mobile_subtitle  }}
+                              </p>
+                           </div>
+
+                          <div class="cta-sec">
+                              {% cta guid="{{ slide.add_call_to_action }}" %}
+                          </div>
+                        </div>
+                      </div> 
+        </div>
+      </div>  
+            
+    {% endfor %}
+</div>
+{% endif %}
+</div>
+
+{% require_js %}
+<script>
+$(document).ready(function() { 
+  if ($.fn.slick) {
+      buildSlider_{{ name }}();
+  }
+  else {
+    $.getScript( "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js", function() {
+      $.when($.fn.slick).then(function() {
+        buildSlider_{{ name }}();
+      });
+    });
+  }
+
+  function buildSlider_{{ name }}() {
+    $('#hs-logo-carousel_{{ name }}').slick({                     {# << Slick slider settings go here #}
+        dots: false,                    {# More info: http://kenwheeler.github.io/slick/ #}
+        arrows: {{ module.settings.show_arrows }},
+        autoplay: {{ module.settings.autoplay }},
+        infinite: true,
+        speed: {{ module.settings.scroll_speed }},
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [{
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+    		}]
+    });  
+  }
+});
+</script>
+{% end_require_js %}
+{% require_css %}
+<style>
+  .hs-logo-carousel__inner {
+   padding: 0px;
+  }
+  
+  #Background_image_corousal_{{name}} .hs-logo-carousel {
+    margin: 0px !important;;
+  }
+  
+  #Background_image_corousal_{{name}} .slick-prev {
+   left: 15px;
+   z-index: 999;
+  }
+  
+  #Background_image_corousal_{{name}} .slick-prev:before,
+  #Background_image_corousal_{{name}} .slick-next:before {  
+    color:  {{ module.brand_color.color }};
+    z-index: 999;
+  }
+  
+  #Background_image_corousal_{{name}} .slick-next {
+      right: 15px;
+  }
+  
+  #Background_image_corousal_{{name}} .body
+  {
+    margin: 0 auto;
+  }
+</style>
+
+{% end_require_css %}
+{% require_css %}
+<style>
+ #backimg_{{name}}
+  {  
+      
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+  
+  .content-desktop {display: block;}
+  .content-mobile {display: none !important;}
+
+@media screen and (max-width: 768px) {
+
+  .content-desktop {display: none !important;}
+  .content-mobile {display: block !important;}
+  }
+
+  .container {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+  .hero_SG
+  {
+    padding-top: 30%;
+    padding-bottom: 5%;
+  }
+
+  .hero_SG .lead p {
+    font-family: Lato, sans-serif;
+  }
+
+  .hero_SG .title h2 {
+    font-size: 3.575rem;
+    margin-top: 0px;
+    font-family: Lato, sans-serif;
+    font-weight: 500;
+    margin-bottom: .35rem;
+    line-height: 1.1;
+    letter-spacing: -.05em;
+  }
+
+  .hero_SG .lead p {
+      font-weight: 400;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.75);
+      display: inline-block;
+      width: 80%;
+      margin-bottom: 50px;
+  }
+
+
+  @media (max-width: 767px)
+  { 
+    .hero_SG {
+        padding-top: 400px;
+        padding-bottom: 0%;
+        height: -webkit-fill-available;
+    }
+
+    .hero_SG .title h2 {
+      font-size: 39.576px;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .hero_SG .lead p {    
+        width: 100%;  
+    }
+  }
+
+</style>
+{% end_require_css %}

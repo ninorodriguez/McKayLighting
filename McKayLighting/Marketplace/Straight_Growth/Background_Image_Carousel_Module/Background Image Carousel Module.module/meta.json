@@ -1,0 +1,50 @@
+{
+  "content_tags" : [ {
+    "name" : "COMPATIBLE_BLOG",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "COMPATIBLE_PAGE",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "HEADERS",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "LAYOUT",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "BANNER",
+    "source" : "MARKETPLACE"
+  } ],
+  "extra_classes" : "widget-type_meatball",
+  "global" : false,
+  "icon" : "https://design-assets.hubspot.com/hubfs/slider.svg",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 9344281,
+  "css_assets" : [ {
+    "url" : "https://cdn2.hubspot.net/hubfs/319325/hs_marketplace_assets/modules/Background_Image_Carousel_Module/0/slick.min-3.css",
+    "autoload" : false,
+    "name" : "slick.min-3.css"
+  } ],
+  "other_assets" : [ {
+    "url" : "https://cdn2.hubspot.net/hubfs/319325/hs_marketplace_assets/modules/Background_Image_Carousel_Module/0/slick-2.svg",
+    "autoload" : false,
+    "name" : "slick-2.svg"
+  }, {
+    "url" : "https://cdn2.hubspot.net/hubfs/319325/hs_marketplace_assets/modules/Background_Image_Carousel_Module/0/slick.ttf",
+    "autoload" : false,
+    "name" : "slick.ttf"
+  }, {
+    "url" : "https://cdn2.hubspot.net/hubfs/319325/hs_marketplace_assets/modules/Background_Image_Carousel_Module/0/ajax-loader-2.gif",
+    "autoload" : false,
+    "name" : "ajax-loader-2.gif"
+  }, {
+    "url" : "https://cdn2.hubspot.net/hubfs/319325/hs_marketplace_assets/modules/Background_Image_Carousel_Module/0/slick.eot",
+    "autoload" : false,
+    "name" : "slick.eot"
+  }, {
+    "url" : "https://cdn2.hubspot.net/hubfs/319325/hs_marketplace_assets/modules/Background_Image_Carousel_Module/0/slick.woff",
+    "autoload" : false,
+    "name" : "slick.woff"
+  } ],
+  "is_available_for_new_content" : true
+}

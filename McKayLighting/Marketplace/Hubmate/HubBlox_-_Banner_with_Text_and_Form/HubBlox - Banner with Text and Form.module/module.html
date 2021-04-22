@@ -1,0 +1,66 @@
+{% if name == 'module_1' %}
+{% require_css %}
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700');
+</style>
+{% end_require_css %}
+{% endif %}
+
+<div class="blox_custom-module blox_banner-text-form {% if module.form.hubblox_styles %}blox_style-active{% endif %}{{ name }}" id="{{ name }}" data-observe-resizes style="{% if module.styling.background_image.src && module.styling.background_type == 'image' %}background-image: url({{ module.styling.background_image.src }});{% endif %} {% if module.styling.video_placeholder.src && module.styling.background_type == 'video' %}background-image: url({{ module.styling.video_placeholder.src }});{% endif %} background-repeat: no-repeat; background-position: {{ module.styling.background_position }}; background-size: cover; {% if module.styling.parallax_background %}background-attachment: parallax;{% endif %}">
+  	<div class="blox_overlay">
+        {% if module.styling.background_type == "video" && module.styling.video_url is string_containing "youtu" %}
+        		<div class="yt-bg player" data-property="{videoURL:'{{ module.styling.video_url }}',containment:'#{{ name }}',autoPlay:true,mute:{{ module.styling.mute_video }},loop:{{ module.styling.loop_video }},showControls:true,stopMovieOnBlur:false,mobileFallbackImage:'{{ module.styling.background_image.src }},showYTLogo:false',vol:100}"></div>
+        {% endif %}
+      	{% if module.styling.background_type == "color" %}<span class="blox_overcol" style="background-color: {{ module.styling.background_color.color }}; opacity: {{ module.styling.background_color.opacity / 100 }};"></span>{% endif %}
+      	{% if module.styling.background_type != "color" %}<span class="blox_overcol" style="background-color: {{ module.styling.background_color_alt.color }}; opacity: {{ module.styling.background_color_alt.opacity / 100 }};"></span>{% endif %}
+      	{% if module.styling.background_type == "video" %}
+      			<i class="fas fa-circle-notch fa-spin center"></i>
+      			<span class="blox_video-loading">Video Loading <i class="fas fa-circle-notch fa-spin"></i></span>
+      	{% endif %}
+  	</div>
+  	<div class="blox_cell-wrapper" {% if module.styling.background_type == "color" %}data-bg="{{ module.styling.background_color.color }}"{% endif %} {% if module.styling.background_type == "color" %}data-bg="{{ module.styling.background_color.color }}"{% endif %} style="padding-top: {{ module.styling.top_padding }}px; padding-bottom: {{ module.styling.bottom_padding }}px; color: {{ module.styling.text_color }};">
+      	<div class="blox_text blox_reduced-margin {% if module.styling.animate_content %}fw-animated-element{% endif %}" style="font-size: {{ module.text.text_size }}px; text-align: {{ module.text.text_alignment }};" {% if module.styling.animate_content %}data-animation-type="fadeInLeft"{% endif %}>
+            {% inline_rich_text field="text.text" value="{{ module.text.text }}" %}
+      	</div>
+        <div class="blox_form {% if module.styling.animate_content %}fw-animated-element{% endif %}" {% if module.styling.animate_content %}data-animation-type="fadeInUp"{% endif %} style="padding-top: {{ module.form.top_padding }}px; max-width: {{ module.form.form_width }}%;">
+          	{% form
+              form_to_use="{{ module.form.form_field.form_id }}"
+              response_response_type="{{ module.form_field.response_type }}"
+              response_message="{{ module.form_field.message }}"
+              response_redirect_id="{{ module.form_field.redirect_id }}"
+              response_redirect_url="{{module.form_field.redirect_url}}"
+							notifications_are_overridden="{{ module.form.send_form_notifications }}"
+							notifications_override_email_addresses="{{ module.form.email_addresses }}"
+              form_follow_ups_workflow_id="{{ module.form.workflow_field }}"
+              follow_up_type_simple="{{ module.form.send_a_follow_up_email }}"
+              simple_email_campaign_id="{{ module.form.followup_email }}"
+            %}
+				</div>
+      	{% if module.text.text_alignment %}<span class="hs-clear"></span>{% endif %}
+  	</div>
+</div>
+
+{% require_css position="header" %}
+<style class="{{ name }}-styles">
+/* RESPONSIVE */
+@media screen and (min-width: 1930px) and (max-width: 2560px) {
+		.{{ name }} .cell-wrapper {
+				padding-top: {{ module.styling.top_padding + 40 }}px !important;
+				padding-bottom: {{ module.styling.bottom_padding + 40 }}px !important;
+		}
+    .{{ name }} .blox_text {
+				font-size: {{ module.text.text_size + 5 }}px !important;
+    }
+    .{{ name }} .blox_form {
+				padding-top: {{ module.form.top_padding + 40 }}px !important;
+    }
+}
+  
+@media screen and (min-width: 1690px) and (max-width: 1920px) {
+		.{{ name }} .blox_cell-wrapper {
+				padding-top: {{ module.styling.top_padding + 15 }}px !important;
+				padding-bottom: {{ module.styling.bottom_padding + 15 }}px !important;
+		}
+}
+</style>
+{% end_require_css %}

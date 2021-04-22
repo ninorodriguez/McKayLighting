@@ -1,0 +1,691 @@
+[ {
+  "id" : "00542eb4-1ae1-7e94-97c0-ff9fa4e413d6",
+  "name" : "intro",
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b055f2fa-5e66-891a-72b4-6741ef21e9e0",
+    "name" : "intro",
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h2>Built by designers, just for you.</h2>\n<p>A small section to introduce your employees which can link through to a dedicated team page. Add as many or little team members as needed.</p>"
+  }, {
+    "id" : "daf88bfa-e20c-30ad-311c-8ed79ef7b164",
+    "name" : "text_alignment",
+    "label" : "Text Alignment",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "placeholder" : "Select text alignment...",
+    "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+    "type" : "choice",
+    "default" : "center"
+  }, {
+    "id" : "1093e543-bd9c-4557-7710-cfbe6539f730",
+    "name" : "text_width",
+    "label" : "Text Width",
+    "help_text" : "Width of text as a percentage of the module",
+    "required" : false,
+    "locked" : true,
+    "display" : "slider",
+    "min" : 50,
+    "max" : 100,
+    "step" : 1,
+    "type" : "number",
+    "default" : 60
+  }, {
+    "id" : "6e46f6c2-b852-32d8-5a6f-9b15422cf389",
+    "name" : "position",
+    "label" : "Position",
+    "help_text" : "Sets whether the text should above or below the team members",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "placeholder" : "Choose text position...",
+    "choices" : [ [ "above", "Above Team Members" ], [ "below", "Below Team Members" ] ],
+    "type" : "choice",
+    "default" : "below"
+  }, {
+    "id" : "89b14a0a-9fa1-bea0-183d-d47cf5ebe3b7",
+    "name" : "padding",
+    "label" : "Padding",
+    "help_text" : "The amount of padding (in pixels) between the text and team member items",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 25,
+    "max" : 100,
+    "step" : 1,
+    "type" : "number",
+    "default" : 50
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "intro" : "<h2>Built by designers, just for you.</h2>\n<p>A small section to introduce your employees which can link through to a dedicated team page. Add as many or little team members as needed.</p>",
+    "text_alignment" : "center",
+    "text_width" : 60,
+    "position" : "below",
+    "padding" : 50
+  }
+}, {
+  "id" : "286e3e83-1eda-a75d-d65f-7648e579deef",
+  "name" : "team_members",
+  "label" : "Team Members",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "635a36ba-7488-6653-c1e7-526123eb0923",
+    "name" : "items",
+    "label" : "Items",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : "5cb441ab-2cb0-e249-2769-9efd0dd00d5a",
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "e403bda8-e183-6f71-5e07-c85c1316085b",
+      "name" : "avatar",
+      "label" : "Avatar",
+      "required" : false,
+      "locked" : false,
+      "responsive" : false,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "src" : "https://cdn2.hubspot.net/hubfs/281278/HubBlox/Images/Team/avatar-small-1.png",
+        "alt" : "avatar-small-1",
+        "width" : 120,
+        "height" : 120
+      }
+    }, {
+      "id" : "43592e45-3586-ce44-e492-f0d8a131fa6c",
+      "name" : "page_link",
+      "label" : "Page Link",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "8ee940a8-1609-5ecb-d774-42392bf16ecb",
+        "controlling_value_regex" : "link",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "page"
+    }, {
+      "id" : "20ed66b6-9c3e-46a1-840e-d6c3d58699b4",
+      "name" : "popup_name",
+      "label" : "Name",
+      "help_text" : "The team member's name",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "8ee940a8-1609-5ecb-d774-42392bf16ecb",
+        "controlling_value_regex" : "popup",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Team Member Name"
+    }, {
+      "id" : "5117b0a6-9539-1246-120f-0595d47d7780",
+      "name" : "position",
+      "label" : "Position",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "8ee940a8-1609-5ecb-d774-42392bf16ecb",
+        "controlling_value_regex" : "popup",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Position"
+    }, {
+      "id" : "0f7db332-81fa-84f2-d1e6-e1267537eb3d",
+      "name" : "popup_text",
+      "label" : "Popup Text",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "8ee940a8-1609-5ecb-d774-42392bf16ecb",
+        "controlling_value_regex" : "popup",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "richtext",
+      "default" : "<p>This is the team member's short biography. It's a chance to connect the people visiting your website with your team. Having the info pop up in this window instead of another webpage is great user experience for the visitor.</p>\n<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "avatar" : {
+        "src" : "https://cdn2.hubspot.net/hubfs/281278/HubBlox/Images/Team/avatar-small-1.png",
+        "alt" : "avatar-small-1",
+        "width" : 120,
+        "height" : 120
+      },
+      "popup_name" : "Team Member Name",
+      "position" : "Position",
+      "popup_text" : "<p>This is the team member's short biography. It's a chance to connect the people visiting your website with your team. Having the info pop up in this window instead of another webpage is great user experience for the visitor.</p>\n<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>"
+    } ]
+  }, {
+    "id" : "e80cbe9a-606e-f8f8-f66c-55923479257e",
+    "name" : "apply_rounded_corners_to_avatars",
+    "label" : "Apply rounded corners to avatars",
+    "help_text" : "This will apply rounded corners to the avatar images",
+    "required" : false,
+    "locked" : false,
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "8ee940a8-1609-5ecb-d774-42392bf16ecb",
+    "name" : "link_type",
+    "label" : "Link Type",
+    "help_text" : "Sets whether the team members should link to another page or display info in a pop-up box",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "placeholder" : "Choose team member link type...",
+    "choices" : [ [ "link", "Page Link" ], [ "popup", "Popup Text" ] ],
+    "type" : "choice",
+    "default" : "link"
+  }, {
+    "id" : "90e936de-e866-82e0-91cb-84739ce0d16b",
+    "name" : "item_alignment",
+    "label" : "Item Alignment",
+    "help_text" : "Choose team members item alignment",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "placeholder" : "",
+    "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+    "type" : "choice",
+    "default" : "center"
+  }, {
+    "id" : "40e49033-de9b-4f63-38c4-5907ca924fdd",
+    "name" : "items_per_row",
+    "label" : "Items per row",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 4,
+    "max" : 6,
+    "step" : 1,
+    "type" : "number",
+    "default" : 6
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "items" : [ {
+      "avatar" : {
+        "src" : "https://cdn2.hubspot.net/hubfs/281278/HubBlox/Images/Team/avatar-small-1.png",
+        "alt" : "avatar-small-1",
+        "width" : 120,
+        "height" : 120
+      },
+      "popup_name" : "Team Member Name",
+      "position" : "Position",
+      "popup_text" : "<p>This is the team member's short biography. It's a chance to connect the people visiting your website with your team. Having the info pop up in this window instead of another webpage is great user experience for the visitor.</p>\n<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>"
+    } ],
+    "apply_rounded_corners_to_avatars" : true,
+    "link_type" : "link",
+    "item_alignment" : "center",
+    "items_per_row" : 6
+  }
+}, {
+  "id" : "a4ccfa84-8b56-0d80-7379-abcc753ff593",
+  "name" : "call_to_action",
+  "label" : "Call-to-Action",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "58a6597f-913b-9aa9-03c7-6bb2c5a38c98",
+    "name" : "items",
+    "label" : "Items",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : "dd2f8ec0-a332-2e1e-198d-0c9550294e87",
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "dd2f8ec0-a332-2e1e-198d-0c9550294e87",
+      "name" : "cta",
+      "label" : "CTA",
+      "help_text" : "CTAs can use optional HubBlox button styles. Choose 'Link (No Style)' from the 'Button style' dropdown when creating your CTA. See here: http://g.recordit.co/fhrmStZKcI.gif",
+      "required" : false,
+      "locked" : false,
+      "type" : "cta",
+      "default" : "594f88e2-8359-4084-ae78-166e0eeabd47"
+    }, {
+      "id" : "9692b36f-55a3-c8af-5faf-57a91d5b9f0b",
+      "name" : "background_color",
+      "label" : "Background Color",
+      "help_text" : "",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "52315e5f-aaa9-d7f7-f2b0-efa68f1e3b48",
+        "controlling_value_regex" : "solid",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "color",
+      "default" : {
+        "color" : "#6dc77a",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "3f7db9ba-f5db-b9d3-0291-f422096a3924",
+      "name" : "color",
+      "label" : "Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#FFF",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "ca83960a-c01a-b4fe-9bca-c641a6291c4d",
+      "name" : "icon",
+      "label" : "Icon",
+      "required" : false,
+      "locked" : false,
+      "icon_set" : "fontawesome-5.0.10",
+      "type" : "icon",
+      "default" : { }
+    }, {
+      "id" : "315e905f-1b31-ee90-080b-53836b9a4752",
+      "name" : "size",
+      "label" : "Size",
+      "help_text" : "Sets the size of the  CTA",
+      "required" : false,
+      "locked" : false,
+      "display" : "radio",
+      "placeholder" : "",
+      "choices" : [ [ "small", "Small" ], [ "medium", "Medium" ], [ "large", "Large" ] ],
+      "type" : "choice",
+      "default" : "medium"
+    }, {
+      "id" : "52315e5f-aaa9-d7f7-f2b0-efa68f1e3b48",
+      "name" : "style",
+      "label" : "Style",
+      "help_text" : "Sets the style on the CTA",
+      "required" : false,
+      "locked" : false,
+      "display" : "radio",
+      "placeholder" : "Choose CTA type...",
+      "choices" : [ [ "outline", "Line" ], [ "solid", "Solid" ] ],
+      "type" : "choice",
+      "default" : "solid"
+    }, {
+      "id" : "7ad6f38c-626b-a8a9-64a4-57a9abe19c00",
+      "name" : "full_width",
+      "label" : "Full Width",
+      "required" : false,
+      "locked" : false,
+      "type" : "boolean",
+      "default" : false
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "cta" : "594f88e2-8359-4084-ae78-166e0eeabd47",
+      "background_color" : {
+        "color" : "#6dc77a",
+        "opacity" : 100
+      },
+      "color" : {
+        "color" : "#FFF",
+        "opacity" : 100
+      },
+      "icon" : { },
+      "size" : "medium",
+      "style" : "solid",
+      "full_width" : false
+    } ]
+  }, {
+    "id" : "ba10e38b-3b04-0a9a-0ad7-461303124054",
+    "name" : "cta_alignment",
+    "label" : "CTA Alignment",
+    "help_text" : "Sets the alignment of the CTAs",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "placeholder" : "",
+    "choices" : [ [ "left", "Left" ], [ "center", "Center" ] ],
+    "type" : "choice",
+    "default" : "center"
+  }, {
+    "id" : "19b131bd-352d-d466-3b5b-1995311988f4",
+    "name" : "top_padding",
+    "label" : "Top Padding",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 100,
+    "step" : 1,
+    "type" : "number",
+    "default" : 50
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "items" : [ {
+      "cta" : "594f88e2-8359-4084-ae78-166e0eeabd47",
+      "background_color" : {
+        "color" : "#6dc77a",
+        "opacity" : 100
+      },
+      "color" : {
+        "color" : "#FFF",
+        "opacity" : 100
+      },
+      "icon" : { },
+      "size" : "medium",
+      "style" : "solid",
+      "full_width" : false
+    } ],
+    "cta_alignment" : "center",
+    "top_padding" : 50
+  }
+}, {
+  "id" : "405bdd87-9eb8-0577-a889-657a50f09f1f",
+  "name" : "styling",
+  "label" : "Styling",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d6fe7e58-8120-943a-a71e-01c7d719d8e8",
+    "name" : "animate_content",
+    "label" : "Animate Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "f2fa4f55-feae-cf85-52bb-a86eab662b88",
+    "name" : "top_padding",
+    "label" : "Top Padding",
+    "help_text" : "Amount of padding (in pixels) at the top of the module",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 100,
+    "step" : 1,
+    "type" : "number",
+    "default" : 100
+  }, {
+    "id" : "e1852ba7-24ca-7265-4d9f-a23886620fea",
+    "name" : "bottom_padding",
+    "label" : "Bottom Padding",
+    "help_text" : "Amount of padding (in pixels) at the bottom of the module",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 100,
+    "step" : 1,
+    "type" : "number",
+    "default" : 100
+  }, {
+    "id" : "15f54733-5e2e-d0c8-4213-021cddf3a01c",
+    "name" : "text_color",
+    "label" : "Text Color",
+    "help_text" : "Sets the module text color. 'Black' will set the module to your usual color for text.",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "placeholder" : "Select module text color...",
+    "choices" : [ [ "inherit", "Black" ], [ "#fff", "White" ] ],
+    "type" : "choice",
+    "default" : "inherit"
+  }, {
+    "id" : "3eb01cef-6af5-0304-4868-e0d2e93347cd",
+    "name" : "background_type",
+    "label" : "Background Type",
+    "help_text" : "Choose the type of module background",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "placeholder" : "",
+    "choices" : [ [ "color", "Color" ], [ "image", "Image" ], [ "video", "Video" ] ],
+    "type" : "choice",
+    "default" : "color"
+  }, {
+    "id" : "2c9c2004-562e-2e2b-0311-2e52e35f4c23",
+    "name" : "background_color",
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "3eb01cef-6af5-0304-4868-e0d2e93347cd",
+      "controlling_value_regex" : "color",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#FFF",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "7cf3b60b-ab2b-67f8-4925-dcf77e0c1316",
+    "name" : "background_color_alt",
+    "label" : "Background Overlay",
+    "help_text" : "This covers the background image and video with a solid color. Adjust the transparency as needed.",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "3eb01cef-6af5-0304-4868-e0d2e93347cd",
+      "controlling_value_regex" : "color",
+      "operator" : "NOT_EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#0F0F0F",
+      "opacity" : 5
+    }
+  }, {
+    "id" : "0650d0e0-5fb5-23d8-4c6e-e3f8c7aa63ce",
+    "name" : "background_image",
+    "label" : "Background Image",
+    "help_text" : "Image should be roughly 1920px wide to ensure it displays nicely on larger screens. The image will fill the available background space regardless of the image dimensions.",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "3eb01cef-6af5-0304-4868-e0d2e93347cd",
+      "controlling_value_regex" : "image",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/281278/Quantum/Images/Heros/home-work-section-med_b.jpg",
+      "alt" : "home-work-section-med_b",
+      "width" : 1920,
+      "height" : 1000
+    }
+  }, {
+    "id" : "808bb61c-fd55-c106-adf6-150dc2fce1e9",
+    "name" : "video_placeholder",
+    "label" : "Video Placeholder",
+    "help_text" : "Image should be roughly 1920px wide to ensure it displays nicely on larger screens. The image will fill the available background space regardless.",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "3eb01cef-6af5-0304-4868-e0d2e93347cd",
+      "controlling_value_regex" : "video",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/281278/HubBlox/Images/Hero/placeholder-bgvid.jpg",
+      "alt" : "placeholder-bgvid",
+      "width" : 1920,
+      "height" : 1080
+    }
+  }, {
+    "id" : "b4f29453-dce8-a64b-f0bf-6fe46522a98b",
+    "name" : "background_position",
+    "label" : "Background Position",
+    "help_text" : "This sets the starting position for the background image. The first value is the horizontal position and the second value is the vertical.",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "3eb01cef-6af5-0304-4868-e0d2e93347cd",
+      "controlling_value_regex" : "image",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "display" : "select",
+    "placeholder" : "Choose background position...",
+    "choices" : [ [ "left top", "Left Top" ], [ "left center", "Left Center" ], [ "left bottom", "Left Bottom" ], [ "right top", "Right Top" ], [ "right center", "Right Center" ], [ "right bottom", "Right Bottom" ], [ "center top", "Center Top" ], [ "center center", "Center Center" ], [ "center bottom", "Center Bottom" ] ],
+    "type" : "choice",
+    "default" : "center center"
+  }, {
+    "id" : "fa43cce4-e394-a67e-07ca-76a338e1ecde",
+    "name" : "parallax_background",
+    "label" : "Parallax background?",
+    "help_text" : "This will apply a parallax effect to the background image",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "3eb01cef-6af5-0304-4868-e0d2e93347cd",
+      "controlling_value_regex" : "image",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "d28316fa-5f85-5a18-ec3d-70f161b9efdd",
+    "name" : "video_url",
+    "label" : "Video URL",
+    "help_text" : "Youtube URL",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "3eb01cef-6af5-0304-4868-e0d2e93347cd",
+      "controlling_value_regex" : "video",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "https://www.youtube.com/watch?v=_bNRCwzUUIE"
+  }, {
+    "id" : "ea9b1456-3e59-226b-323e-567690ffd393",
+    "name" : "mute_video",
+    "label" : "Mute video?",
+    "help_text" : "Check this box to mute the background video",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "3eb01cef-6af5-0304-4868-e0d2e93347cd",
+      "controlling_value_regex" : "video",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "b7490813-a7ae-61a6-32dd-ad186048da4a",
+    "name" : "loop_video",
+    "label" : "Loop video?",
+    "help_text" : "Check to this box to play the background video on a loop",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "3eb01cef-6af5-0304-4868-e0d2e93347cd",
+      "controlling_value_regex" : "video",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "animate_content" : false,
+    "top_padding" : 100,
+    "bottom_padding" : 100,
+    "text_color" : "inherit",
+    "background_type" : "color",
+    "background_color" : {
+      "color" : "#FFF",
+      "opacity" : 100
+    },
+    "background_color_alt" : {
+      "color" : "#0F0F0F",
+      "opacity" : 5
+    },
+    "background_image" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/281278/Quantum/Images/Heros/home-work-section-med_b.jpg",
+      "alt" : "home-work-section-med_b",
+      "width" : 1920,
+      "height" : 1000
+    },
+    "video_placeholder" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/281278/HubBlox/Images/Hero/placeholder-bgvid.jpg",
+      "alt" : "placeholder-bgvid",
+      "width" : 1920,
+      "height" : 1080
+    },
+    "background_position" : "center center",
+    "parallax_background" : false,
+    "video_url" : "https://www.youtube.com/watch?v=_bNRCwzUUIE",
+    "mute_video" : true,
+    "loop_video" : true
+  }
+} ]

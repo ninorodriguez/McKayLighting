@@ -1,0 +1,315 @@
+.blox_team-members-av .blox_intro .blox_text {
+    display: inline-block;
+    vertical-align: top;
+  	max-width: 1024px;
+}
+.blox_team-members-av .blox_items {
+		margin: 0 !important;
+}
+.blox_team-members-av .blox_items > .blox_item-alt {
+		text-align: center;
+}
+.blox_team-members-av .blox_item-alt a {
+		outline: none;
+}
+.blox_team-members-av .blox_item-alt img {
+		max-width: 90%;
+}
+.blox_team-members-av .blox_item-alt img.blox_circle {
+		-webkit-border-radius: 500px;
+		border-radius: 500px;
+}
+div[id*='team-member'] {
+    background: #fff;
+    padding: 30px;
+    text-align: left;
+    max-width: 700px;
+    margin: 40px auto;
+    position: relative;
+}
+div[id*='team-member'] .blox_avatar-pop {
+  	text-align: center;
+}
+div[id*='team-member'] .blox_bio {
+  	padding-left: 10px;
+}
+div[id*='team-member'] .blox_bio > h3 {
+  	margin: 0 0 5px;
+}
+div[id*='team-member'] .blox_bio > p {
+		color: #c4c4c4;
+  	margin: 0;
+}
+div[id*='team-member'] .blox_snippet {
+  	margin: 20px 0 0;
+}
+
+/* IE9 and IE10 */
+@media screen and (min-width:0\0) {
+}
+
+/* RESPONSIVE */
+/* elements */
+/* 834 */
+.blox_team-members-av.blox_834 .blox_intro .blox_text {
+    max-width: 100% !important;
+}
+.blox_team-members-av.blox_834 .blox_items .blox_item-alt[style*='20'],
+.blox_team-members-av.blox_834 .blox_items .blox_item-alt[style*='16.66'] {
+    width: 25% !important;
+}
+.blox_team-members-av.blox_834 .blox_items .blox_item-alt[style*='20']:nth-child(n+5),
+.blox_team-members-av.blox_834 .blox_items .blox_item-alt[style*='16.66']:nth-child(n+5) {
+    margin-top: 51px;
+}
+.blox_team-members-av.blox_834 .blox_items .blox_item-alt[style*='20']:nth-child(4n+1),
+.blox_team-members-av.blox_834 .blox_items .blox_item-alt[style*='16.66']:nth-child(4n+1) {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+.blox_team-members-av.blox_834 .blox_items .blox_item-alt[style*='20']:nth-child(4n+2),
+.blox_team-members-av.blox_834 .blox_items .blox_item-alt[style*='16.66']:nth-child(4n+2) {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+.blox_team-members-av.blox_834 .blox_items .blox_item-alt[style*='20']:nth-child(4n+3),
+.blox_team-members-av.blox_834 .blox_items .blox_item-alt[style*='16.66']:nth-child(4n+3) {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+.blox_team-members-av.blox_834 .blox_items .blox_item-alt[style*='20']:nth-child(4n+4),
+.blox_team-members-av.blox_834 .blox_items .blox_item-alt[style*='16.66']:nth-child(4n+4) {
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+/* 600 */
+.blox_team-members-av.blox_600 .blox_items .blox_item-alt[style*='25'],
+.blox_team-members-av.blox_600 .blox_items .blox_item-alt[style*='20'],
+.blox_team-members-av.blox_600 .blox_items .blox_item-alt[style*='16.66'] {
+    display: inline-block;
+    width: 33.33% !important;
+    margin-top: 0;
+}
+.blox_team-members-av.blox_600 .blox_items .blox_item-alt[style*='25']:nth-child(n+4),
+.blox_team-members-av.blox_600 .blox_items .blox_item-alt[style*='20']:nth-child(n+4),
+.blox_team-members-av.blox_600 .blox_items .blox_item-alt[style*='16.66']:nth-child(n+4) {
+    margin-top: 51px;
+}
+.blox_team-members-av.blox_600 .blox_items .blox_item-alt[style*='25']:nth-child(3n+1),
+.blox_team-members-av.blox_600 .blox_items .blox_item-alt[style*='20']:nth-child(3n+1),
+.blox_team-members-av.blox_600 .blox_items .blox_item-alt[style*='16.66']:nth-child(3n+1) {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+.blox_team-members-av.blox_600 .blox_items .blox_item-alt[style*='25']:nth-child(3n+2),
+.blox_team-members-av.blox_600 .blox_items .blox_item-alt[style*='20']:nth-child(3n+2),
+.blox_team-members-av.blox_600 .blox_items .blox_item-alt[style*='16.66']:nth-child(3n+2) {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+.blox_team-members-av.blox_600 .blox_items .blox_item-alt[style*='25']:nth-child(3n+3),
+.blox_team-members-av.blox_600 .blox_items .blox_item-alt[style*='20']:nth-child(3n+3),
+.blox_team-members-av.blox_600 .blox_items .blox_item-alt[style*='16.66']:nth-child(3n+3) {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+/* 480 */
+.blox_team-members-av.blox_480 .blox_items .blox_item-alt[style*='33.33'],
+.blox_team-members-av.blox_480 .blox_items .blox_item-alt[style*='25'],
+.blox_team-members-av.blox_480 .blox_items .blox_item-alt[style*='20'],
+.blox_team-members-av.blox_480 .blox_items .blox_item-alt[style*='16.66'] {
+    display: inline-block;
+    width: 50% !important;
+    margin-top: 0;
+}
+.blox_team-members-av.blox_480 .blox_items .blox_item-alt[style*='33.33']:nth-child(n+3),
+.blox_team-members-av.blox_480 .blox_items .blox_item-alt[style*='25']:nth-child(n+3),
+.blox_team-members-av.blox_480 .blox_items .blox_item-alt[style*='20']:nth-child(n+3),
+.blox_team-members-av.blox_480 .blox_items .blox_item-alt[style*='16.66']:nth-child(n+3) {
+    margin-top: 51px;
+}
+.blox_team-members-av.blox_480 .blox_items .blox_item-alt[style*='33.33']:nth-child(2n+1),
+.blox_team-members-av.blox_480 .blox_items .blox_item-alt[style*='25']:nth-child(2n+1),
+.blox_team-members-av.blox_480 .blox_items .blox_item-alt[style*='20']:nth-child(2n+1),
+.blox_team-members-av.blox_480 .blox_items .blox_item-alt[style*='16.66']:nth-child(2n+1) {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+.blox_team-members-av.blox_480 .blox_items .blox_item-alt[style*='33.33']:nth-child(2n+2),
+.blox_team-members-av.blox_480 .blox_items .blox_item-alt[style*='25']:nth-child(2n+2),
+.blox_team-members-av.blox_480 .blox_items .blox_item-alt[style*='20']:nth-child(2n+2),
+.blox_team-members-av.blox_480 .blox_items .blox_item-alt[style*='16.66']:nth-child(2n+2) {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+/* 319 */
+.blox_custom-module.blox_team-members-av.blox_319 .blox_items .blox_item-alt[style] {
+  	width: auto !important;
+  	display: block;
+  	margin-top: 40px;
+  	-webkit-animation-delay: 0.2s !important;
+  	animation-delay: 0.2s !important;
+}
+.blox_custom-module.blox_team-members-av.blox_319 .blox_items .blox_item-alt[style]:first-child {
+  	margin-top: 0;
+}
+
+/* media */
+@media screen and (min-width: 1930px) and (max-width: 2560px) {
+    div[id*='team-member'] {
+        max-width: 1024px;
+      	padding: 40px;
+    }
+}
+
+@media screen and (min-width: 1690px) and (max-width: 1920px) {
+    div[id*='team-member'] {
+        max-width: 834px;
+    }
+}
+
+@media (max-width: 1024px) {
+		.blox_team-members-av .blox_intro .blox_text {
+  			max-width: 100% !important;
+		}
+    .blox_team-members-av .blox_items .blox_item-alt[style*='20'],
+    .blox_team-members-av .blox_items .blox_item-alt[style*='16.66'] {
+        width: 25% !important;
+    }
+    .blox_team-members-av .blox_items .blox_item-alt[style*='20']:nth-child(n+5),
+    .blox_team-members-av .blox_items .blox_item-alt[style*='16.66']:nth-child(n+5) {
+        margin-top: 51px;
+    }
+    .blox_team-members-av .blox_items .blox_item-alt[style*='20']:nth-child(4n+1),
+    .blox_team-members-av .blox_items .blox_item-alt[style*='16.66']:nth-child(4n+1) {
+        -webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+    }
+    .blox_team-members-av .blox_items .blox_item-alt[style*='20']:nth-child(4n+2),
+    .blox_team-members-av .blox_items .blox_item-alt[style*='16.66']:nth-child(4n+2) {
+        -webkit-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+    }
+    .blox_team-members-av .blox_items .blox_item-alt[style*='20']:nth-child(4n+3),
+    .blox_team-members-av .blox_items .blox_item-alt[style*='16.66']:nth-child(4n+3) {
+        -webkit-animation-delay: 0.6s;
+        animation-delay: 0.6s;
+    }
+    .blox_team-members-av .blox_items .blox_item-alt[style*='20']:nth-child(4n+4),
+    .blox_team-members-av .blox_items .blox_item-alt[style*='16.66']:nth-child(4n+4) {
+        -webkit-animation-delay: 0.8s;
+        animation-delay: 0.8s;
+    }
+}
+
+@media (max-width: 834px) {
+		.blox_team-members-av .blox_cell-wrapper {
+    		padding: 80px 0 !important;
+		}
+    .blox_team-members-av .blox_intro:first-child {
+        padding-bottom: 50px !important;
+    }
+    .blox_team-members-av .blox_items:first-child + .blox_intro {
+        padding-top: 50px !important;
+    }
+		.blox_team-members-av .blox_items + .blox_ctas {
+    		padding-top: 60px !important;
+		}
+		.blox_team-members-av .blox_intro + .blox_ctas {
+    		padding-top: 50px !important;
+		}
+}
+
+@media (max-width: 767px) {
+		div[id*='team-member'] .blox_avatar-pop {
+    		margin: 0 0 20px;
+		}
+    div[id*='team-member'] .blox_bio {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+		.blox_team-members-av .blox_cell-wrapper {
+    		padding: 60px 0 !important;
+		}
+    .blox_team-members-av .blox_intro:first-child {
+        padding-bottom: 40px !important;
+    }
+    .blox_team-members-av .blox_items:first-child + .blox_intro {
+        padding-top: 40px !important;
+    }
+		.blox_team-members-av .blox_items + .blox_ctas {
+    		padding-top: 50px !important;
+		}
+		.blox_team-members-av .blox_intro + .blox_ctas {
+    		padding-top: 40px !important;
+		}
+    div[id*='team-member'] {
+        padding: 25px;
+    }
+    .blox_team-members-av .blox_items .blox_item-alt[style*='25'],
+    .blox_team-members-av .blox_items .blox_item-alt[style*='20'],
+    .blox_team-members-av .blox_items .blox_item-alt[style*='16.66'] {
+        display: inline-block;
+        width: 33.33% !important;
+        margin-top: 0;
+    }
+    .blox_team-members-av .blox_items .blox_item-alt[style*='25']:nth-child(n+4),
+    .blox_team-members-av .blox_items .blox_item-alt[style*='20']:nth-child(n+4),
+    .blox_team-members-av .blox_items .blox_item-alt[style*='16.66']:nth-child(n+4) {
+        margin-top: 51px;
+    }
+    .blox_team-members-av .blox_items .blox_item-alt[style*='25']:nth-child(3n+1),
+    .blox_team-members-av .blox_items .blox_item-alt[style*='20']:nth-child(3n+1),
+    .blox_team-members-av .blox_items .blox_item-alt[style*='16.66']:nth-child(3n+1) {
+        -webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+    }
+    .blox_team-members-av .blox_items .blox_item-alt[style*='25']:nth-child(3n+2),
+    .blox_team-members-av .blox_items .blox_item-alt[style*='20']:nth-child(3n+2),
+    .blox_team-members-av .blox_items .blox_item-alt[style*='16.66']:nth-child(3n+2) {
+        -webkit-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+    }
+    .blox_team-members-av .blox_items .blox_item-alt[style*='25']:nth-child(3n+3),
+    .blox_team-members-av .blox_items .blox_item-alt[style*='20']:nth-child(3n+3),
+    .blox_team-members-av .blox_items .blox_item-alt[style*='16.66']:nth-child(3n+3) {
+        -webkit-animation-delay: 0.6s;
+        animation-delay: 0.6s;
+    }
+}
+
+@media (max-width: 480px) {
+    .blox_team-members-av .blox_items .blox_item-alt[style*='33.33'],
+    .blox_team-members-av .blox_items .blox_item-alt[style*='25'],
+    .blox_team-members-av .blox_items .blox_item-alt[style*='20'],
+    .blox_team-members-av .blox_items .blox_item-alt[style*='16.66'] {
+        display: inline-block;
+        width: 50% !important;
+        margin-top: 0;
+    }
+    .blox_team-members-av .blox_items .blox_item-alt[style*='33.33']:nth-child(n+3),
+    .blox_team-members-av .blox_items .blox_item-alt[style*='25']:nth-child(n+3),
+    .blox_team-members-av .blox_items .blox_item-alt[style*='20']:nth-child(n+3),
+    .blox_team-members-av .blox_items .blox_item-alt[style*='16.66']:nth-child(n+3) {
+        margin-top: 51px;
+    }
+    .blox_team-members-av .blox_items .blox_item-alt[style*='33.33']:nth-child(2n+1),
+    .blox_team-members-av .blox_items .blox_item-alt[style*='25']:nth-child(2n+1),
+    .blox_team-members-av .blox_items .blox_item-alt[style*='20']:nth-child(2n+1),
+    .blox_team-members-av .blox_items .blox_item-alt[style*='16.66']:nth-child(2n+1) {
+        -webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+    }
+    .blox_team-members-av .blox_items .blox_item-alt[style*='33.33']:nth-child(2n+2),
+    .blox_team-members-av .blox_items .blox_item-alt[style*='25']:nth-child(2n+2),
+    .blox_team-members-av .blox_items .blox_item-alt[style*='20']:nth-child(2n+2),
+    .blox_team-members-av .blox_items .blox_item-alt[style*='16.66']:nth-child(2n+2) {
+        -webkit-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+    }
+}

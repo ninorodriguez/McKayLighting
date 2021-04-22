@@ -1,0 +1,49 @@
+{
+  "content_tags" : [ {
+    "name" : "LAYOUT",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "BANNER",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "COMPATIBLE_BLOG",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "COMPATIBLE_PAGE",
+    "source" : "MARKETPLACE"
+  } ],
+  "global" : false,
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 7047388,
+  "css_assets" : [ {
+    "url" : "https://cdn2.hubspot.net/hubfs/319325/hs_marketplace_assets/modules/HubBlox%20-%20Hero%20Banner%20SaaS%20with%20Image/0/hubblox-modules.css",
+    "autoload" : false,
+    "name" : "hubblox-modules.css"
+  }, {
+    "url" : "https://cdn2.hubspot.net/hubfs/319325/hs_marketplace_assets/modules/HubBlox%20-%20Hero%20Banner%20SaaS%20with%20Image/0/jquery_mb_YTPlayer_min.css",
+    "autoload" : false,
+    "name" : "jquery_mb_YTPlayer_min.css"
+  }, {
+    "url" : "https://cdn2.hubspot.net/hubfs/319325/hs_marketplace_assets/modules/HubBlox%20-%20Hero%20Banner%20SaaS%20with%20Image/0/font-awesome.css",
+    "autoload" : false,
+    "name" : "font-awesome.css"
+  } ],
+  "js_assets" : [ {
+    "url" : "https://cdn2.hubspot.net/hubfs/319325/hs_marketplace_assets/modules/HubBlox%20-%20Hero%20Banner%20SaaS%20with%20Image/0/jquery_mb_YTPlayer_min.js",
+    "autoload" : false,
+    "name" : "jquery_mb_YTPlayer_min.js"
+  }, {
+    "url" : "https://cdn2.hubspot.net/hubfs/319325/hs_marketplace_assets/modules/HubBlox%20-%20Hero%20Banner%20SaaS%20with%20Image/0/jquery_waypoints_min.js",
+    "autoload" : false,
+    "name" : "jquery_waypoints_min.js"
+  }, {
+    "url" : "https://cdn2.hubspot.net/hubfs/319325/hs_marketplace_assets/modules/HubBlox%20-%20Hero%20Banner%20SaaS%20with%20Image/0/resize-observer.js",
+    "autoload" : false,
+    "name" : "resize-observer.js"
+  }, {
+    "url" : "https://cdn2.hubspot.net/hubfs/319325/hs_marketplace_assets/modules/HubBlox%20-%20Hero%20Banner%20SaaS%20with%20Image/0/hubblox-modules.js",
+    "autoload" : false,
+    "name" : "hubblox-modules.js"
+  } ],
+  "is_available_for_new_content" : true
+}

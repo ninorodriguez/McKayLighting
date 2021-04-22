@@ -1,0 +1,137 @@
+{% if module.background_choice == "video" %}
+
+<style>   
+    .wcs .wcs-fullscreen-bg {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -100;
+        height: 100%;
+        width: 100%;
+    }
+
+    .wcs .wcs-fullscreen-bg__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
+        height: auto;
+        width: auto;
+    }
+    
+    .wcs video {
+        max-width: none;
+    }
+    
+    @media (max-width: 767px) {
+      .wcs .wcs-fullscreen-bg {
+        background-image: url({{ widget.select_a_hero_image.src }});
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .wcs .wcs-fullscreen-bg__video {
+        display: none;
+      }
+    }
+</style>
+
+<div class="wcs">
+  <div class="wcs-fullscreen-bg">
+      <video loop muted autoplay class="wcs-fullscreen-bg__video">
+          <source src="{{ module.video_file }}" type="video/{{ widget.video_type }}">
+      </video>
+  </div>
+</div>
+
+{% endif %}
+
+{% if module.background_choice == "image" %}
+
+<style>
+  #hs_cos_wrapper_{{ name }} .wcs .wcs-hero {
+    background-image: url({{ module.select_a_hero_image.src }});
+    {% if module.hero_position == 'custom' %}
+    background-position: {{ module.x_position }} {{ module.y_position }};
+    {% else %}
+    background-position: {{ module.hero_position }};
+    {% endif %} 
+  }
+</style>
+
+{% endif %}
+
+{% set bgop = module.background_color.opacity / 100 %}
+
+{% if module.background_choice == "gradient" %}
+
+<style>
+.wcs .wcs-hero {
+  background: {{ module.background_color.color }};
+  background: -moz-linear-gradient(top, {{ module.background_color.color }} 0%, {{ module.background_color_2.color }} 100%);
+  background: -webkit-linear-gradient(top, {{ module.background_color.color }} 0%, {{ module.background_color_2.color }} 100%);
+  background: linear-gradient(to bottom, {{ module.background_color.color }} 0%, {{ module.background_color_2.color }} 100%); 
+}
+</style>
+
+{% set bgop = "0" %}
+
+{% endif %}
+
+<style>
+.wcs .wcs-hero::before { 
+	background-color: rgba({{ module.background_color.color|convert_rgb }},{{ bgop }});
+}
+</style>
+
+{% if module.vertically_align %}
+	{% set aligner="wcs-vert-align" %}
+{% else %}
+	{% set aligner="wcs-top-align" %}
+{% endif %}
+
+{% if module.column_sizes == "2-2" %}
+  {% set leftCol="wcs-col-6" %}
+  {% set rightCol="wcs-col-6" %}
+
+<div class="wcs">
+  <div class="wcs-col-12 wcs-hero">
+    <div class="wcs-col-12 wcs-page-center">
+      <div class="wcs-container-fluid">
+      <div class="wcs-container {{ aligner }}">
+      <div class="{{ leftCol }}">
+        {% inline_rich_text field="left_rich_text_field" value="{{ module.left_rich_text_field }}" %}
+      </div>
+      <div class="{{ rightCol }}">
+        {% inline_rich_text field="right_rich_text_field" value="{{ module.right_rich_text_field }}" %}
+      </div>
+      </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+{% endif %}
+
+{% if module.column_sizes == "1-1" %}
+  {% set leftCol="wcs-col-12" %}
+
+<div class="wcs"> 
+  <div class="wcs-col-12 wcs-hero">
+    <div class="wcs-col-12 wcs-page-center">
+      <div class="wcs-container-fluid">
+      <div class="wcs-container {{ aligner }}">
+      <div class="{{ leftCol }} wcs-center-hero">
+        {% inline_rich_text field="left_rich_text_field" value="{{ module.left_rich_text_field }}" %}
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endif %}

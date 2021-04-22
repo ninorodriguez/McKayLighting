@@ -1,0 +1,103 @@
+/* AFFILIATE LOGOS & FORM */
+.blox_banner-text-form .blox_cell-wrapper {
+    max-width: 975px !important;
+}
+.blox_banner-text-form .blox_form {
+    padding: 40px 0 0;
+}
+.blox_banner-text-form .blox_form:after {
+		content: "";
+  	display: block;
+  	clear: both;
+}
+.blox_banner-text-form .blox_form h3.form-title {
+    display: none;
+}
+.blox_banner-text-form .blox_text[style*='text-align: center'] + .blox_form .hs_submit,
+.blox_banner-text-form .blox_text[style*='text-align: center'] + .blox_form .submitted-message {
+   text-align: center
+}
+.blox_banner-text-form .blox_text[style*='text-align: center'] + .blox_form {
+    margin: 0 auto;
+}
+.blox_banner-text-form .blox_text[style*='text-align: right'] + .blox_form {
+    text-align: right;
+  	float: right;
+}
+.blox_banner-text-form .blox_text[style*='text-align: right'] + .blox_form .hs_cos_wrapper_type_form {
+    display: inline-block;
+  	vertical-align: top;
+}
+.blox_banner-text-form .blox_text[style*='text-align: right'] + .blox_form .hs_submit {
+    text-align: right
+}
+
+/* BROWSER TESTING */
+/* ie9 */
+@media screen and (min-width:0\0) and (min-resolution: +72dpi) {
+}
+
+/* --------------------------------------------------
+RESPONSIVE
+-------------------------------------------------- */
+/* ELEMENTS */
+.blox_banner-text-form.blox_600 fieldset > div {
+		float: none !important;
+		padding: 0 !important;
+}
+.blox_banner-text-form.blox_600 fieldset.form-columns-2 > div,
+.blox_banner-text-form.blox_600 fieldset.form-columns-3 > div {
+		width: 100% !important;
+}
+
+/* MEDIA */
+@media screen and (min-width: 1930px) and (max-width: 2560px) {
+    .blox_banner-text-form .blox_cell-wrapper {
+        max-width: 1800px !important;
+    }
+}
+
+@media screen and (min-width: 1690px) and (max-width: 1920px) {
+    .blox_banner-text-form .blox_cell-wrapper {
+        max-width: 1360px !important;
+    }
+}
+
+@media (max-width: 834px) {
+    .blox_banner-text-form .blox_cell-wrapper {
+        padding: 80px 0 !important;
+    }
+  	.blox_affiliate-logos-cta .blox_form {
+      	padding: 40px 0 0 !important;
+  	}
+  
+}
+
+@media (max-width: 767px) {
+    .blox_banner-text-form .blox_form {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .blox_banner-text-form .blox_cell-wrapper {
+        padding: 60px 0 !important;
+    }
+    .blox_banner-text-form .blox_form {
+        padding: 45px 0 0 !important;
+    }
+    .blox_banner-text-form .blox_text[style*='text-align: right'],
+    .blox_banner-text-form .blox_text[style*='text-align: right'] + .blox_form .hs_submit {
+        text-align: left !important;
+    }
+}
+
+@media (max-width: 480px) {
+}
+
+@media (max-width: 375px) {
+}
+
+@media (max-width: 320px) {
+}

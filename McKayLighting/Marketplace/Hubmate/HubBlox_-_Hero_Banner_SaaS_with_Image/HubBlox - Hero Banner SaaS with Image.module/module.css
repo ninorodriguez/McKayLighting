@@ -1,0 +1,171 @@
+.blox_hero-phone-tablet .blox_logo {
+		margin: 0 0 40px;
+}
+.blox_hero-phone-tablet .blox_image-text {
+  	display: table;
+		width: 100%;
+}
+.blox_hero-phone-tablet .blox_image-text > div {
+  	display: table-cell;
+  	vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.blox_hero-phone-tablet .blox_image-text .blox_text,
+.blox_hero-phone-tablet .blox_image-text[dir='rtl'] .blox_image {
+		padding: 0 0 0 25px;
+}
+.blox_hero-phone-tablet .blox_image-text .blox_image,
+.blox_hero-phone-tablet .blox_image-text[dir='rtl'] .blox_text {
+		padding: 0 25px 0 0;
+}
+.blox_hero-phone-tablet .blox_items {
+  	text-align: left;
+  	padding: 0 40px 0 0;
+		margin: 44px 0 0 -15px;
+}
+.blox_hero-phone-tablet .blox_items .blox_item-alt[style*='100']:nth-child(n+2),
+.blox_hero-phone-tablet .blox_items .blox_item-alt[style*='50']:nth-child(n+3),
+.blox_hero-phone-tablet .blox_items .blox_item-alt[style*='33']:nth-child(n+4),
+.blox_hero-phone-tablet .blox_items .blox_item-alt[style*='25']:nth-child(n+5) {
+    margin-top: 30px;
+}
+.blox_hero-phone-tablet .blox_icon {
+  	display: table-cell;
+  	vertical-align: top;
+  	padding-right: 20px;
+}
+.blox_hero-phone-tablet .blox_label {
+  	display: table-cell;
+  	vertical-align: middle;
+  	font-weight: 700;
+  	position: relative;
+  	top: -4px;
+		-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+.blox_hero-phone-tablet .blox_icon svg {
+  	width: 1.5em;
+  	height: 1.5em;
+}
+.blox_hero-phone-tablet .blox_ctas {
+  	margin: 45px 0 0;
+}
+
+/* RESPONSIVE */
+
+/* ELEMENTS */
+/* 800 */
+.blox_hero-phone-tablet .blox_text.blox_800 .blox_item-alt[style*='33'] {
+  	width: 50% !important;
+}
+.blox_hero-phone-tablet .blox_text.blox_800 .blox_item-alt[style*='33']:nth-child(n+3) {
+  	margin-top: 30px;
+}
+
+/* 480 */
+.blox_hero-phone-tablet .blox_text.blox_480 .blox_items {
+    padding: 0;
+}
+.blox_hero-phone-tablet .blox_text.blox_480 .blox_item-alt[style*='50'],
+.blox_hero-phone-tablet .blox_text.blox_480 .blox_item-alt[style*='33'] {
+  	display: block;
+  	width: auto !important;
+}
+.blox_hero-phone-tablet .blox_text.blox_480 .blox_item-alt[style*='50']:nth-child(n+2),
+.blox_hero-phone-tablet .blox_text.blox_480 .blox_item-alt[style*='33']:nth-child(n+2) {
+  	margin-top: 30px;
+}
+
+/* window */
+@media screen and (min-width: 1930px) and (max-width: 2560px) {
+		.blox_hero-phone-tablet .blox_items {
+    		margin: 60px 0 0 -15px;
+		}
+    .blox_hero-phone-tablet .blox_items .blox_item-alt[style*='100']:nth-child(n+2),
+    .blox_hero-phone-tablet .blox_items .blox_item-alt[style*='50']:nth-child(n+3),
+    .blox_hero-phone-tablet .blox_items .blox_item-alt[style*='33']:nth-child(n+4),
+    .blox_hero-phone-tablet .blox_items .blox_item-alt[style*='25']:nth-child(n+5) {
+        margin-top: 40px;
+    }
+    .blox_hero-phone-tablet .blox_icon {
+        padding-right: 25px;
+    }
+    .blox_hero-phone-tablet .blox_ctas {
+        margin: 60px 0 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .blox_hero-phone-tablet .blox_image-text .blox_text,
+    .blox_hero-phone-tablet .blox_image-text[dir='rtl'] .blox_image {
+        padding: 0 0 0 20px;
+    }
+    .blox_hero-phone-tablet .blox_image-text .blox_image,
+    .blox_hero-phone-tablet .blox_image-text[dir='rtl'] .blox_text {
+        padding: 0 20px 0 0;
+    }
+    .blox_hero-phone-tablet .blox_items {
+        padding: 0;
+    }
+}
+
+@media (max-width: 834px) {
+    .blox_hero-phone-tablet .blox_cell-wrapper {
+        padding: 100px 0 !important;
+    }
+		.blox_hero-phone-tablet .blox_image-text {
+      	display: block;
+  	}
+    .blox_hero-phone-tablet .blox_image {
+        margin: 0 0 50px;
+    }
+    .blox_hero-phone-tablet .blox_image img {
+        max-width: 50%;
+    }
+    .blox_hero-phone-tablet .blox_logo img {
+        display: block;
+      	margin: 0 auto;
+    }
+  	.blox_hero-phone-tablet .blox_snippet, .blox_hero-phone-tablet .blox_ctas {
+      	text-align: center;
+  	}
+    .blox_hero-phone-tablet .blox_image-text > div {
+        display: block;
+				width: auto !important;
+      	padding: 0 !important;
+    }
+    .blox_hero-phone-tablet .blox_ctas .cta-container {
+        margin: 0 10px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .blox_hero-phone-tablet .blox_cell-wrapper {
+        padding: 70px 0 !important;
+    }
+    .blox_hero-phone-tablet .blox_image {
+        margin: 0 0 40px;
+    }
+		.blox_hero-phone-tablet .blox_logo {
+    		margin: 0 0 30px;
+		}
+    .blox_hero-phone-tablet .blox_text .blox_items {
+        padding: 0;
+      	margin: 35px 0 0;
+    }
+    .blox_hero-phone-tablet .blox_item-alt,
+    .blox_hero-phone-tablet .blox_item-alt {
+        padding: 0;
+    }
+    body .blox_custom-module.blox_hero-phone-tablet .blox_text .blox_item-alt[style*='50'],
+    body .blox_custom-module.blox_hero-phone-tablet .blox_text .blox_item-alt[style*='33'] {
+        display: block;
+        width: auto !important;
+    }
+    body .blox_custom-module.blox_hero-phone-tablet .blox_text .blox_item-alt[style*='50']:nth-child(n+2),
+    body .blox_custom-module.blox_hero-phone-tablet .blox_text .blox_item-alt[style*='33']:nth-child(n+2) {
+        margin-top: 20px;
+    }
+}
